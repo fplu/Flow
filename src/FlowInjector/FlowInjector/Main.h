@@ -32,13 +32,11 @@
 #include "InjectorMain.h"
 
 #ifdef _DEBUG
-#pragma comment(lib, "../x64/Debug/FlowUser.lib")
 #pragma comment(lib, "../x64/Debug/INSTRUCTIONCounter.lib")
 #pragma comment(lib, "../x64/Debug/Injector.lib")
 #pragma comment(lib, "../x64/Debug/Flow.lib")
 #pragma comment(lib, "../x64/Debug/Hook.lib")
 #else
-#pragma comment(lib, "../x64/Release/FlowUser.lib")
 #pragma comment(lib, "../x64/Release/INSTRUCTIONCounter.lib")
 #pragma comment(lib, "../x64/Release/Injector.lib")
 #pragma comment(lib, "../x64/Release/Flow.lib")

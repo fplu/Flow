@@ -5,7 +5,7 @@
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <LocalDebuggerCommandArguments>1 FlowUser.dll C:\aaa\paint.net\PaintDotNet.exe</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>1 FlowUser.dll C:\WINDOWS\system32\notepad.exe</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
 </Project>

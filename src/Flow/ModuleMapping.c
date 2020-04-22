@@ -777,7 +777,7 @@ BOOL ModuleMappingMapAllUnmappedModule(void) {
 
 		wait = InterlockedBitTestAndSetAcquire(&(g_mmm.SynchronizationByte), 0);//wait and take lock
 		if (wait) {
-			return;
+			__leave;
 		}
 
 		g_mmm.AreAllModuleInit = TRUE;
