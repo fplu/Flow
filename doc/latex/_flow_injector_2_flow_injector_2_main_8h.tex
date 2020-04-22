@@ -1,0 +1,50 @@
+\hypertarget{_flow_injector_2_flow_injector_2_main_8h}{}\doxysection{C\+:/\+Users/\+Nota\+Number/\+Classified/\+Programmation/\+C/\+Flow-\/master/src/\+Flow\+Injector/\+Flow\+Injector/\+Main.h File Reference}
+\label{_flow_injector_2_flow_injector_2_main_8h}\index{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/FlowInjector/FlowInjector/Main.h@{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/FlowInjector/FlowInjector/Main.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$tchar.\+h$>$}\newline
+{\ttfamily \#include $<$tlhelp32.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$Psapi.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Main\+I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+Counter.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Hook.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Flow\+Main.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dllmain.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Injector\+Main.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_flow_injector_2_flow_injector_2_main_8h_af08ec37a8c99d747fb60fa15bc28678b}{\+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+W\+A\+R\+N\+I\+N\+GS}}
+\item 
+\#define \mbox{\hyperlink{_flow_injector_2_flow_injector_2_main_8h_a6ee13d5bcebab292dbc98e06c6cf9fe7}{\+\_\+\+Thread\+\_\+local}}~\mbox{\hyperlink{_module_mapping_8h_acdbe2dac764849c563c26b5781acf301}{\+\_\+\+\_\+declspec}}(thread)
+\item 
+\#define \mbox{\hyperlink{_flow_injector_2_flow_injector_2_main_8h_a5aad060c7b129a6b4f7ec39880d06175}{M\+S\+D\+N\+\_\+\+F\+U\+N\+C\+\_\+\+E\+R\+R\+OR}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_flow_injector_2_flow_injector_2_main_8h_af08ec37a8c99d747fb60fa15bc28678b}\label{_flow_injector_2_flow_injector_2_main_8h_af08ec37a8c99d747fb60fa15bc28678b}} 
+\index{Main.h@{Main.h}!\_CRT\_SECURE\_NO\_WARNINGS@{\_CRT\_SECURE\_NO\_WARNINGS}}
+\index{\_CRT\_SECURE\_NO\_WARNINGS@{\_CRT\_SECURE\_NO\_WARNINGS}!Main.h@{Main.h}}
+\doxysubsubsection{\texorpdfstring{\_CRT\_SECURE\_NO\_WARNINGS}{\_CRT\_SECURE\_NO\_WARNINGS}}
+{\footnotesize\ttfamily \#define \+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+W\+A\+R\+N\+I\+N\+GS}
+
+\mbox{\Hypertarget{_flow_injector_2_flow_injector_2_main_8h_a6ee13d5bcebab292dbc98e06c6cf9fe7}\label{_flow_injector_2_flow_injector_2_main_8h_a6ee13d5bcebab292dbc98e06c6cf9fe7}} 
+\index{Main.h@{Main.h}!\_Thread\_local@{\_Thread\_local}}
+\index{\_Thread\_local@{\_Thread\_local}!Main.h@{Main.h}}
+\doxysubsubsection{\texorpdfstring{\_Thread\_local}{\_Thread\_local}}
+{\footnotesize\ttfamily \#define \+\_\+\+Thread\+\_\+local~\mbox{\hyperlink{_module_mapping_8h_acdbe2dac764849c563c26b5781acf301}{\+\_\+\+\_\+declspec}}(thread)}
+
+\mbox{\Hypertarget{_flow_injector_2_flow_injector_2_main_8h_a5aad060c7b129a6b4f7ec39880d06175}\label{_flow_injector_2_flow_injector_2_main_8h_a5aad060c7b129a6b4f7ec39880d06175}} 
+\index{Main.h@{Main.h}!MSDN\_FUNC\_ERROR@{MSDN\_FUNC\_ERROR}}
+\index{MSDN\_FUNC\_ERROR@{MSDN\_FUNC\_ERROR}!Main.h@{Main.h}}
+\doxysubsubsection{\texorpdfstring{MSDN\_FUNC\_ERROR}{MSDN\_FUNC\_ERROR}}
+{\footnotesize\ttfamily \#define M\+S\+D\+N\+\_\+\+F\+U\+N\+C\+\_\+\+E\+R\+R\+OR(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{        \_tprintf(\_T(\textcolor{stringliteral}{"error on line \%d, in file \%s, in func \%s, error code \%d\(\backslash\)n"}), \_\_LINE\_\_, \_T(\_\_FILE\_\_), \_\_func\_\_, GetLastError()); \(\backslash\)}
+\DoxyCodeLine{        \_\_leave;}
+
+\end{DoxyCode}

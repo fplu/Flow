@@ -1,0 +1,46 @@
+\hypertarget{_syscall_8h}{}\doxysection{C\+:/\+Users/\+Nota\+Number/\+Classified/\+Programmation/\+C/\+Flow-\/master/src/\+Flow/\+Syscall.h File Reference}
+\label{_syscall_8h}\index{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/Flow/Syscall.h@{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/Flow/Syscall.h}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_syscall_8h_a979b48ba8553de0a2d3fb023d05ed2ee}{S\+Y\+S\+C\+A\+L\+L\+\_\+\+A\+D\+D\+I\+N\+G\+\_\+\+S\+I\+ZE}}~24
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} \mbox{\hyperlink{_syscall_8h_a219513d0fa15f6733f6aa745aa93b877}{Get\+Mapped\+Syscall\+Size}} (\mbox{\hyperlink{_module_mapping_8h_aa179d7a8f9db0415215d839ec2565456}{P\+M\+A\+P\+P\+E\+D\+\_\+\+P\+A\+GE}} p\+Page, \mbox{\hyperlink{_module_mapping_8h_a9b359f9cef1b61585ee114579dd16a9d}{M\+A\+P\+P\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON}} $\ast$p\+Instruction, \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$p\+Index)
+\item 
+\mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} \mbox{\hyperlink{_syscall_8h_a3aa8ae6ae0ac66cb2b490e1b63a4f22f}{Write\+Mapped\+Syscall}} (\mbox{\hyperlink{_module_mapping_8h_aa179d7a8f9db0415215d839ec2565456}{P\+M\+A\+P\+P\+E\+D\+\_\+\+P\+A\+GE}} p\+Page, \mbox{\hyperlink{_module_mapping_8h_a9b359f9cef1b61585ee114579dd16a9d}{M\+A\+P\+P\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON}} $\ast$p\+Instruction, \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$p\+Buffer, \mbox{\hyperlink{_module_mapping_8h_ace39fd6ada144d4fc3314bf63ba8fe5f}{P\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+L\+I\+ST}} p\+Callback\+List, \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} tls\+Id, \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$p\+Index)
+\item 
+\mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_syscall_8h_ae7a527bad14e42fb187b1b53473103fb}{Manage\+Syscall}} (\+\_\+\+In\+\_\+ \mbox{\hyperlink{_flow_init_8h_a8f1e1146d7c138cc79abcc8edfbecce4}{D\+O\+C\+K\+ER}} $\ast$docker, \+\_\+\+In\+\_\+opt\+\_\+ \mbox{\hyperlink{_mod_r_m_8h_ad72b8164369315d084ba85db0aa0a72b}{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT}} $\ast$context, \+\_\+\+In\+\_\+ \mbox{\hyperlink{_instruction_counter_8h_aa89a230da12185056e1b372a62f706a6}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}} $\ast$\mbox{\hyperlink{_instruction_counter_8h_a9a330709ccd9c7a275983dbcac4cb4c6}{instruction\+Read}}, \+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$buffer, \+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$buffer\+Index, \+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} buffer\+Length)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_syscall_8h_a979b48ba8553de0a2d3fb023d05ed2ee}\label{_syscall_8h_a979b48ba8553de0a2d3fb023d05ed2ee}} 
+\index{Syscall.h@{Syscall.h}!SYSCALL\_ADDING\_SIZE@{SYSCALL\_ADDING\_SIZE}}
+\index{SYSCALL\_ADDING\_SIZE@{SYSCALL\_ADDING\_SIZE}!Syscall.h@{Syscall.h}}
+\doxysubsubsection{\texorpdfstring{SYSCALL\_ADDING\_SIZE}{SYSCALL\_ADDING\_SIZE}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+A\+L\+L\+\_\+\+A\+D\+D\+I\+N\+G\+\_\+\+S\+I\+ZE~24}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_syscall_8h_a219513d0fa15f6733f6aa745aa93b877}\label{_syscall_8h_a219513d0fa15f6733f6aa745aa93b877}} 
+\index{Syscall.h@{Syscall.h}!GetMappedSyscallSize@{GetMappedSyscallSize}}
+\index{GetMappedSyscallSize@{GetMappedSyscallSize}!Syscall.h@{Syscall.h}}
+\doxysubsubsection{\texorpdfstring{GetMappedSyscallSize()}{GetMappedSyscallSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} Get\+Mapped\+Syscall\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_module_mapping_8h_aa179d7a8f9db0415215d839ec2565456}{P\+M\+A\+P\+P\+E\+D\+\_\+\+P\+A\+GE}}}]{p\+Page,  }\item[{\mbox{\hyperlink{_module_mapping_8h_a9b359f9cef1b61585ee114579dd16a9d}{M\+A\+P\+P\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON}} $\ast$}]{p\+Instruction,  }\item[{\mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$}]{p\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_syscall_8h_ae7a527bad14e42fb187b1b53473103fb}\label{_syscall_8h_ae7a527bad14e42fb187b1b53473103fb}} 
+\index{Syscall.h@{Syscall.h}!ManageSyscall@{ManageSyscall}}
+\index{ManageSyscall@{ManageSyscall}!Syscall.h@{Syscall.h}}
+\doxysubsubsection{\texorpdfstring{ManageSyscall()}{ManageSyscall()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} Manage\+Syscall (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_flow_init_8h_a8f1e1146d7c138cc79abcc8edfbecce4}{D\+O\+C\+K\+ER}} $\ast$}]{docker,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ \mbox{\hyperlink{_mod_r_m_8h_ad72b8164369315d084ba85db0aa0a72b}{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT}} $\ast$}]{context,  }\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_instruction_counter_8h_aa89a230da12185056e1b372a62f706a6}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}} $\ast$}]{instruction\+Read,  }\item[{\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{buffer,  }\item[{\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$}]{buffer\+Index,  }\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}}}]{buffer\+Length }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_syscall_8h_a3aa8ae6ae0ac66cb2b490e1b63a4f22f}\label{_syscall_8h_a3aa8ae6ae0ac66cb2b490e1b63a4f22f}} 
+\index{Syscall.h@{Syscall.h}!WriteMappedSyscall@{WriteMappedSyscall}}
+\index{WriteMappedSyscall@{WriteMappedSyscall}!Syscall.h@{Syscall.h}}
+\doxysubsubsection{\texorpdfstring{WriteMappedSyscall()}{WriteMappedSyscall()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} Write\+Mapped\+Syscall (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_module_mapping_8h_aa179d7a8f9db0415215d839ec2565456}{P\+M\+A\+P\+P\+E\+D\+\_\+\+P\+A\+GE}}}]{p\+Page,  }\item[{\mbox{\hyperlink{_module_mapping_8h_a9b359f9cef1b61585ee114579dd16a9d}{M\+A\+P\+P\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON}} $\ast$}]{p\+Instruction,  }\item[{\mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{p\+Buffer,  }\item[{\mbox{\hyperlink{_module_mapping_8h_ace39fd6ada144d4fc3314bf63ba8fe5f}{P\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+L\+I\+ST}}}]{p\+Callback\+List,  }\item[{\mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}}}]{tls\+Id,  }\item[{\mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$}]{p\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+

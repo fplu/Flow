@@ -1,0 +1,30 @@
+global TAKE_THIS_
+extern initIncRip
+
+%include "_macros.hasm"
+
+
+section .text ; makes this executable
+	USE64
+
+TAKE_THIS_:
+
+	PUSH_REGISTER_ENTIER_VOLATILE
+	PUSH_REGISTER_ENTIER_CALLEE_SAFE
+	PUSH_REGISTER_XMM_VOLATILE
+	PUSH_REGISTER_XMM_CALLEE_SAFE
+
+	mov	rcx, cLaQueLonVa
+	mov rdx, rsp
+	sub rsp, 28h
+	and rsp, 0FFFFFFFFFFFFFFF0h
+		call initIncRip
+
+		cLaQueLonVa:
+
+	mov rsp, rcx
+	POP_REGISTER_XMM_CALLEE_SAFE
+	POP_REGISTER_XMM_VOLATILE
+	POP_REGISTER_ENTIER_CALLEE_SAFE
+	POP_REGISTER_ENTIER_VOLATILE
+ret

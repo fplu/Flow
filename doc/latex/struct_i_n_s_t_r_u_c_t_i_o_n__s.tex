@@ -1,0 +1,188 @@
+\hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s}{}\doxysection{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s Struct Reference}
+\label{struct_i_n_s_t_r_u_c_t_i_o_n__s}\index{INSTRUCTION\_s@{INSTRUCTION\_s}}
+
+
+{\ttfamily \#include $<$Instruction\+Counter.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s}} $\ast$ \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s_a21d946b74a3e50ad97c62e53c7f923bf}{Flink}}
+\item 
+struct \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s}} $\ast$ \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s_ae98151596301f84e23bec030376c8abc}{Blink}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{QWORD}} \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s_ae141266a7813ca478ccf70972a1fe4ef}{\_andq}}\\
+\>\mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{OPCODE}} \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s_ae217b9b918ebd32b8ca74cf8bd569f34}{\_andb}} \mbox{[}8\mbox{]}\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{QWORD}} \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s_aa3b881335f52340d081637cd3e06ae13}{\_xorq}}\\
+\>\mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{OPCODE}} \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s_ac69cdd4103651aefe3e8bba1031c10c5}{\_xorb}} \mbox{[}8\mbox{]}\\
+\}; \\
+
+\end{tabbing}\item 
+B\+Y\+TE \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s_ae558f906e4f648a8abed357a7a9c0b53}{Mod\+R\+M\+Pos}}
+\item 
+B\+Y\+TE \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s_a0fd8521a7e800c2553a829a0b5c79ef6}{Imm32\+\_\+16\+Pos}}
+\item 
+B\+Y\+TE \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s_acb864844143c65451bdefd1f0abf49c0}{Length}}
+\item 
+B\+O\+O\+L\+E\+AN \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s_adb2561d935133f90b316b3088f5b00c9}{Is\+Vex}}
+\item 
+B\+O\+O\+L\+E\+AN \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s_abb8d6fb962c821535d8ca9ac1621b14d}{\+\_\+0\+F\+Opcode}}
+\item 
+B\+O\+O\+L\+E\+AN \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s_aa8bda02d78584526bc5af9624e62edb3}{Always\+Has\+Operand\+Size\+Prefix}}
+\item 
+B\+O\+O\+L\+E\+AN \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s_a216b5334ad21f46b2691ee0cb95c8777}{Always\+Has\+Address\+Size\+Prefix}}
+\item 
+B\+O\+O\+L\+E\+AN \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s_abb361c8f6e372a8bf4e4df7320379895}{Always\+Has\+Lock\+Prefix}}
+\item 
+B\+O\+O\+L\+E\+AN \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s_aead300dc8cb12488a53886153fec70d4}{Always\+Has\+Rep\+Prefix}}
+\item 
+B\+O\+O\+L\+E\+AN \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s_ac9a9fc67ede1111080d88cf001acd146}{Always\+Has\+Repne\+Prefix}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s_aa89bdda21361b260db2cd86d290668b4}{INSTRUCTION\_SHARED\_VALUE}}\\
+\>\mbox{\hyperlink{_instruction_counter_8h_af28ce61674e9d7b3a8b787492a889279}{INSTRUCTION\_SHARED\_VALUE}} \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s_a81ac2cc4bf6ac613f5a299da877edec1}{CommonValue}}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Used internally 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_a2a7f8f6d4e539ac9f16c7ff7c1dc8aee}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_a2a7f8f6d4e539ac9f16c7ff7c1dc8aee}} 
+\doxysubsubsection{\texorpdfstring{"@11}{@11}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_ae843f525257fd20343e32279f9d702f8}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_ae843f525257fd20343e32279f9d702f8}} 
+\doxysubsubsection{\texorpdfstring{"@13}{@13}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_a51386191af78e37e9380d194a1a109e7}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_a51386191af78e37e9380d194a1a109e7}} 
+\doxysubsubsection{\texorpdfstring{"@9}{@9}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_abb8d6fb962c821535d8ca9ac1621b14d}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_abb8d6fb962c821535d8ca9ac1621b14d}} 
+\index{INSTRUCTION\_s@{INSTRUCTION\_s}!\_0FOpcode@{\_0FOpcode}}
+\index{\_0FOpcode@{\_0FOpcode}!INSTRUCTION\_s@{INSTRUCTION\_s}}
+\doxysubsubsection{\texorpdfstring{\_0FOpcode}{\_0FOpcode}}
+{\footnotesize\ttfamily B\+O\+O\+L\+E\+AN I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s\+::\+\_\+0\+F\+Opcode}
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_ae217b9b918ebd32b8ca74cf8bd569f34}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_ae217b9b918ebd32b8ca74cf8bd569f34}} 
+\index{INSTRUCTION\_s@{INSTRUCTION\_s}!\_andb@{\_andb}}
+\index{\_andb@{\_andb}!INSTRUCTION\_s@{INSTRUCTION\_s}}
+\doxysubsubsection{\texorpdfstring{\_andb}{\_andb}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s\+::\+\_\+andb\mbox{[}8\mbox{]}}
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_ae141266a7813ca478ccf70972a1fe4ef}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_ae141266a7813ca478ccf70972a1fe4ef}} 
+\index{INSTRUCTION\_s@{INSTRUCTION\_s}!\_andq@{\_andq}}
+\index{\_andq@{\_andq}!INSTRUCTION\_s@{INSTRUCTION\_s}}
+\doxysubsubsection{\texorpdfstring{\_andq}{\_andq}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s\+::\+\_\+andq}
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_ac69cdd4103651aefe3e8bba1031c10c5}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_ac69cdd4103651aefe3e8bba1031c10c5}} 
+\index{INSTRUCTION\_s@{INSTRUCTION\_s}!\_xorb@{\_xorb}}
+\index{\_xorb@{\_xorb}!INSTRUCTION\_s@{INSTRUCTION\_s}}
+\doxysubsubsection{\texorpdfstring{\_xorb}{\_xorb}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s\+::\+\_\+xorb\mbox{[}8\mbox{]}}
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_aa3b881335f52340d081637cd3e06ae13}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_aa3b881335f52340d081637cd3e06ae13}} 
+\index{INSTRUCTION\_s@{INSTRUCTION\_s}!\_xorq@{\_xorq}}
+\index{\_xorq@{\_xorq}!INSTRUCTION\_s@{INSTRUCTION\_s}}
+\doxysubsubsection{\texorpdfstring{\_xorq}{\_xorq}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s\+::\+\_\+xorq}
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_a216b5334ad21f46b2691ee0cb95c8777}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_a216b5334ad21f46b2691ee0cb95c8777}} 
+\index{INSTRUCTION\_s@{INSTRUCTION\_s}!AlwaysHasAddressSizePrefix@{AlwaysHasAddressSizePrefix}}
+\index{AlwaysHasAddressSizePrefix@{AlwaysHasAddressSizePrefix}!INSTRUCTION\_s@{INSTRUCTION\_s}}
+\doxysubsubsection{\texorpdfstring{AlwaysHasAddressSizePrefix}{AlwaysHasAddressSizePrefix}}
+{\footnotesize\ttfamily B\+O\+O\+L\+E\+AN I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s\+::\+Always\+Has\+Address\+Size\+Prefix}
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_abb361c8f6e372a8bf4e4df7320379895}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_abb361c8f6e372a8bf4e4df7320379895}} 
+\index{INSTRUCTION\_s@{INSTRUCTION\_s}!AlwaysHasLockPrefix@{AlwaysHasLockPrefix}}
+\index{AlwaysHasLockPrefix@{AlwaysHasLockPrefix}!INSTRUCTION\_s@{INSTRUCTION\_s}}
+\doxysubsubsection{\texorpdfstring{AlwaysHasLockPrefix}{AlwaysHasLockPrefix}}
+{\footnotesize\ttfamily B\+O\+O\+L\+E\+AN I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s\+::\+Always\+Has\+Lock\+Prefix}
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_aa8bda02d78584526bc5af9624e62edb3}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_aa8bda02d78584526bc5af9624e62edb3}} 
+\index{INSTRUCTION\_s@{INSTRUCTION\_s}!AlwaysHasOperandSizePrefix@{AlwaysHasOperandSizePrefix}}
+\index{AlwaysHasOperandSizePrefix@{AlwaysHasOperandSizePrefix}!INSTRUCTION\_s@{INSTRUCTION\_s}}
+\doxysubsubsection{\texorpdfstring{AlwaysHasOperandSizePrefix}{AlwaysHasOperandSizePrefix}}
+{\footnotesize\ttfamily B\+O\+O\+L\+E\+AN I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s\+::\+Always\+Has\+Operand\+Size\+Prefix}
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_ac9a9fc67ede1111080d88cf001acd146}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_ac9a9fc67ede1111080d88cf001acd146}} 
+\index{INSTRUCTION\_s@{INSTRUCTION\_s}!AlwaysHasRepnePrefix@{AlwaysHasRepnePrefix}}
+\index{AlwaysHasRepnePrefix@{AlwaysHasRepnePrefix}!INSTRUCTION\_s@{INSTRUCTION\_s}}
+\doxysubsubsection{\texorpdfstring{AlwaysHasRepnePrefix}{AlwaysHasRepnePrefix}}
+{\footnotesize\ttfamily B\+O\+O\+L\+E\+AN I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s\+::\+Always\+Has\+Repne\+Prefix}
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_aead300dc8cb12488a53886153fec70d4}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_aead300dc8cb12488a53886153fec70d4}} 
+\index{INSTRUCTION\_s@{INSTRUCTION\_s}!AlwaysHasRepPrefix@{AlwaysHasRepPrefix}}
+\index{AlwaysHasRepPrefix@{AlwaysHasRepPrefix}!INSTRUCTION\_s@{INSTRUCTION\_s}}
+\doxysubsubsection{\texorpdfstring{AlwaysHasRepPrefix}{AlwaysHasRepPrefix}}
+{\footnotesize\ttfamily B\+O\+O\+L\+E\+AN I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s\+::\+Always\+Has\+Rep\+Prefix}
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_ae98151596301f84e23bec030376c8abc}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_ae98151596301f84e23bec030376c8abc}} 
+\index{INSTRUCTION\_s@{INSTRUCTION\_s}!Blink@{Blink}}
+\index{Blink@{Blink}!INSTRUCTION\_s@{INSTRUCTION\_s}}
+\doxysubsubsection{\texorpdfstring{Blink}{Blink}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s}}$\ast$ I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s\+::\+Blink}
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_a81ac2cc4bf6ac613f5a299da877edec1}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_a81ac2cc4bf6ac613f5a299da877edec1}} 
+\index{INSTRUCTION\_s@{INSTRUCTION\_s}!CommonValue@{CommonValue}}
+\index{CommonValue@{CommonValue}!INSTRUCTION\_s@{INSTRUCTION\_s}}
+\doxysubsubsection{\texorpdfstring{CommonValue}{CommonValue}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_instruction_counter_8h_af28ce61674e9d7b3a8b787492a889279}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+S\+H\+A\+R\+E\+D\+\_\+\+V\+A\+L\+UE}} I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s\+::\+Common\+Value}
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_a21d946b74a3e50ad97c62e53c7f923bf}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_a21d946b74a3e50ad97c62e53c7f923bf}} 
+\index{INSTRUCTION\_s@{INSTRUCTION\_s}!Flink@{Flink}}
+\index{Flink@{Flink}!INSTRUCTION\_s@{INSTRUCTION\_s}}
+\doxysubsubsection{\texorpdfstring{Flink}{Flink}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n__s}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s}}$\ast$ I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s\+::\+Flink}
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_a0fd8521a7e800c2553a829a0b5c79ef6}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_a0fd8521a7e800c2553a829a0b5c79ef6}} 
+\index{INSTRUCTION\_s@{INSTRUCTION\_s}!Imm32\_16Pos@{Imm32\_16Pos}}
+\index{Imm32\_16Pos@{Imm32\_16Pos}!INSTRUCTION\_s@{INSTRUCTION\_s}}
+\doxysubsubsection{\texorpdfstring{Imm32\_16Pos}{Imm32\_16Pos}}
+{\footnotesize\ttfamily B\+Y\+TE I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s\+::\+Imm32\+\_\+16\+Pos}
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_aa89bdda21361b260db2cd86d290668b4}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_aa89bdda21361b260db2cd86d290668b4}} 
+\index{INSTRUCTION\_s@{INSTRUCTION\_s}!INSTRUCTION\_SHARED\_VALUE@{INSTRUCTION\_SHARED\_VALUE}}
+\index{INSTRUCTION\_SHARED\_VALUE@{INSTRUCTION\_SHARED\_VALUE}!INSTRUCTION\_s@{INSTRUCTION\_s}}
+\doxysubsubsection{\texorpdfstring{INSTRUCTION\_SHARED\_VALUE}{INSTRUCTION\_SHARED\_VALUE}}
+{\footnotesize\ttfamily I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s\+::\+I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+S\+H\+A\+R\+E\+D\+\_\+\+V\+A\+L\+UE}
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_adb2561d935133f90b316b3088f5b00c9}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_adb2561d935133f90b316b3088f5b00c9}} 
+\index{INSTRUCTION\_s@{INSTRUCTION\_s}!IsVex@{IsVex}}
+\index{IsVex@{IsVex}!INSTRUCTION\_s@{INSTRUCTION\_s}}
+\doxysubsubsection{\texorpdfstring{IsVex}{IsVex}}
+{\footnotesize\ttfamily B\+O\+O\+L\+E\+AN I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s\+::\+Is\+Vex}
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_acb864844143c65451bdefd1f0abf49c0}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_acb864844143c65451bdefd1f0abf49c0}} 
+\index{INSTRUCTION\_s@{INSTRUCTION\_s}!Length@{Length}}
+\index{Length@{Length}!INSTRUCTION\_s@{INSTRUCTION\_s}}
+\doxysubsubsection{\texorpdfstring{Length}{Length}}
+{\footnotesize\ttfamily B\+Y\+TE I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s\+::\+Length}
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n__s_ae558f906e4f648a8abed357a7a9c0b53}\label{struct_i_n_s_t_r_u_c_t_i_o_n__s_ae558f906e4f648a8abed357a7a9c0b53}} 
+\index{INSTRUCTION\_s@{INSTRUCTION\_s}!ModRMPos@{ModRMPos}}
+\index{ModRMPos@{ModRMPos}!INSTRUCTION\_s@{INSTRUCTION\_s}}
+\doxysubsubsection{\texorpdfstring{ModRMPos}{ModRMPos}}
+{\footnotesize\ttfamily B\+Y\+TE I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s\+::\+Mod\+R\+M\+Pos}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Nota\+Number/\+Classified/\+Programmation/\+C/\+Flow-\/master/src/\+Instruction\+Counter/\+Instruction\+Counter/\mbox{\hyperlink{_instruction_counter_8h}{Instruction\+Counter.\+h}}\end{DoxyCompactItemize}

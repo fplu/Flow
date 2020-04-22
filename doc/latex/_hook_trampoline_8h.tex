@@ -1,0 +1,48 @@
+\hypertarget{_hook_trampoline_8h}{}\doxysection{C\+:/\+Users/\+Nota\+Number/\+Classified/\+Programmation/\+C/\+Flow-\/master/src/\+Hook/\+Hook\+Trampoline.h File Reference}
+\label{_hook_trampoline_8h}\index{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/Hook/HookTrampoline.h@{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/Hook/HookTrampoline.h}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_hook_8h_a6f5f4e79edbdebad8e6c06b47b61d81c}{H\+O\+O\+K\+\_\+\+L\+IB}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_hook_trampoline_8h_ab7f1ecfa3cd832997bb9fa948e1e1f53}{init\+Hook}} ()
+\item 
+\mbox{\hyperlink{_hook_8h_a6f5f4e79edbdebad8e6c06b47b61d81c}{H\+O\+O\+K\+\_\+\+L\+IB}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_hook_trampoline_8h_a2f01b692d7a3963261cb90626ea19bdc}{place\+Hook\+Trampoline}} (\+\_\+\+In\+\_\+ P\+V\+O\+ID function\+To\+Replace, \+\_\+\+In\+\_\+opt\+\_\+ P\+V\+O\+ID function\+Which\+Replace, \+\_\+\+In\+\_\+opt\+\_\+ P\+V\+O\+ID precallback, \+\_\+\+In\+\_\+opt\+\_\+ P\+V\+O\+ID postcallback)
+\item 
+U\+I\+N\+T64 \mbox{\hyperlink{_hook_trampoline_8h_a51385659841a1bd28b35b08c20780416}{\+\_\+\+\_\+fonction\+Hook\+Generic}} (U\+I\+N\+T64 somethings\+You\+Dont\+Care,...)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_hook_trampoline_8h_a51385659841a1bd28b35b08c20780416}\label{_hook_trampoline_8h_a51385659841a1bd28b35b08c20780416}} 
+\index{HookTrampoline.h@{HookTrampoline.h}!\_\_fonctionHookGeneric@{\_\_fonctionHookGeneric}}
+\index{\_\_fonctionHookGeneric@{\_\_fonctionHookGeneric}!HookTrampoline.h@{HookTrampoline.h}}
+\doxysubsubsection{\texorpdfstring{\_\_fonctionHookGeneric()}{\_\_fonctionHookGeneric()}}
+{\footnotesize\ttfamily U\+I\+N\+T64 \+\_\+\+\_\+fonction\+Hook\+Generic (\begin{DoxyParamCaption}\item[{U\+I\+N\+T64}]{somethings\+You\+Dont\+Care,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+Used internally \mbox{\Hypertarget{_hook_trampoline_8h_ab7f1ecfa3cd832997bb9fa948e1e1f53}\label{_hook_trampoline_8h_ab7f1ecfa3cd832997bb9fa948e1e1f53}} 
+\index{HookTrampoline.h@{HookTrampoline.h}!initHook@{initHook}}
+\index{initHook@{initHook}!HookTrampoline.h@{HookTrampoline.h}}
+\doxysubsubsection{\texorpdfstring{initHook()}{initHook()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_hook_8h_a6f5f4e79edbdebad8e6c06b47b61d81c}{H\+O\+O\+K\+\_\+\+L\+IB}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} init\+Hook (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Used internally \mbox{\Hypertarget{_hook_trampoline_8h_a2f01b692d7a3963261cb90626ea19bdc}\label{_hook_trampoline_8h_a2f01b692d7a3963261cb90626ea19bdc}} 
+\index{HookTrampoline.h@{HookTrampoline.h}!placeHookTrampoline@{placeHookTrampoline}}
+\index{placeHookTrampoline@{placeHookTrampoline}!HookTrampoline.h@{HookTrampoline.h}}
+\doxysubsubsection{\texorpdfstring{placeHookTrampoline()}{placeHookTrampoline()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_hook_8h_a6f5f4e79edbdebad8e6c06b47b61d81c}{H\+O\+O\+K\+\_\+\+L\+IB}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} place\+Hook\+Trampoline (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ P\+V\+O\+ID}]{function\+To\+Replace,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ P\+V\+O\+ID}]{function\+Which\+Replace,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ P\+V\+O\+ID}]{precallback,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ P\+V\+O\+ID}]{postcallback }\end{DoxyParamCaption})}
+
+Place a hook at function\+To\+Replace which could goes to function\+Which\+Replace or execute a optional precallback or execute a optional postcallback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em function\+To\+Replace} & is the address targetted by the hook. \\
+\hline
+\mbox{\texttt{ in}}  & {\em function\+Which\+Replace} & which is executed instead of the function\+To\+Replace if not N\+U\+LL. \\
+\hline
+\mbox{\texttt{ in}}  & {\em precallback} & is a callback executed before the execution of function\+To\+Replace if not N\+U\+LL. \\
+\hline
+\mbox{\texttt{ out}}  & {\em postcallback} & is a callback executed after the execution of function\+To\+Replace if not N\+U\+LL. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if the function succeed, F\+A\+L\+SE otherwise. 
+\end{DoxyReturn}

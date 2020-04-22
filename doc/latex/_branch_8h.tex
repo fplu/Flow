@@ -1,0 +1,56 @@
+\hypertarget{_branch_8h}{}\doxysection{C\+:/\+Users/\+Nota\+Number/\+Classified/\+Programmation/\+C/\+Flow-\/master/src/\+Instruction\+Counter/\+Instruction\+Counter/\+Branch.h File Reference}
+\label{_branch_8h}\index{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/InstructionCounter/InstructionCounter/Branch.h@{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/InstructionCounter/InstructionCounter/Branch.h}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} B\+O\+O\+L\+E\+AN \mbox{\hyperlink{_branch_8h_ad1e538e8dd0eb492d921bd11ca9b9ec8}{Is\+Branch}} (const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$opcode)
+\item 
+\mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$ \mbox{\hyperlink{_branch_8h_ab4178a8870a6b8f4102bb00eecf7198c}{Get\+Branch\+Dest}} (const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$branch\+Opcode, \mbox{\hyperlink{_mod_r_m_8h_a124fffaf6e43517fd2e6931d9d0ae3f7}{R\+EX}} rex, const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$rip, B\+Y\+TE instruction\+Length, \mbox{\hyperlink{_mod_r_m_8h_ad72b8164369315d084ba85db0aa0a72b}{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT}} $\ast$context, B\+Y\+TE address\+Size, B\+O\+O\+L\+E\+AN has\+Operand\+Size\+Prefix)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_branch_8h_ab4178a8870a6b8f4102bb00eecf7198c}\label{_branch_8h_ab4178a8870a6b8f4102bb00eecf7198c}} 
+\index{Branch.h@{Branch.h}!GetBranchDest@{GetBranchDest}}
+\index{GetBranchDest@{GetBranchDest}!Branch.h@{Branch.h}}
+\doxysubsubsection{\texorpdfstring{GetBranchDest()}{GetBranchDest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}}$\ast$ Get\+Branch\+Dest (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{branch\+Opcode,  }\item[{\mbox{\hyperlink{_mod_r_m_8h_a124fffaf6e43517fd2e6931d9d0ae3f7}{R\+EX}}}]{rex,  }\item[{const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{rip,  }\item[{B\+Y\+TE}]{instruction\+Length,  }\item[{\mbox{\hyperlink{_mod_r_m_8h_ad72b8164369315d084ba85db0aa0a72b}{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT}} $\ast$}]{context,  }\item[{B\+Y\+TE}]{address\+Size,  }\item[{B\+O\+O\+L\+E\+AN}]{has\+Operand\+Size\+Prefix }\end{DoxyParamCaption})}
+
+Return the destination of a branch instruction (Call, Ret, Jmp, Loop or Jcc), considering that the condition of the branch is always T\+R\+UE. It fails if the opcode pass as paramter are not from a branch or the context pass as paramater is N\+U\+LL even if it was needed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em opcode} & start of the instruction (do not include prefix). \\
+\hline
+\mbox{\texttt{ in}}  & {\em rex} & rex (see intel documentation for more information) prefix of the instruction, 0 if the instruction has no rex prefix. This value can be found using Get\+Instruction. \\
+\hline
+\mbox{\texttt{ in}}  & {\em rip} & value of rip when the instruction is executed. In other word, it is the start of the instruction which include prefix. \\
+\hline
+\mbox{\texttt{ in}}  & {\em instruction\+Length} & size of the instruction (include prefixe). \\
+\hline
+\mbox{\texttt{ in}}  & {\em context} & context of the thread which execute the instruction. It could be N\+U\+LL if the result of the instruction do not depend on general purpose register. \\
+\hline
+\mbox{\texttt{ in}}  & {\em address\+Size} & address size of the instruction see \+: \char`\"{}address-\/size override prefix\char`\"{} for more information. This value can be found using Get\+Instruction. It is 8 most of the time. \\
+\hline
+\mbox{\texttt{ in}}  & {\em has\+Operand\+Size\+Prefix} & operand size of the instruction see \+: \char`\"{}operand-\/size override prefix\char`\"{} for more information. This value can be found using Get\+Instruction. It is F\+A\+L\+SE most of the time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the destination of the branch or N\+U\+LL if it fails. Be careful, sometimes a branch could jump to the N\+U\+LL address. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_branch_8h_ad1e538e8dd0eb492d921bd11ca9b9ec8}\label{_branch_8h_ad1e538e8dd0eb492d921bd11ca9b9ec8}} 
+\index{Branch.h@{Branch.h}!IsBranch@{IsBranch}}
+\index{IsBranch@{IsBranch}!Branch.h@{Branch.h}}
+\doxysubsubsection{\texorpdfstring{IsBranch()}{IsBranch()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} B\+O\+O\+L\+E\+AN Is\+Branch (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{opcode }\end{DoxyParamCaption})}
+
+Say if the instruction which start as opcode is a branch instruction (Call, Ret, Jmp, Loop or Jcc).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em opcode} & start of the instruction (do not include prefixe). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if it is a branch instruction otherwise it returns F\+A\+L\+SE. 
+\end{DoxyReturn}

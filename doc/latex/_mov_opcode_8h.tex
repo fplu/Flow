@@ -1,0 +1,209 @@
+\hypertarget{_mov_opcode_8h}{}\doxysection{C\+:/\+Users/\+Nota\+Number/\+Classified/\+Programmation/\+C/\+Flow-\/master/src/\+Instruction\+Counter/\+Instruction\+Counter/\+Mov\+Opcode.h File Reference}
+\label{_mov_opcode_8h}\index{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/InstructionCounter/InstructionCounter/MovOpcode.h@{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/InstructionCounter/InstructionCounter/MovOpcode.h}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_a_n_a_l_y_s_e_d___i_n_s_t_r_u_c_t_i_o_n__s}{A\+N\+A\+L\+Y\+S\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s}}
+\item 
+struct \mbox{\hyperlink{struct_a_n_a_l_y_s_e_d___f_u_n_t_i_o_n__s}{A\+N\+A\+L\+Y\+S\+E\+D\+\_\+\+F\+U\+N\+T\+I\+O\+N\+\_\+s}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_mov_opcode_8h_a46846a7c9bad931ec090f873b3b2ad53}{B\+U\+F\+F\+E\+R\+\_\+\+O\+P\+C\+O\+D\+E\+\_\+\+S\+I\+ZE}}~512
+\item 
+\#define \mbox{\hyperlink{_mov_opcode_8h_abb8eb89c96eaec66e0300b3fa085667f}{callback\+\_\+\+S\+I\+ZE}}~35
+\item 
+\#define \mbox{\hyperlink{_mov_opcode_8h_af0bfb7d82f4afc623e115a75259011fe}{N\+O\+\_\+\+L\+I\+N\+K\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON}}~-\/1
+\item 
+\#define \mbox{\hyperlink{_mov_opcode_8h_a8577f89e3aaa2ca9b60a5edf1438ec95}{I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+ID}}~-\/1
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528}{F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+A\+N\+A\+L\+Y\+Z\+A\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+e}} \mbox{\hyperlink{_mov_opcode_8h_a92b51000f63670f0ec81d8d7efd5cc7e}{F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+A\+N\+A\+L\+Y\+Z\+A\+T\+I\+O\+N\+\_\+\+E\+R\+R\+OR}}
+\item 
+typedef struct \mbox{\hyperlink{struct_a_n_a_l_y_s_e_d___i_n_s_t_r_u_c_t_i_o_n__s}{A\+N\+A\+L\+Y\+S\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s}} \mbox{\hyperlink{_mov_opcode_8h_ac7675fbd1c90162d1f1fbb2b53e725ae}{A\+N\+A\+L\+Y\+S\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON}}
+\item 
+typedef struct \mbox{\hyperlink{struct_a_n_a_l_y_s_e_d___f_u_n_t_i_o_n__s}{A\+N\+A\+L\+Y\+S\+E\+D\+\_\+\+F\+U\+N\+T\+I\+O\+N\+\_\+s}} \mbox{\hyperlink{_mov_opcode_8h_a5017a16dcaf41696199524a30a2ce2a0}{A\+N\+A\+L\+Y\+S\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+ON}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528}{F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+A\+N\+A\+L\+Y\+Z\+A\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+e}} \{ \newline
+\mbox{\hyperlink{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528aef9104c292609ba6db320509be8fe27f}{No\+Error}}, 
+\mbox{\hyperlink{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528a3fcdbbf17c27e6e9705afa1247890aca}{New\+Function\+Too\+Big}}, 
+\mbox{\hyperlink{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528ae37e760d1ce0732430b2c6a0020b5863}{Original\+Function\+Too\+Big}}, 
+\mbox{\hyperlink{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528a2f5648019686ca5276732d8d3238ff0a}{Abnormal\+Jmp}}, 
+\newline
+\mbox{\hyperlink{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528a76c8b6aa2b481cc0fbde93f1fd6d8f12}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+Ns\+Length\+Too\+Little}}, 
+\mbox{\hyperlink{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528a76739d9a7a6f73e161612e31415cbc8a}{Wrong\+Argument}}, 
+\mbox{\hyperlink{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528aa9703801ac7bd790f6f980532e4224c0}{Data}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_mov_opcode_8h_a09de577eb6bd79d8edb4ecd53c82c79a}{Extract\+Entire\+Function}} (\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_mov_opcode_8h_a5017a16dcaf41696199524a30a2ce2a0}{A\+N\+A\+L\+Y\+S\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+ON}} $\ast$analyzed\+Function, \+\_\+\+In\+\_\+ B\+O\+O\+L\+E\+AN use\+Stack, \+\_\+\+In\+\_\+ B\+O\+O\+L\+E\+AN go\+Above)
+\item 
+\mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_mov_opcode_8h_a064c98a033ee46abb43bb9734e690083}{Modify\+Rip\+Relative\+Instruction}} (\+\_\+\+In\+\_\+ \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$start, \+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$length, \+\_\+\+Out\+\_\+ \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$$\ast$pp\+Buf, \+\_\+\+Out\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$p\+Buf\+Length)
+\item 
+\mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_mov_opcode_8h_a51f3c22e97477687afddeffb9a7a1b97}{Get\+Next\+Rip\+Value}} (\+\_\+\+In\+\_\+ \mbox{\hyperlink{_mod_r_m_8h_ad72b8164369315d084ba85db0aa0a72b}{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT}} $\ast$context, \+\_\+\+In\+\_\+ \mbox{\hyperlink{_instruction_counter_8h_aa89a230da12185056e1b372a62f706a6}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}} $\ast$\mbox{\hyperlink{_instruction_counter_8h_a9a330709ccd9c7a275983dbcac4cb4c6}{instruction\+Read}}, \+\_\+\+In\+\_\+ void $\ast$Rip, \+\_\+\+Out\+\_\+ void $\ast$$\ast$next\+Rip)
+\item 
+\mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_mov_opcode_8h_ab6ddc666d12a0e9b93c922652575885a}{Get\+Rip\+Relative\+Address}} (\+\_\+\+In\+\_\+ \mbox{\hyperlink{_instruction_counter_8h_aa89a230da12185056e1b372a62f706a6}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}} $\ast$instruction, \+\_\+\+In\+\_\+ void $\ast$instruction\+Address, \+\_\+\+Out\+\_\+ void $\ast$$\ast$rip\+Relative\+Address)
+\item 
+\mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_mov_opcode_8h_a88baa1aa51d6e5394238b71c1d7164f3}{Get\+New\+Instruction\+Length}} (\+\_\+\+In\+\_\+ \mbox{\hyperlink{_instruction_counter_8h_aa89a230da12185056e1b372a62f706a6}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}} $\ast$old\+Instruction, \+\_\+\+Out\+\_\+ B\+Y\+TE $\ast$new\+Instruction\+Length)
+\item 
+\mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_mov_opcode_8h_a4efb2cd44d669320677be7d6116e6c9c}{Create\+New\+Instruction}} (\+\_\+\+In\+\_\+ \mbox{\hyperlink{_instruction_counter_8h_aa89a230da12185056e1b372a62f706a6}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}} $\ast$old\+Instruction, \+\_\+\+In\+\_\+ void $\ast$rip\+Relative\+Address, \+\_\+\+In\+\_\+ void $\ast$address\+Ret, \+\_\+\+Out\+\_\+ \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$p\+Buf)
+\item 
+\mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} void \mbox{\hyperlink{_mov_opcode_8h_a54e487f1550032d94b502774906685fd}{Mov\+My\+Assembly}} (\mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$start\+Data, \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$start\+Code, \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} length, \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} $\ast$entries\+Value, \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} entries\+Length, \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$new\+Start\+Code)
+\item 
+void \mbox{\hyperlink{_mov_opcode_8h_a87eb202279be12d2e7ae950ffe6f6a62}{Rewrite\+Rip\+Relative\+Instruction}} (\mbox{\hyperlink{_instruction_counter_8h_aa89a230da12185056e1b372a62f706a6}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}} $\ast$\mbox{\hyperlink{_instruction_counter_8h_a9a330709ccd9c7a275983dbcac4cb4c6}{instruction\+Read}}, \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$address\+Dest)
+\item 
+void \mbox{\hyperlink{_mov_opcode_8h_a89e30aaa19353c883c0b79a721e51138}{Rewrite\+Rip\+Relative\+Instruction\+Save\+Zone}} (\mbox{\hyperlink{_instruction_counter_8h_aa89a230da12185056e1b372a62f706a6}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}} $\ast$\mbox{\hyperlink{_instruction_counter_8h_a9a330709ccd9c7a275983dbcac4cb4c6}{instruction\+Read}}, \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$address\+Dest, \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} $\ast$save\+Zone)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_mov_opcode_8h_a46846a7c9bad931ec090f873b3b2ad53}\label{_mov_opcode_8h_a46846a7c9bad931ec090f873b3b2ad53}} 
+\index{MovOpcode.h@{MovOpcode.h}!BUFFER\_OPCODE\_SIZE@{BUFFER\_OPCODE\_SIZE}}
+\index{BUFFER\_OPCODE\_SIZE@{BUFFER\_OPCODE\_SIZE}!MovOpcode.h@{MovOpcode.h}}
+\doxysubsubsection{\texorpdfstring{BUFFER\_OPCODE\_SIZE}{BUFFER\_OPCODE\_SIZE}}
+{\footnotesize\ttfamily \#define B\+U\+F\+F\+E\+R\+\_\+\+O\+P\+C\+O\+D\+E\+\_\+\+S\+I\+ZE~512}
+
+\mbox{\Hypertarget{_mov_opcode_8h_abb8eb89c96eaec66e0300b3fa085667f}\label{_mov_opcode_8h_abb8eb89c96eaec66e0300b3fa085667f}} 
+\index{MovOpcode.h@{MovOpcode.h}!callback\_SIZE@{callback\_SIZE}}
+\index{callback\_SIZE@{callback\_SIZE}!MovOpcode.h@{MovOpcode.h}}
+\doxysubsubsection{\texorpdfstring{callback\_SIZE}{callback\_SIZE}}
+{\footnotesize\ttfamily \#define callback\+\_\+\+S\+I\+ZE~35}
+
+\mbox{\Hypertarget{_mov_opcode_8h_a8577f89e3aaa2ca9b60a5edf1438ec95}\label{_mov_opcode_8h_a8577f89e3aaa2ca9b60a5edf1438ec95}} 
+\index{MovOpcode.h@{MovOpcode.h}!INVALID\_INSTRUCTION\_ID@{INVALID\_INSTRUCTION\_ID}}
+\index{INVALID\_INSTRUCTION\_ID@{INVALID\_INSTRUCTION\_ID}!MovOpcode.h@{MovOpcode.h}}
+\doxysubsubsection{\texorpdfstring{INVALID\_INSTRUCTION\_ID}{INVALID\_INSTRUCTION\_ID}}
+{\footnotesize\ttfamily \#define I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+ID~-\/1}
+
+\mbox{\Hypertarget{_mov_opcode_8h_af0bfb7d82f4afc623e115a75259011fe}\label{_mov_opcode_8h_af0bfb7d82f4afc623e115a75259011fe}} 
+\index{MovOpcode.h@{MovOpcode.h}!NO\_LINKED\_INSTRUCTION@{NO\_LINKED\_INSTRUCTION}}
+\index{NO\_LINKED\_INSTRUCTION@{NO\_LINKED\_INSTRUCTION}!MovOpcode.h@{MovOpcode.h}}
+\doxysubsubsection{\texorpdfstring{NO\_LINKED\_INSTRUCTION}{NO\_LINKED\_INSTRUCTION}}
+{\footnotesize\ttfamily \#define N\+O\+\_\+\+L\+I\+N\+K\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON~-\/1}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_mov_opcode_8h_a5017a16dcaf41696199524a30a2ce2a0}\label{_mov_opcode_8h_a5017a16dcaf41696199524a30a2ce2a0}} 
+\index{MovOpcode.h@{MovOpcode.h}!ANALYSED\_FUNCTION@{ANALYSED\_FUNCTION}}
+\index{ANALYSED\_FUNCTION@{ANALYSED\_FUNCTION}!MovOpcode.h@{MovOpcode.h}}
+\doxysubsubsection{\texorpdfstring{ANALYSED\_FUNCTION}{ANALYSED\_FUNCTION}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_a_n_a_l_y_s_e_d___f_u_n_t_i_o_n__s}{A\+N\+A\+L\+Y\+S\+E\+D\+\_\+\+F\+U\+N\+T\+I\+O\+N\+\_\+s}} \mbox{\hyperlink{_mov_opcode_8h_a5017a16dcaf41696199524a30a2ce2a0}{A\+N\+A\+L\+Y\+S\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+ON}}}
+
+Used internally. \mbox{\Hypertarget{_mov_opcode_8h_ac7675fbd1c90162d1f1fbb2b53e725ae}\label{_mov_opcode_8h_ac7675fbd1c90162d1f1fbb2b53e725ae}} 
+\index{MovOpcode.h@{MovOpcode.h}!ANALYSED\_INSTRUCTION@{ANALYSED\_INSTRUCTION}}
+\index{ANALYSED\_INSTRUCTION@{ANALYSED\_INSTRUCTION}!MovOpcode.h@{MovOpcode.h}}
+\doxysubsubsection{\texorpdfstring{ANALYSED\_INSTRUCTION}{ANALYSED\_INSTRUCTION}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_a_n_a_l_y_s_e_d___i_n_s_t_r_u_c_t_i_o_n__s}{A\+N\+A\+L\+Y\+S\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+s}} \mbox{\hyperlink{_mov_opcode_8h_ac7675fbd1c90162d1f1fbb2b53e725ae}{A\+N\+A\+L\+Y\+S\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON}}}
+
+Used internally. \mbox{\Hypertarget{_mov_opcode_8h_a92b51000f63670f0ec81d8d7efd5cc7e}\label{_mov_opcode_8h_a92b51000f63670f0ec81d8d7efd5cc7e}} 
+\index{MovOpcode.h@{MovOpcode.h}!FUNCTION\_ANALYZATION\_ERROR@{FUNCTION\_ANALYZATION\_ERROR}}
+\index{FUNCTION\_ANALYZATION\_ERROR@{FUNCTION\_ANALYZATION\_ERROR}!MovOpcode.h@{MovOpcode.h}}
+\doxysubsubsection{\texorpdfstring{FUNCTION\_ANALYZATION\_ERROR}{FUNCTION\_ANALYZATION\_ERROR}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528}{F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+A\+N\+A\+L\+Y\+Z\+A\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+e}} \mbox{\hyperlink{_mov_opcode_8h_a92b51000f63670f0ec81d8d7efd5cc7e}{F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+A\+N\+A\+L\+Y\+Z\+A\+T\+I\+O\+N\+\_\+\+E\+R\+R\+OR}}}
+
+Used internally. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528}\label{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528}} 
+\index{MovOpcode.h@{MovOpcode.h}!FUNCTION\_ANALYZATION\_ERROR\_e@{FUNCTION\_ANALYZATION\_ERROR\_e}}
+\index{FUNCTION\_ANALYZATION\_ERROR\_e@{FUNCTION\_ANALYZATION\_ERROR\_e}!MovOpcode.h@{MovOpcode.h}}
+\doxysubsubsection{\texorpdfstring{FUNCTION\_ANALYZATION\_ERROR\_e}{FUNCTION\_ANALYZATION\_ERROR\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528}{F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+A\+N\+A\+L\+Y\+Z\+A\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+e}}}
+
+Used internally. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NoError@{NoError}!MovOpcode.h@{MovOpcode.h}}\index{MovOpcode.h@{MovOpcode.h}!NoError@{NoError}}}\mbox{\Hypertarget{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528aef9104c292609ba6db320509be8fe27f}\label{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528aef9104c292609ba6db320509be8fe27f}} 
+No\+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NewFunctionTooBig@{NewFunctionTooBig}!MovOpcode.h@{MovOpcode.h}}\index{MovOpcode.h@{MovOpcode.h}!NewFunctionTooBig@{NewFunctionTooBig}}}\mbox{\Hypertarget{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528a3fcdbbf17c27e6e9705afa1247890aca}\label{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528a3fcdbbf17c27e6e9705afa1247890aca}} 
+New\+Function\+Too\+Big&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OriginalFunctionTooBig@{OriginalFunctionTooBig}!MovOpcode.h@{MovOpcode.h}}\index{MovOpcode.h@{MovOpcode.h}!OriginalFunctionTooBig@{OriginalFunctionTooBig}}}\mbox{\Hypertarget{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528ae37e760d1ce0732430b2c6a0020b5863}\label{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528ae37e760d1ce0732430b2c6a0020b5863}} 
+Original\+Function\+Too\+Big&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AbnormalJmp@{AbnormalJmp}!MovOpcode.h@{MovOpcode.h}}\index{MovOpcode.h@{MovOpcode.h}!AbnormalJmp@{AbnormalJmp}}}\mbox{\Hypertarget{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528a2f5648019686ca5276732d8d3238ff0a}\label{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528a2f5648019686ca5276732d8d3238ff0a}} 
+Abnormal\+Jmp&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INSTRUCTIONsLengthTooLittle@{INSTRUCTIONsLengthTooLittle}!MovOpcode.h@{MovOpcode.h}}\index{MovOpcode.h@{MovOpcode.h}!INSTRUCTIONsLengthTooLittle@{INSTRUCTIONsLengthTooLittle}}}\mbox{\Hypertarget{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528a76c8b6aa2b481cc0fbde93f1fd6d8f12}\label{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528a76c8b6aa2b481cc0fbde93f1fd6d8f12}} 
+I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+Ns\+Length\+Too\+Little&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WrongArgument@{WrongArgument}!MovOpcode.h@{MovOpcode.h}}\index{MovOpcode.h@{MovOpcode.h}!WrongArgument@{WrongArgument}}}\mbox{\Hypertarget{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528a76739d9a7a6f73e161612e31415cbc8a}\label{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528a76739d9a7a6f73e161612e31415cbc8a}} 
+Wrong\+Argument&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Data@{Data}!MovOpcode.h@{MovOpcode.h}}\index{MovOpcode.h@{MovOpcode.h}!Data@{Data}}}\mbox{\Hypertarget{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528aa9703801ac7bd790f6f980532e4224c0}\label{_mov_opcode_8h_a4e2953bf1c7f3cb8363e9ea822acb528aa9703801ac7bd790f6f980532e4224c0}} 
+Data&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_mov_opcode_8h_a4efb2cd44d669320677be7d6116e6c9c}\label{_mov_opcode_8h_a4efb2cd44d669320677be7d6116e6c9c}} 
+\index{MovOpcode.h@{MovOpcode.h}!CreateNewInstruction@{CreateNewInstruction}}
+\index{CreateNewInstruction@{CreateNewInstruction}!MovOpcode.h@{MovOpcode.h}}
+\doxysubsubsection{\texorpdfstring{CreateNewInstruction()}{CreateNewInstruction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} Create\+New\+Instruction (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_instruction_counter_8h_aa89a230da12185056e1b372a62f706a6}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}} $\ast$}]{old\+Instruction,  }\item[{\+\_\+\+In\+\_\+ void $\ast$}]{rip\+Relative\+Address,  }\item[{\+\_\+\+In\+\_\+ void $\ast$}]{address\+Ret,  }\item[{\+\_\+\+Out\+\_\+ \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{p\+Buf }\end{DoxyParamCaption})}
+
+Used internally. \mbox{\Hypertarget{_mov_opcode_8h_a09de577eb6bd79d8edb4ecd53c82c79a}\label{_mov_opcode_8h_a09de577eb6bd79d8edb4ecd53c82c79a}} 
+\index{MovOpcode.h@{MovOpcode.h}!ExtractEntireFunction@{ExtractEntireFunction}}
+\index{ExtractEntireFunction@{ExtractEntireFunction}!MovOpcode.h@{MovOpcode.h}}
+\doxysubsubsection{\texorpdfstring{ExtractEntireFunction()}{ExtractEntireFunction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} Extract\+Entire\+Function (\begin{DoxyParamCaption}\item[{\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_mov_opcode_8h_a5017a16dcaf41696199524a30a2ce2a0}{A\+N\+A\+L\+Y\+S\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+ON}} $\ast$}]{analyzed\+Function,  }\item[{\+\_\+\+In\+\_\+ B\+O\+O\+L\+E\+AN}]{use\+Stack,  }\item[{\+\_\+\+In\+\_\+ B\+O\+O\+L\+E\+AN}]{go\+Above }\end{DoxyParamCaption})}
+
+Used internally. \mbox{\Hypertarget{_mov_opcode_8h_a88baa1aa51d6e5394238b71c1d7164f3}\label{_mov_opcode_8h_a88baa1aa51d6e5394238b71c1d7164f3}} 
+\index{MovOpcode.h@{MovOpcode.h}!GetNewInstructionLength@{GetNewInstructionLength}}
+\index{GetNewInstructionLength@{GetNewInstructionLength}!MovOpcode.h@{MovOpcode.h}}
+\doxysubsubsection{\texorpdfstring{GetNewInstructionLength()}{GetNewInstructionLength()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} Get\+New\+Instruction\+Length (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_instruction_counter_8h_aa89a230da12185056e1b372a62f706a6}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}} $\ast$}]{old\+Instruction,  }\item[{\+\_\+\+Out\+\_\+ B\+Y\+TE $\ast$}]{new\+Instruction\+Length }\end{DoxyParamCaption})}
+
+Used internally. \mbox{\Hypertarget{_mov_opcode_8h_a51f3c22e97477687afddeffb9a7a1b97}\label{_mov_opcode_8h_a51f3c22e97477687afddeffb9a7a1b97}} 
+\index{MovOpcode.h@{MovOpcode.h}!GetNextRipValue@{GetNextRipValue}}
+\index{GetNextRipValue@{GetNextRipValue}!MovOpcode.h@{MovOpcode.h}}
+\doxysubsubsection{\texorpdfstring{GetNextRipValue()}{GetNextRipValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} Get\+Next\+Rip\+Value (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_mod_r_m_8h_ad72b8164369315d084ba85db0aa0a72b}{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT}} $\ast$}]{context,  }\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_instruction_counter_8h_aa89a230da12185056e1b372a62f706a6}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}} $\ast$}]{instruction\+Read,  }\item[{\+\_\+\+In\+\_\+ void $\ast$}]{Rip,  }\item[{\+\_\+\+Out\+\_\+ void $\ast$$\ast$}]{next\+Rip }\end{DoxyParamCaption})}
+
+Used internally. \mbox{\Hypertarget{_mov_opcode_8h_ab6ddc666d12a0e9b93c922652575885a}\label{_mov_opcode_8h_ab6ddc666d12a0e9b93c922652575885a}} 
+\index{MovOpcode.h@{MovOpcode.h}!GetRipRelativeAddress@{GetRipRelativeAddress}}
+\index{GetRipRelativeAddress@{GetRipRelativeAddress}!MovOpcode.h@{MovOpcode.h}}
+\doxysubsubsection{\texorpdfstring{GetRipRelativeAddress()}{GetRipRelativeAddress()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} Get\+Rip\+Relative\+Address (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_instruction_counter_8h_aa89a230da12185056e1b372a62f706a6}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}} $\ast$}]{instruction,  }\item[{\+\_\+\+In\+\_\+ void $\ast$}]{instruction\+Address,  }\item[{\+\_\+\+Out\+\_\+ void $\ast$$\ast$}]{rip\+Relative\+Address }\end{DoxyParamCaption})}
+
+Used internally. \mbox{\Hypertarget{_mov_opcode_8h_a064c98a033ee46abb43bb9734e690083}\label{_mov_opcode_8h_a064c98a033ee46abb43bb9734e690083}} 
+\index{MovOpcode.h@{MovOpcode.h}!ModifyRipRelativeInstruction@{ModifyRipRelativeInstruction}}
+\index{ModifyRipRelativeInstruction@{ModifyRipRelativeInstruction}!MovOpcode.h@{MovOpcode.h}}
+\doxysubsubsection{\texorpdfstring{ModifyRipRelativeInstruction()}{ModifyRipRelativeInstruction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} Modify\+Rip\+Relative\+Instruction (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{start,  }\item[{\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$}]{length,  }\item[{\+\_\+\+Out\+\_\+ \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$$\ast$}]{pp\+Buf,  }\item[{\+\_\+\+Out\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$}]{p\+Buf\+Length }\end{DoxyParamCaption})}
+
+Used internally. \mbox{\Hypertarget{_mov_opcode_8h_a54e487f1550032d94b502774906685fd}\label{_mov_opcode_8h_a54e487f1550032d94b502774906685fd}} 
+\index{MovOpcode.h@{MovOpcode.h}!MovMyAssembly@{MovMyAssembly}}
+\index{MovMyAssembly@{MovMyAssembly}!MovOpcode.h@{MovOpcode.h}}
+\doxysubsubsection{\texorpdfstring{MovMyAssembly()}{MovMyAssembly()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} void Mov\+My\+Assembly (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{start\+Data,  }\item[{\mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{start\+Code,  }\item[{\mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}}}]{length,  }\item[{\mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} $\ast$}]{entries\+Value,  }\item[{\mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}}}]{entries\+Length,  }\item[{\mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{new\+Start\+Code }\end{DoxyParamCaption})}
+
+Used internally. \mbox{\Hypertarget{_mov_opcode_8h_a87eb202279be12d2e7ae950ffe6f6a62}\label{_mov_opcode_8h_a87eb202279be12d2e7ae950ffe6f6a62}} 
+\index{MovOpcode.h@{MovOpcode.h}!RewriteRipRelativeInstruction@{RewriteRipRelativeInstruction}}
+\index{RewriteRipRelativeInstruction@{RewriteRipRelativeInstruction}!MovOpcode.h@{MovOpcode.h}}
+\doxysubsubsection{\texorpdfstring{RewriteRipRelativeInstruction()}{RewriteRipRelativeInstruction()}}
+{\footnotesize\ttfamily void Rewrite\+Rip\+Relative\+Instruction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_instruction_counter_8h_aa89a230da12185056e1b372a62f706a6}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}} $\ast$}]{instruction\+Read,  }\item[{\mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{address\+Dest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Used internally. address\+Dest should be 28 + I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+D-\/$>$Length -\/ 4 length at least \mbox{\Hypertarget{_mov_opcode_8h_a89e30aaa19353c883c0b79a721e51138}\label{_mov_opcode_8h_a89e30aaa19353c883c0b79a721e51138}} 
+\index{MovOpcode.h@{MovOpcode.h}!RewriteRipRelativeInstructionSaveZone@{RewriteRipRelativeInstructionSaveZone}}
+\index{RewriteRipRelativeInstructionSaveZone@{RewriteRipRelativeInstructionSaveZone}!MovOpcode.h@{MovOpcode.h}}
+\doxysubsubsection{\texorpdfstring{RewriteRipRelativeInstructionSaveZone()}{RewriteRipRelativeInstructionSaveZone()}}
+{\footnotesize\ttfamily void Rewrite\+Rip\+Relative\+Instruction\+Save\+Zone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_instruction_counter_8h_aa89a230da12185056e1b372a62f706a6}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}} $\ast$}]{instruction\+Read,  }\item[{\mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{address\+Dest,  }\item[{\mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} $\ast$}]{save\+Zone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Used internally. address\+Dest should be 24 + I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+D-\/$>$Length -\/ 4 length at least. save\+Zone should be at less than 2Go from address\+Dest 

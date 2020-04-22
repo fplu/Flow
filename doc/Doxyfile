@@ -1,0 +1,9 @@
+INPUT                  = ../.
+RECURSIVE 			   = YES
+FILE_PATTERNS		   = *.h
+EXTRACT_ALL			   = YES
+EXCLUDE_PATTERNS	   = */Extern/*
+EXCLUDE_PATTERNS	   += */distorm/*
+EXCLUDE_PATTERNS	   += */FlowUser/*
+EXCLUDE_PATTERNS	   += */FlowUser - Copy/*
+EXCLUDE_PATTERNS	   += */FlowUserWriting/*

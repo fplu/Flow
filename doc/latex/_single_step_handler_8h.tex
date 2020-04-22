@@ -1,0 +1,102 @@
+\hypertarget{_single_step_handler_8h}{}\doxysection{C\+:/\+Users/\+Nota\+Number/\+Classified/\+Programmation/\+C/\+Flow-\/master/src/\+Flow/\+Single\+Step\+Handler.h File Reference}
+\label{_single_step_handler_8h}\index{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/Flow/SingleStepHandler.h@{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/Flow/SingleStepHandler.h}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_a_l_l___s_t_a_c_k___e_l_e_m_e_n_t__s}{C\+A\+L\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+s}}
+\item 
+struct \mbox{\hyperlink{struct_d_o_c_k_e_r___p_a_g_e__}{D\+O\+C\+K\+E\+R\+\_\+\+P\+A\+G\+E\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_single_step_handler_8h_a152a7545bf4c97e8724f51eed32dd9c0}{is\+Syscall}}(rip)~(((B\+Y\+TE$\ast$)(rip))\mbox{[}0\mbox{]} == 0x0F \&\& ((B\+Y\+TE$\ast$)(rip))\mbox{[}1\mbox{]} == 0x05)
+\item 
+\#define \mbox{\hyperlink{_single_step_handler_8h_a486c3e73fb468470b367d48fba83ae34}{C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+W\+R\+I\+T\+E\+\_\+\+S\+Y\+S\+C\+A\+LL}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_c_a_l_l___s_t_a_c_k___e_l_e_m_e_n_t__s}{C\+A\+L\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+s}} \mbox{\hyperlink{_single_step_handler_8h_a3d9e8d2d1b746b3047c5edbd17302640}{C\+A\+L\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+E\+L\+E\+M\+E\+NT}}
+\item 
+typedef struct \mbox{\hyperlink{struct_c_a_l_l___s_t_a_c_k___e_l_e_m_e_n_t__s}{C\+A\+L\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+s}} $\ast$ \mbox{\hyperlink{_single_step_handler_8h_ac00b55fa2602bc863a70230b72e36faf}{P\+C\+A\+L\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+E\+L\+E\+M\+E\+NT}}
+\item 
+typedef struct \mbox{\hyperlink{struct_d_o_c_k_e_r___p_a_g_e__}{D\+O\+C\+K\+E\+R\+\_\+\+P\+A\+G\+E\+\_\+}} \mbox{\hyperlink{_single_step_handler_8h_a1754da478524df645026c2075e045922}{D\+O\+C\+K\+E\+R\+\_\+\+P\+A\+GE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_single_step_handler_8h_a699528f62116cedd7eaae30eb92684c0}{Is\+Prb\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON}} (\mbox{\hyperlink{_instruction_counter_8h_aa89a230da12185056e1b372a62f706a6}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}} $\ast$\mbox{\hyperlink{_instruction_counter_8h_a9a330709ccd9c7a275983dbcac4cb4c6}{instruction\+Read}})
+\item 
+\mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} \mbox{\hyperlink{_single_step_handler_8h_a39949b2ae1d07315e3edf618d09526e3}{Single\+Step\+Handler\+Memory\+Check}} (P\+M\+E\+M\+O\+R\+Y\+\_\+\+B\+A\+S\+I\+C\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON mem\+Basic\+Info, B\+Y\+TE $\ast$ptr, S\+I\+Z\+E\+\_\+T size)
+\item 
+void \mbox{\hyperlink{_single_step_handler_8h_a3d305e835f8d7480f3b8f0a42b533a1b}{Single\+Step\+Handler\+Run}} (\mbox{\hyperlink{_flow_init_8h_a8f1e1146d7c138cc79abcc8edfbecce4}{D\+O\+C\+K\+ER}} $\ast$docker)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_single_step_handler_8h_a486c3e73fb468470b367d48fba83ae34}\label{_single_step_handler_8h_a486c3e73fb468470b367d48fba83ae34}} 
+\index{SingleStepHandler.h@{SingleStepHandler.h}!CALLBACK\_WRITE\_SYSCALL@{CALLBACK\_WRITE\_SYSCALL}}
+\index{CALLBACK\_WRITE\_SYSCALL@{CALLBACK\_WRITE\_SYSCALL}!SingleStepHandler.h@{SingleStepHandler.h}}
+\doxysubsubsection{\texorpdfstring{CALLBACK\_WRITE\_SYSCALL}{CALLBACK\_WRITE\_SYSCALL}}
+{\footnotesize\ttfamily \#define C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+W\+R\+I\+T\+E\+\_\+\+S\+Y\+S\+C\+A\+LL(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (2 + (*bufferIndex) + \mbox{\hyperlink{_jmp_and_call_8h_a1ac32c84114bfb2752c6625ccfdb72b6}{JMP\_REL32\_SIZE}} >= \mbox{\hyperlink{_mov_opcode_8h_a46846a7c9bad931ec090f873b3b2ad53}{BUFFER\_OPCODE\_SIZE}}) \{\(\backslash\)}
+\DoxyCodeLine{            success = \mbox{\hyperlink{_macro_8h_aa93f0eb578d23995850d61f7d61c55c1}{FALSE}}; \(\backslash\)}
+\DoxyCodeLine{            \_\_leave; \(\backslash\)}
+\DoxyCodeLine{    \}\(\backslash\)}
+\DoxyCodeLine{    buffer[(*bufferIndex)] = 0x0F; \(\backslash\)}
+\DoxyCodeLine{    buffer[(*bufferIndex) + 1] = 0x05; \(\backslash\)}
+\DoxyCodeLine{    (*bufferIndex) += 2;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_single_step_handler_8h_a152a7545bf4c97e8724f51eed32dd9c0}\label{_single_step_handler_8h_a152a7545bf4c97e8724f51eed32dd9c0}} 
+\index{SingleStepHandler.h@{SingleStepHandler.h}!isSyscall@{isSyscall}}
+\index{isSyscall@{isSyscall}!SingleStepHandler.h@{SingleStepHandler.h}}
+\doxysubsubsection{\texorpdfstring{isSyscall}{isSyscall}}
+{\footnotesize\ttfamily \#define is\+Syscall(\begin{DoxyParamCaption}\item[{}]{rip }\end{DoxyParamCaption})~(((B\+Y\+TE$\ast$)(rip))\mbox{[}0\mbox{]} == 0x0F \&\& ((B\+Y\+TE$\ast$)(rip))\mbox{[}1\mbox{]} == 0x05)}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_single_step_handler_8h_a3d9e8d2d1b746b3047c5edbd17302640}\label{_single_step_handler_8h_a3d9e8d2d1b746b3047c5edbd17302640}} 
+\index{SingleStepHandler.h@{SingleStepHandler.h}!CALL\_STACK\_ELEMENT@{CALL\_STACK\_ELEMENT}}
+\index{CALL\_STACK\_ELEMENT@{CALL\_STACK\_ELEMENT}!SingleStepHandler.h@{SingleStepHandler.h}}
+\doxysubsubsection{\texorpdfstring{CALL\_STACK\_ELEMENT}{CALL\_STACK\_ELEMENT}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_c_a_l_l___s_t_a_c_k___e_l_e_m_e_n_t__s}{C\+A\+L\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+s}} \mbox{\hyperlink{_single_step_handler_8h_a3d9e8d2d1b746b3047c5edbd17302640}{C\+A\+L\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+E\+L\+E\+M\+E\+NT}}}
+
+\mbox{\Hypertarget{_single_step_handler_8h_a1754da478524df645026c2075e045922}\label{_single_step_handler_8h_a1754da478524df645026c2075e045922}} 
+\index{SingleStepHandler.h@{SingleStepHandler.h}!DOCKER\_PAGE@{DOCKER\_PAGE}}
+\index{DOCKER\_PAGE@{DOCKER\_PAGE}!SingleStepHandler.h@{SingleStepHandler.h}}
+\doxysubsubsection{\texorpdfstring{DOCKER\_PAGE}{DOCKER\_PAGE}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_d_o_c_k_e_r___p_a_g_e__}{D\+O\+C\+K\+E\+R\+\_\+\+P\+A\+G\+E\+\_\+}} \mbox{\hyperlink{_single_step_handler_8h_a1754da478524df645026c2075e045922}{D\+O\+C\+K\+E\+R\+\_\+\+P\+A\+GE}}}
+
+\mbox{\Hypertarget{_single_step_handler_8h_ac00b55fa2602bc863a70230b72e36faf}\label{_single_step_handler_8h_ac00b55fa2602bc863a70230b72e36faf}} 
+\index{SingleStepHandler.h@{SingleStepHandler.h}!PCALL\_STACK\_ELEMENT@{PCALL\_STACK\_ELEMENT}}
+\index{PCALL\_STACK\_ELEMENT@{PCALL\_STACK\_ELEMENT}!SingleStepHandler.h@{SingleStepHandler.h}}
+\doxysubsubsection{\texorpdfstring{PCALL\_STACK\_ELEMENT}{PCALL\_STACK\_ELEMENT}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_c_a_l_l___s_t_a_c_k___e_l_e_m_e_n_t__s}{C\+A\+L\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+s}} $\ast$ \mbox{\hyperlink{_single_step_handler_8h_ac00b55fa2602bc863a70230b72e36faf}{P\+C\+A\+L\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+E\+L\+E\+M\+E\+NT}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_single_step_handler_8h_a699528f62116cedd7eaae30eb92684c0}\label{_single_step_handler_8h_a699528f62116cedd7eaae30eb92684c0}} 
+\index{SingleStepHandler.h@{SingleStepHandler.h}!IsPrbINSTRUCTION@{IsPrbINSTRUCTION}}
+\index{IsPrbINSTRUCTION@{IsPrbINSTRUCTION}!SingleStepHandler.h@{SingleStepHandler.h}}
+\doxysubsubsection{\texorpdfstring{IsPrbINSTRUCTION()}{IsPrbINSTRUCTION()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} Is\+Prb\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_instruction_counter_8h_aa89a230da12185056e1b372a62f706a6}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}} $\ast$}]{instruction\+Read }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_single_step_handler_8h_a39949b2ae1d07315e3edf618d09526e3}\label{_single_step_handler_8h_a39949b2ae1d07315e3edf618d09526e3}} 
+\index{SingleStepHandler.h@{SingleStepHandler.h}!SingleStepHandlerMemoryCheck@{SingleStepHandlerMemoryCheck}}
+\index{SingleStepHandlerMemoryCheck@{SingleStepHandlerMemoryCheck}!SingleStepHandler.h@{SingleStepHandler.h}}
+\doxysubsubsection{\texorpdfstring{SingleStepHandlerMemoryCheck()}{SingleStepHandlerMemoryCheck()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} Single\+Step\+Handler\+Memory\+Check (\begin{DoxyParamCaption}\item[{P\+M\+E\+M\+O\+R\+Y\+\_\+\+B\+A\+S\+I\+C\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON}]{mem\+Basic\+Info,  }\item[{B\+Y\+TE $\ast$}]{ptr,  }\item[{S\+I\+Z\+E\+\_\+T}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_single_step_handler_8h_a3d305e835f8d7480f3b8f0a42b533a1b}\label{_single_step_handler_8h_a3d305e835f8d7480f3b8f0a42b533a1b}} 
+\index{SingleStepHandler.h@{SingleStepHandler.h}!SingleStepHandlerRun@{SingleStepHandlerRun}}
+\index{SingleStepHandlerRun@{SingleStepHandlerRun}!SingleStepHandler.h@{SingleStepHandler.h}}
+\doxysubsubsection{\texorpdfstring{SingleStepHandlerRun()}{SingleStepHandlerRun()}}
+{\footnotesize\ttfamily void Single\+Step\+Handler\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_flow_init_8h_a8f1e1146d7c138cc79abcc8edfbecce4}{D\+O\+C\+K\+ER}} $\ast$}]{docker }\end{DoxyParamCaption})}
+

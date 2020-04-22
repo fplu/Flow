@@ -1,0 +1,112 @@
+\hypertarget{_hijack_running_thread_8h}{}\doxysection{C\+:/\+Users/\+Nota\+Number/\+Classified/\+Programmation/\+C/\+Flow-\/master/src/\+Injector/\+Injector/\+Hijack\+Running\+Thread.h File Reference}
+\label{_hijack_running_thread_8h}\index{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/Injector/Injector/HijackRunningThread.h@{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/Injector/Injector/HijackRunningThread.h}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_hijack_running_thread_8h_a47212a9a7de036d9a14fc330ded08b70}{init\+Remote\+Rip}} ()
+\item 
+\mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_hijack_running_thread_8h_a3ac4294e04a2acffae79edae69b4f575}{synchronize\+Thread}} (\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE h\+Remote\+Process, \+\_\+\+In\+\_\+ H\+A\+N\+D\+LE h\+Remote\+Thread)
+\item 
+\mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_hijack_running_thread_8h_ae0d67f460180953065c963457ce52975}{take\+Thread\+Control}} (\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE h\+Remote\+Process, \+\_\+\+In\+\_\+ H\+A\+N\+D\+LE h\+Remote\+Thread, \+\_\+\+Outptr\+\_\+ C\+O\+N\+T\+E\+XT $\ast$p\+Initial\+Context)
+\item 
+\mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_hijack_running_thread_8h_ae7d1803b148850acf8bee08fec012324}{release\+Thread\+Control}} (\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE h\+Remote\+Thread, \+\_\+\+In\+\_\+ C\+O\+N\+T\+E\+XT $\ast$p\+Initial\+Context)
+\item 
+\mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_hijack_running_thread_8h_a1581cab45e27d7e4920c63ef7bd57d14}{C\+L\+R\+\_\+\+Wait}} (\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE h\+Remote\+Thread, \+\_\+\+In\+\_\+ C\+O\+N\+T\+E\+XT $\ast$p\+Initial\+Context)
+\item 
+\mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_hijack_running_thread_8h_a4da0d27470865bd121a8bae9876b4f20}{remote\+Call}} (\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE h\+Remote\+Thread, \+\_\+\+In\+\_\+ const C\+O\+N\+T\+E\+XT $\ast$p\+Initial\+Context, \+\_\+\+In\+\_\+ void $\ast$function, \+\_\+\+In\+\_\+opt\+\_\+ void $\ast$arg1, \+\_\+\+In\+\_\+opt\+\_\+ void $\ast$arg2, \+\_\+\+In\+\_\+opt\+\_\+ void $\ast$arg3, \+\_\+\+In\+\_\+opt\+\_\+ void $\ast$arg4, \+\_\+\+Outptr\+\_\+ void $\ast$$\ast$ret\+Value)
+\item 
+\mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_hijack_running_thread_8h_afa5850fba5f81511fea62daf8484da95}{my\+Virtual\+Alloc\+Ex}} (\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE h\+Remote\+Thread, \+\_\+\+In\+\_\+ const C\+O\+N\+T\+E\+XT $\ast$p\+Initial\+Context, \+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} buffer\+Size, \+\_\+\+Out\+\_\+ B\+Y\+TE $\ast$$\ast$p\+Remote\+Buffer)
+\item 
+\mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_hijack_running_thread_8h_aa2ff6f62a549ddb3d195eb93a3242a36}{my\+Write\+Process\+Memory}} (\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE h\+Remote\+Thread, \+\_\+\+In\+\_\+ const C\+O\+N\+T\+E\+XT $\ast$p\+Initial\+Context, \+\_\+\+In\+\_\+ B\+Y\+TE $\ast$buffer, \+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} buffer\+Size, \+\_\+\+In\+\_\+ B\+Y\+TE $\ast$remote\+Buffer)
+\item 
+\mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_hijack_running_thread_8h_a2b8ea8679acdae6055c9dab84da84226}{write\+And\+Alloc\+Process\+Memory}} (\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE h\+Remote\+Process, \+\_\+\+In\+\_\+ H\+A\+N\+D\+LE h\+Remote\+Thread, \+\_\+\+In\+\_\+ B\+Y\+TE $\ast$buffer, \+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} buffer\+Size, \+\_\+\+Out\+\_\+ B\+Y\+TE $\ast$$\ast$p\+Remote\+Buffer)
+\item 
+\mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_hijack_running_thread_8h_a4275684f69030914ad415d60c8bbe766}{remote\+Get\+Proc\+Address}} (\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE h\+Remote\+Thread, \+\_\+\+In\+\_\+ const C\+O\+N\+T\+E\+XT $\ast$p\+Initial\+Context, \+\_\+\+In\+\_\+ char $\ast$arg1, \+\_\+\+In\+\_\+ char $\ast$arg2, \+\_\+\+Outptr\+\_\+ void $\ast$$\ast$p\+Function)
+\item 
+\mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_hijack_running_thread_8h_a3fe17c9676f9c91363594804ee2e7d3a}{remote\+Load\+Library}} (\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE h\+Remote\+Thread, \+\_\+\+In\+\_\+ const C\+O\+N\+T\+E\+XT $\ast$p\+Initial\+Context, \+\_\+\+In\+\_\+ const T\+C\+H\+AR $\ast$dll\+Path)
+\item 
+\mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_hijack_running_thread_8h_a87a8f53bc2352ed7e22b7f2023ad76f1}{Create\+Call\+On\+The\+Fly}} (\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE h\+Remote\+Thread, \+\_\+\+In\+\_\+ const C\+O\+N\+T\+E\+XT $\ast$p\+Initial\+Context, \+\_\+\+In\+\_\+ void $\ast$function, \+\_\+\+In\+\_\+opt\+\_\+ void $\ast$arg1, \+\_\+\+In\+\_\+opt\+\_\+ void $\ast$arg2, \+\_\+\+Outptr\+\_\+ void $\ast$$\ast$page)
+\item 
+\mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_hijack_running_thread_8h_a4b1739778771c01ae6ef31662bda7aa1}{Hijack\+Running\+Thread}} (\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE h\+Remote\+Thread, \+\_\+\+In\+\_\+ C\+O\+N\+T\+E\+XT $\ast$p\+Initial\+Context, \+\_\+\+In\+\_\+ void $\ast$function, \+\_\+\+In\+\_\+opt\+\_\+ void $\ast$arg1, \+\_\+\+In\+\_\+opt\+\_\+ void $\ast$arg2, \+\_\+\+Outptr\+\_\+ void $\ast$$\ast$page)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_hijack_running_thread_8h_a1581cab45e27d7e4920c63ef7bd57d14}\label{_hijack_running_thread_8h_a1581cab45e27d7e4920c63ef7bd57d14}} 
+\index{HijackRunningThread.h@{HijackRunningThread.h}!CLR\_Wait@{CLR\_Wait}}
+\index{CLR\_Wait@{CLR\_Wait}!HijackRunningThread.h@{HijackRunningThread.h}}
+\doxysubsubsection{\texorpdfstring{CLR\_Wait()}{CLR\_Wait()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} C\+L\+R\+\_\+\+Wait (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE}]{h\+Remote\+Thread,  }\item[{\+\_\+\+In\+\_\+ C\+O\+N\+T\+E\+XT $\ast$}]{p\+Initial\+Context }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_hijack_running_thread_8h_a87a8f53bc2352ed7e22b7f2023ad76f1}\label{_hijack_running_thread_8h_a87a8f53bc2352ed7e22b7f2023ad76f1}} 
+\index{HijackRunningThread.h@{HijackRunningThread.h}!CreateCallOnTheFly@{CreateCallOnTheFly}}
+\index{CreateCallOnTheFly@{CreateCallOnTheFly}!HijackRunningThread.h@{HijackRunningThread.h}}
+\doxysubsubsection{\texorpdfstring{CreateCallOnTheFly()}{CreateCallOnTheFly()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} Create\+Call\+On\+The\+Fly (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE}]{h\+Remote\+Thread,  }\item[{\+\_\+\+In\+\_\+ const C\+O\+N\+T\+E\+XT $\ast$}]{p\+Initial\+Context,  }\item[{\+\_\+\+In\+\_\+ void $\ast$}]{function,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ void $\ast$}]{arg1,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ void $\ast$}]{arg2,  }\item[{\+\_\+\+Outptr\+\_\+ void $\ast$$\ast$}]{page }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_hijack_running_thread_8h_a4b1739778771c01ae6ef31662bda7aa1}\label{_hijack_running_thread_8h_a4b1739778771c01ae6ef31662bda7aa1}} 
+\index{HijackRunningThread.h@{HijackRunningThread.h}!HijackRunningThread@{HijackRunningThread}}
+\index{HijackRunningThread@{HijackRunningThread}!HijackRunningThread.h@{HijackRunningThread.h}}
+\doxysubsubsection{\texorpdfstring{HijackRunningThread()}{HijackRunningThread()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} Hijack\+Running\+Thread (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE}]{h\+Remote\+Thread,  }\item[{\+\_\+\+In\+\_\+ C\+O\+N\+T\+E\+XT $\ast$}]{p\+Initial\+Context,  }\item[{\+\_\+\+In\+\_\+ void $\ast$}]{function,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ void $\ast$}]{arg1,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ void $\ast$}]{arg2,  }\item[{\+\_\+\+Outptr\+\_\+ void $\ast$$\ast$}]{page }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_hijack_running_thread_8h_a47212a9a7de036d9a14fc330ded08b70}\label{_hijack_running_thread_8h_a47212a9a7de036d9a14fc330ded08b70}} 
+\index{HijackRunningThread.h@{HijackRunningThread.h}!initRemoteRip@{initRemoteRip}}
+\index{initRemoteRip@{initRemoteRip}!HijackRunningThread.h@{HijackRunningThread.h}}
+\doxysubsubsection{\texorpdfstring{initRemoteRip()}{initRemoteRip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} init\+Remote\+Rip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_hijack_running_thread_8h_afa5850fba5f81511fea62daf8484da95}\label{_hijack_running_thread_8h_afa5850fba5f81511fea62daf8484da95}} 
+\index{HijackRunningThread.h@{HijackRunningThread.h}!myVirtualAllocEx@{myVirtualAllocEx}}
+\index{myVirtualAllocEx@{myVirtualAllocEx}!HijackRunningThread.h@{HijackRunningThread.h}}
+\doxysubsubsection{\texorpdfstring{myVirtualAllocEx()}{myVirtualAllocEx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} my\+Virtual\+Alloc\+Ex (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE}]{h\+Remote\+Thread,  }\item[{\+\_\+\+In\+\_\+ const C\+O\+N\+T\+E\+XT $\ast$}]{p\+Initial\+Context,  }\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}}}]{buffer\+Size,  }\item[{\+\_\+\+Out\+\_\+ B\+Y\+TE $\ast$$\ast$}]{p\+Remote\+Buffer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_hijack_running_thread_8h_aa2ff6f62a549ddb3d195eb93a3242a36}\label{_hijack_running_thread_8h_aa2ff6f62a549ddb3d195eb93a3242a36}} 
+\index{HijackRunningThread.h@{HijackRunningThread.h}!myWriteProcessMemory@{myWriteProcessMemory}}
+\index{myWriteProcessMemory@{myWriteProcessMemory}!HijackRunningThread.h@{HijackRunningThread.h}}
+\doxysubsubsection{\texorpdfstring{myWriteProcessMemory()}{myWriteProcessMemory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} my\+Write\+Process\+Memory (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE}]{h\+Remote\+Thread,  }\item[{\+\_\+\+In\+\_\+ const C\+O\+N\+T\+E\+XT $\ast$}]{p\+Initial\+Context,  }\item[{\+\_\+\+In\+\_\+ B\+Y\+TE $\ast$}]{buffer,  }\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}}}]{buffer\+Size,  }\item[{\+\_\+\+In\+\_\+ B\+Y\+TE $\ast$}]{remote\+Buffer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_hijack_running_thread_8h_ae7d1803b148850acf8bee08fec012324}\label{_hijack_running_thread_8h_ae7d1803b148850acf8bee08fec012324}} 
+\index{HijackRunningThread.h@{HijackRunningThread.h}!releaseThreadControl@{releaseThreadControl}}
+\index{releaseThreadControl@{releaseThreadControl}!HijackRunningThread.h@{HijackRunningThread.h}}
+\doxysubsubsection{\texorpdfstring{releaseThreadControl()}{releaseThreadControl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} release\+Thread\+Control (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE}]{h\+Remote\+Thread,  }\item[{\+\_\+\+In\+\_\+ C\+O\+N\+T\+E\+XT $\ast$}]{p\+Initial\+Context }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_hijack_running_thread_8h_a4da0d27470865bd121a8bae9876b4f20}\label{_hijack_running_thread_8h_a4da0d27470865bd121a8bae9876b4f20}} 
+\index{HijackRunningThread.h@{HijackRunningThread.h}!remoteCall@{remoteCall}}
+\index{remoteCall@{remoteCall}!HijackRunningThread.h@{HijackRunningThread.h}}
+\doxysubsubsection{\texorpdfstring{remoteCall()}{remoteCall()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} remote\+Call (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE}]{h\+Remote\+Thread,  }\item[{\+\_\+\+In\+\_\+ const C\+O\+N\+T\+E\+XT $\ast$}]{p\+Initial\+Context,  }\item[{\+\_\+\+In\+\_\+ void $\ast$}]{function,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ void $\ast$}]{arg1,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ void $\ast$}]{arg2,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ void $\ast$}]{arg3,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ void $\ast$}]{arg4,  }\item[{\+\_\+\+Outptr\+\_\+ void $\ast$$\ast$}]{ret\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_hijack_running_thread_8h_a4275684f69030914ad415d60c8bbe766}\label{_hijack_running_thread_8h_a4275684f69030914ad415d60c8bbe766}} 
+\index{HijackRunningThread.h@{HijackRunningThread.h}!remoteGetProcAddress@{remoteGetProcAddress}}
+\index{remoteGetProcAddress@{remoteGetProcAddress}!HijackRunningThread.h@{HijackRunningThread.h}}
+\doxysubsubsection{\texorpdfstring{remoteGetProcAddress()}{remoteGetProcAddress()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} remote\+Get\+Proc\+Address (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE}]{h\+Remote\+Thread,  }\item[{\+\_\+\+In\+\_\+ const C\+O\+N\+T\+E\+XT $\ast$}]{p\+Initial\+Context,  }\item[{\+\_\+\+In\+\_\+ char $\ast$}]{arg1,  }\item[{\+\_\+\+In\+\_\+ char $\ast$}]{arg2,  }\item[{\+\_\+\+Outptr\+\_\+ void $\ast$$\ast$}]{p\+Function }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_hijack_running_thread_8h_a3fe17c9676f9c91363594804ee2e7d3a}\label{_hijack_running_thread_8h_a3fe17c9676f9c91363594804ee2e7d3a}} 
+\index{HijackRunningThread.h@{HijackRunningThread.h}!remoteLoadLibrary@{remoteLoadLibrary}}
+\index{remoteLoadLibrary@{remoteLoadLibrary}!HijackRunningThread.h@{HijackRunningThread.h}}
+\doxysubsubsection{\texorpdfstring{remoteLoadLibrary()}{remoteLoadLibrary()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} remote\+Load\+Library (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE}]{h\+Remote\+Thread,  }\item[{\+\_\+\+In\+\_\+ const C\+O\+N\+T\+E\+XT $\ast$}]{p\+Initial\+Context,  }\item[{\+\_\+\+In\+\_\+ const T\+C\+H\+AR $\ast$}]{dll\+Path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_hijack_running_thread_8h_a3ac4294e04a2acffae79edae69b4f575}\label{_hijack_running_thread_8h_a3ac4294e04a2acffae79edae69b4f575}} 
+\index{HijackRunningThread.h@{HijackRunningThread.h}!synchronizeThread@{synchronizeThread}}
+\index{synchronizeThread@{synchronizeThread}!HijackRunningThread.h@{HijackRunningThread.h}}
+\doxysubsubsection{\texorpdfstring{synchronizeThread()}{synchronizeThread()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} synchronize\+Thread (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE}]{h\+Remote\+Process,  }\item[{\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE}]{h\+Remote\+Thread }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_hijack_running_thread_8h_ae0d67f460180953065c963457ce52975}\label{_hijack_running_thread_8h_ae0d67f460180953065c963457ce52975}} 
+\index{HijackRunningThread.h@{HijackRunningThread.h}!takeThreadControl@{takeThreadControl}}
+\index{takeThreadControl@{takeThreadControl}!HijackRunningThread.h@{HijackRunningThread.h}}
+\doxysubsubsection{\texorpdfstring{takeThreadControl()}{takeThreadControl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} take\+Thread\+Control (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE}]{h\+Remote\+Process,  }\item[{\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE}]{h\+Remote\+Thread,  }\item[{\+\_\+\+Outptr\+\_\+ C\+O\+N\+T\+E\+XT $\ast$}]{p\+Initial\+Context }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_hijack_running_thread_8h_a2b8ea8679acdae6055c9dab84da84226}\label{_hijack_running_thread_8h_a2b8ea8679acdae6055c9dab84da84226}} 
+\index{HijackRunningThread.h@{HijackRunningThread.h}!writeAndAllocProcessMemory@{writeAndAllocProcessMemory}}
+\index{writeAndAllocProcessMemory@{writeAndAllocProcessMemory}!HijackRunningThread.h@{HijackRunningThread.h}}
+\doxysubsubsection{\texorpdfstring{writeAndAllocProcessMemory()}{writeAndAllocProcessMemory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} write\+And\+Alloc\+Process\+Memory (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE}]{h\+Remote\+Process,  }\item[{\+\_\+\+In\+\_\+ H\+A\+N\+D\+LE}]{h\+Remote\+Thread,  }\item[{\+\_\+\+In\+\_\+ B\+Y\+TE $\ast$}]{buffer,  }\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}}}]{buffer\+Size,  }\item[{\+\_\+\+Out\+\_\+ B\+Y\+TE $\ast$$\ast$}]{p\+Remote\+Buffer }\end{DoxyParamCaption})}
+

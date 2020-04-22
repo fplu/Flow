@@ -1,0 +1,43 @@
+\hypertarget{_injector_main_8h}{}\doxysection{C\+:/\+Users/\+Nota\+Number/\+Classified/\+Programmation/\+C/\+Flow-\/master/src/\+Injector/\+Injector/\+Injector\+Main.h File Reference}
+\label{_injector_main_8h}\index{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/Injector/Injector/InjectorMain.h@{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/Injector/Injector/InjectorMain.h}}
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$tlhelp32.\+h$>$}\newline
+{\ttfamily \#include $<$Psapi.\+h$>$}\newline
+{\ttfamily \#include $<$tchar.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../../\+I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+Counter/\+I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+Counter/\+Opcode.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Hijack\+Running\+Thread.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Injection\+Create\+Remote\+Thread.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_injector_main_8h_a5aad060c7b129a6b4f7ec39880d06175}{M\+S\+D\+N\+\_\+\+F\+U\+N\+C\+\_\+\+E\+R\+R\+OR}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned long long \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_injector_main_8h_a5aad060c7b129a6b4f7ec39880d06175}\label{_injector_main_8h_a5aad060c7b129a6b4f7ec39880d06175}} 
+\index{InjectorMain.h@{InjectorMain.h}!MSDN\_FUNC\_ERROR@{MSDN\_FUNC\_ERROR}}
+\index{MSDN\_FUNC\_ERROR@{MSDN\_FUNC\_ERROR}!InjectorMain.h@{InjectorMain.h}}
+\doxysubsubsection{\texorpdfstring{MSDN\_FUNC\_ERROR}{MSDN\_FUNC\_ERROR}}
+{\footnotesize\ttfamily \#define M\+S\+D\+N\+\_\+\+F\+U\+N\+C\+\_\+\+E\+R\+R\+OR(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{        \_tprintf(\_T(\textcolor{stringliteral}{"error on line \%d, in file \%s, in func \%s, error code \%d\(\backslash\)n"}), \_\_LINE\_\_, \_T(\_\_FILE\_\_), \_\_func\_\_, GetLastError()); \(\backslash\)}
+\DoxyCodeLine{        \_\_leave;}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}\label{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}} 
+\index{InjectorMain.h@{InjectorMain.h}!QWORD@{QWORD}}
+\index{QWORD@{QWORD}!InjectorMain.h@{InjectorMain.h}}
+\doxysubsubsection{\texorpdfstring{QWORD}{QWORD}}
+{\footnotesize\ttfamily typedef unsigned long long \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}}}
+

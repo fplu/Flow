@@ -1,0 +1,53 @@
+\hypertarget{_main_instruction_counter_8h}{}\doxysection{C\+:/\+Users/\+Nota\+Number/\+Classified/\+Programmation/\+C/\+Flow-\/master/src/\+Instruction\+Counter/\+Instruction\+Counter/\+Main\+Instruction\+Counter.h File Reference}
+\label{_main_instruction_counter_8h}\index{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/InstructionCounter/InstructionCounter/MainInstructionCounter.h@{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/InstructionCounter/InstructionCounter/MainInstructionCounter.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$immintrin.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$tchar.\+h$>$}\newline
+{\ttfamily \#include $<$tlhelp32.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$psapi.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Macro.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}L\+I\+S\+T\+\_\+\+B\+A\+S\+I\+C.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}G\+R\+A\+P\+H\+\_\+\+B\+A\+S\+I\+C.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Miscallenious.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Opcode.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Mod\+R\+M.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Memory\+Access.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Jcc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Jmp\+And\+Call.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Ret.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Branch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Instruction\+Counter.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Prefix.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Mov\+Opcode.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Instruction\+Read\+Export.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_main_instruction_counter_8h_a5aad060c7b129a6b4f7ec39880d06175}{M\+S\+D\+N\+\_\+\+F\+U\+N\+C\+\_\+\+E\+R\+R\+OR}}()
+\item 
+\#define \mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}}~\mbox{\hyperlink{_module_mapping_8h_acdbe2dac764849c563c26b5781acf301}{\+\_\+\+\_\+declspec}}(dllimport)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}\label{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}} 
+\index{MainInstructionCounter.h@{MainInstructionCounter.h}!INSTRUCTIONCOUNTER\_LIB@{INSTRUCTIONCOUNTER\_LIB}}
+\index{INSTRUCTIONCOUNTER\_LIB@{INSTRUCTIONCOUNTER\_LIB}!MainInstructionCounter.h@{MainInstructionCounter.h}}
+\doxysubsubsection{\texorpdfstring{INSTRUCTIONCOUNTER\_LIB}{INSTRUCTIONCOUNTER\_LIB}}
+{\footnotesize\ttfamily \#define I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB~\mbox{\hyperlink{_module_mapping_8h_acdbe2dac764849c563c26b5781acf301}{\+\_\+\+\_\+declspec}}(dllimport)}
+
+\mbox{\Hypertarget{_main_instruction_counter_8h_a5aad060c7b129a6b4f7ec39880d06175}\label{_main_instruction_counter_8h_a5aad060c7b129a6b4f7ec39880d06175}} 
+\index{MainInstructionCounter.h@{MainInstructionCounter.h}!MSDN\_FUNC\_ERROR@{MSDN\_FUNC\_ERROR}}
+\index{MSDN\_FUNC\_ERROR@{MSDN\_FUNC\_ERROR}!MainInstructionCounter.h@{MainInstructionCounter.h}}
+\doxysubsubsection{\texorpdfstring{MSDN\_FUNC\_ERROR}{MSDN\_FUNC\_ERROR}}
+{\footnotesize\ttfamily \#define M\+S\+D\+N\+\_\+\+F\+U\+N\+C\+\_\+\+E\+R\+R\+OR(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{        \_tprintf(\_T(\textcolor{stringliteral}{"error on line \%d, in file \%s, in func \%s, error code \%d\(\backslash\)n"}), \_\_LINE\_\_, \_T(\_\_FILE\_\_), \_\_func\_\_, GetLastError()); \(\backslash\)}
+\DoxyCodeLine{        \_\_leave;}
+
+\end{DoxyCode}

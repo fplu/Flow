@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainInstructionCounter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModRM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Jcc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JmpAndCall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Macro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MovOpcode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Prefix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InstructionCounter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryAccess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InstructionReadExport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Branch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Miscallenious.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ret.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllMain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModRM.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InstructionCounter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ret.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Prefix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MovOpcode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JmpAndCall.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Jcc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryAccess.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InstructionReadExport.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Branch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Miscallenious.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

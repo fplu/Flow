@@ -1,0 +1,902 @@
+\hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h}{}\doxysection{C\+:/\+Users/\+Nota\+Number/\+Classified/\+Programmation/\+C/\+Flow-\/master/src/\+Instruction\+Counter/\+Instruction\+Counter/\+Jcc.h File Reference}
+\label{_instruction_counter_2_instruction_counter_2_jcc_8h}\index{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/InstructionCounter/InstructionCounter/Jcc.h@{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/InstructionCounter/InstructionCounter/Jcc.h}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_aa5676f82f38bd25a2fb2eaa55d2fdce1}{CF}}~0x01
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_aa0e278c26c25558741febfadd7216caa}{PF}}~0x04
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a76ba789cde9c36cd57dbb390bdee7661}{AF}}~0x10
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_ab4dfddb53d3b02a91b6a0429bdc10143}{ZF}}~0x40
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a1022bf161d0791b616eb885b56a04934}{SF}}~0x80
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a1c0168a9703a05a19de4ce775acc6647}{TF}}~0x100
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_ac138c68a0709c57bc5f7567abc1558eb}{IF}}~0x200
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a0ad2d5d4043d3b7508e2a4da99d6f673}{DF}}~0x400
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a37666c9af451b99166c96df28aec5395}{OF}}~0x800
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a7c2768273769723184f14f27524ac833}{I\+O\+PL}}~0x3000
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a7d5ef0de19030d43f98042e1c4a9f605}{NT}}~0x4000
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a8480531c08b9aa2ba525a6a03d119487}{RF}}~0x10000
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_adfc557c4c5ffee93683554f98270d461}{VM}}~0x20000
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a67d1a34c515736c571484ec2a3543da5}{AC}}~0x40000
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a2821b72ad5b91dd09cef916dce01beff}{V\+IF}}~0x80000
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_aa0ca88b99db16a94898a4a2d93a68e4c}{V\+IP}}~0x100000
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a77ceac8d6af195fe72f95f6afd87c45e}{ID}}~0x200000
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_aeaac2ef3a027d767a9ad05643ea9cdc9}{L\+O\+O\+P\+\_\+\+R\+E\+L8}}~0x\+E2
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a8401e8573ee930898915d78cfa987909}{L\+O\+O\+P\+E\+\_\+\+R\+E\+L8}}~0x\+E1
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a50a1b9f504e1e0ca6e10af4d0357f03f}{L\+O\+O\+P\+N\+E\+\_\+\+R\+E\+L8}}~0x\+E0
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a1f221ef99fa4a3ef367bf817e8a97114}{J\+A\+\_\+\+R\+E\+L8}}~0x77
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a067abb506d5d467fa85c41f14aa17e46}{J\+A\+E\+\_\+\+R\+E\+L8}}~0x73
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a92672a1ba00ad3694a70deefd3fa2288}{J\+B\+\_\+\+R\+E\+L8}}~0x72
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_aa482c7030270de51d1e1a86f5a5e852b}{J\+B\+E\+\_\+\+R\+E\+L8}}~0x76
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a3fc9666c321b05592577b8825641d321}{J\+C\+\_\+\+R\+E\+L8}}~0x72
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a8287da98df125922f996fbf10e2c5525}{J\+C\+X\+Z\+\_\+\+R\+E\+L8}}~0x\+E3
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_ad0fff650e675bcbd8bd692b3ef447dc3}{J\+E\+C\+X\+Z\+\_\+\+R\+E\+L8}}~0x\+E3
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a5dbd5a270891335c26bf9d51b89f83a4}{J\+R\+C\+X\+Z\+\_\+\+R\+E\+L8}}~0x\+E3
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a626c2685f46ea137414920bd4411fc1d}{J\+E\+\_\+\+R\+E\+L8}}~0x74
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_addd341558f946d1b247d96cd8f25d9e7}{J\+G\+\_\+\+R\+E\+L8}}~0x7F
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a1d43373b06d3e1b2bf46615d1dcf7cfd}{J\+G\+E\+\_\+\+R\+E\+L8}}~0x7D
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a6059f077df6b54a8f7ffaac9d6be166c}{J\+L\+\_\+\+R\+E\+L8}}~0x7C
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_ad0414d107dcf6b7621b53ec9ecec8653}{J\+L\+E\+\_\+\+R\+E\+L8}}~0x7E
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a66542331029d3deee33c529f17ab9ffd}{J\+N\+A\+\_\+\+R\+E\+L8}}~0x76
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_af3d0c520633560840fa35b39cda1c912}{J\+N\+A\+E\+\_\+\+R\+E\+L8}}~0x72
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a0a078a81393d410dbe37fc13b43bd806}{J\+N\+B\+\_\+\+R\+E\+L8}}~0x73
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a8369ead2db455276acfe8525b42b9740}{J\+N\+B\+E\+\_\+\+R\+E\+L8}}~0x77
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a962cddc68b450a2b4501d9d4be787681}{J\+N\+C\+\_\+\+R\+E\+L8}}~0x73
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_ad9943e6625917a9ae3efd6b4dcf0493d}{J\+N\+E\+\_\+\+R\+E\+L8}}~0x75
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_ac0b0099fa684cf99915bc70fa007c223}{J\+N\+G\+\_\+\+R\+E\+L8}}~0x7E
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_adf0d471ff5dd1657dcb331fba3247f7e}{J\+N\+G\+E\+\_\+\+R\+E\+L8}}~0x7C
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_aa5a21f15c6c2dc91a54e9dbbe7fa655f}{J\+N\+L\+\_\+\+R\+E\+L8}}~0x7D
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a230c26d625e31c15012cc28b26b674b8}{J\+N\+L\+E\+\_\+\+R\+E\+L8}}~0x7F
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_adbc0856aff71f543126094212c0576f4}{J\+N\+O\+\_\+\+R\+E\+L8}}~0x71
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a3e928e1f3641ab932f4806648c6e55ae}{J\+N\+P\+\_\+\+R\+E\+L8}}~0x7B
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_abeced5fb45fcabc8f2b89df12cf3ac96}{J\+N\+S\+\_\+\+R\+E\+L8}}~0x79
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_acfef417a8d4fa4239d058088a8483e75}{J\+N\+Z\+\_\+\+R\+E\+L8}}~0x75
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_aafdb016c45be1cc34903a86169dc3c1c}{J\+O\+\_\+\+R\+E\+L8}}~0x70
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_ac31da7094366ceadd5ed7fd638188906}{J\+P\+\_\+\+R\+E\+L8}}~0x7A
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a62b4fe890d0707f7224f8f0206e0d54c}{J\+P\+E\+\_\+\+R\+E\+L8}}~0x7A
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_aa5513aac16136577921b3704af4ced00}{J\+P\+O\+\_\+\+R\+E\+L8}}~0x7B
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a199882909d41e2f25f7cdd70c5c981b1}{J\+S\+\_\+\+R\+E\+L8}}~0x78
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a50169b223e19ebda7c80aadee88639ad}{J\+Z\+\_\+\+R\+E\+L8}}~0x74
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a374e6e8a7c3d2054a1cda35bb39be9c2}{J\+A\+\_\+\+R\+E\+L32}}~0x87
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a4dcac4469f358d2a318c804d74ffc9ab}{J\+A\+E\+\_\+\+R\+E\+L32}}~0x83
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_ab0f97eb30827f741908b800fb94e329c}{J\+B\+\_\+\+R\+E\+L32}}~0x82
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_abac714d83b516f6bcd6a04f1ee35daa3}{J\+B\+E\+\_\+\+R\+E\+L32}}~0x86
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_aab8f2a1bbcbc47326f78de8e86227cfd}{J\+C\+\_\+\+R\+E\+L32}}~0x82
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a49c418a7bb1f8f84d5b8ae57418f5604}{J\+E\+\_\+\+R\+E\+L32}}~0x84
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a6597796b96c20758dd9555e1f8d939e5}{J\+Z\+\_\+\+R\+E\+L32}}~0x84
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a7e94cf2a2dfa5d7a12fdc0233d7e9861}{J\+G\+\_\+\+R\+E\+L32}}~0x8F
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_aa0fc58cbd3b29c4aed1e186765e79fb5}{J\+G\+E\+\_\+\+R\+E\+L32}}~0x8D
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_abcaa6adc9880a2c964076b38913f7055}{J\+L\+\_\+\+R\+E\+L32}}~0x8C
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_ae6d39927f18d5ef61e8381e0abddcae0}{J\+L\+E\+\_\+\+R\+E\+L32}}~0x8E
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a6fc5a14800bc8fcb25d762c834b7721e}{J\+N\+A\+\_\+\+R\+E\+L32}}~0x86
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a8e3e9ede0026fa079287bd2bd78c5e86}{J\+N\+A\+E\+\_\+\+R\+E\+L32}}~0x82
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a5fb5f7cb5fdafdd4fd6968da16064945}{J\+N\+B\+\_\+\+R\+E\+L32}}~0x83
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_ac67b590a062d38f05686790781fd3097}{J\+N\+B\+E\+\_\+\+R\+E\+L32}}~0x87
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_ad7aedc25fef52796e8d23c5ac6634965}{J\+N\+C\+\_\+\+R\+E\+L32}}~0x83
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a09666db2238bc4c18cc30c486233092e}{J\+N\+E\+\_\+\+R\+E\+L32}}~0x85
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_ae4d8e72d9bc7da880f5cfdad7b297893}{J\+N\+G\+\_\+\+R\+E\+L32}}~0x8E
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a80ef8eac49d2fd7e321d301f9790d670}{J\+N\+G\+E\+\_\+\+R\+E\+L32}}~0x8C
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_ae83d074b3ffccffc970aa2f82cc6a1ff}{J\+N\+L\+\_\+\+R\+E\+L32}}~0x8D
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a369a5fdcae69fd2c2dc2c5f094cd7bdb}{J\+N\+L\+E\+\_\+\+R\+E\+L32}}~0x8F
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a42301c40495ec250e0952e8c42c3b24a}{J\+N\+O\+\_\+\+R\+E\+L32}}~0x81
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a0b7971f2219c7dadfa349403251bd64a}{J\+N\+P\+\_\+\+R\+E\+L32}}~0x8B
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a20f767c32de2605b7a8444d17ee59e5b}{J\+N\+S\+\_\+\+R\+E\+L32}}~0x89
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_af1bfec41b28fddcbb3771ee2aa30a205}{J\+N\+Z\+\_\+\+R\+E\+L32}}~0x85
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a6e891ea90c087c22b90731d21ad29a40}{J\+O\+\_\+\+R\+E\+L32}}~0x80
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a0e64f09b561cfcd9a6cf591e376b0b3e}{J\+P\+\_\+\+R\+E\+L32}}~0x8A
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_af28ef46b29e83c726af88fe3541d60f5}{J\+P\+E\+\_\+\+R\+E\+L32}}~0x8A
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_ab1e421ace7f7fe3370010cdaf3932b8b}{J\+P\+O\+\_\+\+R\+E\+L32}}~0x8B
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a3b6bf59d6d3b2298ed1909a87bd94a9c}{J\+S\+\_\+\+R\+E\+L32}}~0x88
+\item 
+\#define \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a6597796b96c20758dd9555e1f8d939e5}{J\+Z\+\_\+\+R\+E\+L32}}~0x84
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef B\+O\+O\+L\+E\+AN($\ast$ \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a0e7ca6a4cd722fb8a3a44197055a1273}{jcc\+Test}}) (\mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$Opcode, \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} eflags)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} B\+O\+O\+L\+E\+AN \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a9f741b6bb6808e2b83d0f16610771184}{Is\+Jcc\+Rel8}} (const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$opcode)
+\item 
+\mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} B\+O\+O\+L\+E\+AN \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a870c6b6054712d73a89f798d1b5d6cbc}{Is\+Jcc\+Rel32}} (const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$opcode)
+\item 
+\mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} B\+O\+O\+L\+E\+AN \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a459a781e9ffe42ef4a64a136ccc52002}{Is\+Jcc}} (const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$opcode)
+\item 
+\mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} B\+O\+O\+L\+E\+AN \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a75508f8d8642bcbaef750e2470729f97}{Is\+Loop}} (const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$opcode)
+\item 
+\mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} B\+O\+O\+L\+E\+AN \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a37b8183601e08fca5b5dc0e2930afa01}{Is\+Jcc\+Or\+Loop}} (const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$opcode)
+\item 
+\mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_aad5f2cbe09bab9a99ded1b532c93b5b5}{Get\+Jcc\+Or\+Loop\+Dest}} (const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$opcode, const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$rip, B\+Y\+TE instruction\+Length)
+\item 
+\mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_adc643e725879a46dced8b8d26250c4b8}{Get\+Jcc8\+Dest}} (const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$jcc\+Opcode, const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$rip, B\+Y\+TE instruction\+Length)
+\item 
+\mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a315061a6f91950b3171e209ad625c2d0}{Get\+Jcc32\+Dest}} (const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$jcc\+Opcode, const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$rip, B\+Y\+TE instruction\+Length)
+\item 
+\mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a17634a1e681e9cfc67e821df4db832dc}{Get\+Loop\+Dest}} (const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$jcc\+Opcode, const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$rip, B\+Y\+TE instruction\+Length)
+\item 
+\mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} B\+O\+O\+L\+E\+AN \mbox{\hyperlink{_instruction_counter_2_instruction_counter_2_jcc_8h_a76faf1a57d6c247e593dc2ce0842af81}{Is\+Jcc\+Or\+Loop\+Active}} (\mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$opcode, \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} eflags, \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} rcx, B\+O\+O\+L\+E\+AN has\+Address\+Size\+Prefix)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a67d1a34c515736c571484ec2a3543da5}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a67d1a34c515736c571484ec2a3543da5}} 
+\index{Jcc.h@{Jcc.h}!AC@{AC}}
+\index{AC@{AC}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{AC}{AC}}
+{\footnotesize\ttfamily \#define AC~0x40000}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a76ba789cde9c36cd57dbb390bdee7661}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a76ba789cde9c36cd57dbb390bdee7661}} 
+\index{Jcc.h@{Jcc.h}!AF@{AF}}
+\index{AF@{AF}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{AF}{AF}}
+{\footnotesize\ttfamily \#define AF~0x10}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_aa5676f82f38bd25a2fb2eaa55d2fdce1}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_aa5676f82f38bd25a2fb2eaa55d2fdce1}} 
+\index{Jcc.h@{Jcc.h}!CF@{CF}}
+\index{CF@{CF}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{CF}{CF}}
+{\footnotesize\ttfamily \#define CF~0x01}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a0ad2d5d4043d3b7508e2a4da99d6f673}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a0ad2d5d4043d3b7508e2a4da99d6f673}} 
+\index{Jcc.h@{Jcc.h}!DF@{DF}}
+\index{DF@{DF}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{DF}{DF}}
+{\footnotesize\ttfamily \#define DF~0x400}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a77ceac8d6af195fe72f95f6afd87c45e}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a77ceac8d6af195fe72f95f6afd87c45e}} 
+\index{Jcc.h@{Jcc.h}!ID@{ID}}
+\index{ID@{ID}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily \#define ID~0x200000}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_ac138c68a0709c57bc5f7567abc1558eb}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_ac138c68a0709c57bc5f7567abc1558eb}} 
+\index{Jcc.h@{Jcc.h}!IF@{IF}}
+\index{IF@{IF}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{IF}{IF}}
+{\footnotesize\ttfamily \#define IF~0x200}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a7c2768273769723184f14f27524ac833}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a7c2768273769723184f14f27524ac833}} 
+\index{Jcc.h@{Jcc.h}!IOPL@{IOPL}}
+\index{IOPL@{IOPL}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{IOPL}{IOPL}}
+{\footnotesize\ttfamily \#define I\+O\+PL~0x3000}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a374e6e8a7c3d2054a1cda35bb39be9c2}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a374e6e8a7c3d2054a1cda35bb39be9c2}} 
+\index{Jcc.h@{Jcc.h}!JA\_REL32@{JA\_REL32}}
+\index{JA\_REL32@{JA\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JA\_REL32}{JA\_REL32}}
+{\footnotesize\ttfamily \#define J\+A\+\_\+\+R\+E\+L32~0x87}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a1f221ef99fa4a3ef367bf817e8a97114}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a1f221ef99fa4a3ef367bf817e8a97114}} 
+\index{Jcc.h@{Jcc.h}!JA\_REL8@{JA\_REL8}}
+\index{JA\_REL8@{JA\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JA\_REL8}{JA\_REL8}}
+{\footnotesize\ttfamily \#define J\+A\+\_\+\+R\+E\+L8~0x77}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a4dcac4469f358d2a318c804d74ffc9ab}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a4dcac4469f358d2a318c804d74ffc9ab}} 
+\index{Jcc.h@{Jcc.h}!JAE\_REL32@{JAE\_REL32}}
+\index{JAE\_REL32@{JAE\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JAE\_REL32}{JAE\_REL32}}
+{\footnotesize\ttfamily \#define J\+A\+E\+\_\+\+R\+E\+L32~0x83}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a067abb506d5d467fa85c41f14aa17e46}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a067abb506d5d467fa85c41f14aa17e46}} 
+\index{Jcc.h@{Jcc.h}!JAE\_REL8@{JAE\_REL8}}
+\index{JAE\_REL8@{JAE\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JAE\_REL8}{JAE\_REL8}}
+{\footnotesize\ttfamily \#define J\+A\+E\+\_\+\+R\+E\+L8~0x73}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_ab0f97eb30827f741908b800fb94e329c}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_ab0f97eb30827f741908b800fb94e329c}} 
+\index{Jcc.h@{Jcc.h}!JB\_REL32@{JB\_REL32}}
+\index{JB\_REL32@{JB\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JB\_REL32}{JB\_REL32}}
+{\footnotesize\ttfamily \#define J\+B\+\_\+\+R\+E\+L32~0x82}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a92672a1ba00ad3694a70deefd3fa2288}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a92672a1ba00ad3694a70deefd3fa2288}} 
+\index{Jcc.h@{Jcc.h}!JB\_REL8@{JB\_REL8}}
+\index{JB\_REL8@{JB\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JB\_REL8}{JB\_REL8}}
+{\footnotesize\ttfamily \#define J\+B\+\_\+\+R\+E\+L8~0x72}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_abac714d83b516f6bcd6a04f1ee35daa3}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_abac714d83b516f6bcd6a04f1ee35daa3}} 
+\index{Jcc.h@{Jcc.h}!JBE\_REL32@{JBE\_REL32}}
+\index{JBE\_REL32@{JBE\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JBE\_REL32}{JBE\_REL32}}
+{\footnotesize\ttfamily \#define J\+B\+E\+\_\+\+R\+E\+L32~0x86}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_aa482c7030270de51d1e1a86f5a5e852b}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_aa482c7030270de51d1e1a86f5a5e852b}} 
+\index{Jcc.h@{Jcc.h}!JBE\_REL8@{JBE\_REL8}}
+\index{JBE\_REL8@{JBE\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JBE\_REL8}{JBE\_REL8}}
+{\footnotesize\ttfamily \#define J\+B\+E\+\_\+\+R\+E\+L8~0x76}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_aab8f2a1bbcbc47326f78de8e86227cfd}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_aab8f2a1bbcbc47326f78de8e86227cfd}} 
+\index{Jcc.h@{Jcc.h}!JC\_REL32@{JC\_REL32}}
+\index{JC\_REL32@{JC\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JC\_REL32}{JC\_REL32}}
+{\footnotesize\ttfamily \#define J\+C\+\_\+\+R\+E\+L32~0x82}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a3fc9666c321b05592577b8825641d321}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a3fc9666c321b05592577b8825641d321}} 
+\index{Jcc.h@{Jcc.h}!JC\_REL8@{JC\_REL8}}
+\index{JC\_REL8@{JC\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JC\_REL8}{JC\_REL8}}
+{\footnotesize\ttfamily \#define J\+C\+\_\+\+R\+E\+L8~0x72}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a8287da98df125922f996fbf10e2c5525}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a8287da98df125922f996fbf10e2c5525}} 
+\index{Jcc.h@{Jcc.h}!JCXZ\_REL8@{JCXZ\_REL8}}
+\index{JCXZ\_REL8@{JCXZ\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JCXZ\_REL8}{JCXZ\_REL8}}
+{\footnotesize\ttfamily \#define J\+C\+X\+Z\+\_\+\+R\+E\+L8~0x\+E3}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a49c418a7bb1f8f84d5b8ae57418f5604}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a49c418a7bb1f8f84d5b8ae57418f5604}} 
+\index{Jcc.h@{Jcc.h}!JE\_REL32@{JE\_REL32}}
+\index{JE\_REL32@{JE\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JE\_REL32}{JE\_REL32}}
+{\footnotesize\ttfamily \#define J\+E\+\_\+\+R\+E\+L32~0x84}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a626c2685f46ea137414920bd4411fc1d}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a626c2685f46ea137414920bd4411fc1d}} 
+\index{Jcc.h@{Jcc.h}!JE\_REL8@{JE\_REL8}}
+\index{JE\_REL8@{JE\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JE\_REL8}{JE\_REL8}}
+{\footnotesize\ttfamily \#define J\+E\+\_\+\+R\+E\+L8~0x74}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_ad0fff650e675bcbd8bd692b3ef447dc3}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_ad0fff650e675bcbd8bd692b3ef447dc3}} 
+\index{Jcc.h@{Jcc.h}!JECXZ\_REL8@{JECXZ\_REL8}}
+\index{JECXZ\_REL8@{JECXZ\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JECXZ\_REL8}{JECXZ\_REL8}}
+{\footnotesize\ttfamily \#define J\+E\+C\+X\+Z\+\_\+\+R\+E\+L8~0x\+E3}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a7e94cf2a2dfa5d7a12fdc0233d7e9861}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a7e94cf2a2dfa5d7a12fdc0233d7e9861}} 
+\index{Jcc.h@{Jcc.h}!JG\_REL32@{JG\_REL32}}
+\index{JG\_REL32@{JG\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JG\_REL32}{JG\_REL32}}
+{\footnotesize\ttfamily \#define J\+G\+\_\+\+R\+E\+L32~0x8F}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_addd341558f946d1b247d96cd8f25d9e7}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_addd341558f946d1b247d96cd8f25d9e7}} 
+\index{Jcc.h@{Jcc.h}!JG\_REL8@{JG\_REL8}}
+\index{JG\_REL8@{JG\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JG\_REL8}{JG\_REL8}}
+{\footnotesize\ttfamily \#define J\+G\+\_\+\+R\+E\+L8~0x7F}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_aa0fc58cbd3b29c4aed1e186765e79fb5}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_aa0fc58cbd3b29c4aed1e186765e79fb5}} 
+\index{Jcc.h@{Jcc.h}!JGE\_REL32@{JGE\_REL32}}
+\index{JGE\_REL32@{JGE\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JGE\_REL32}{JGE\_REL32}}
+{\footnotesize\ttfamily \#define J\+G\+E\+\_\+\+R\+E\+L32~0x8D}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a1d43373b06d3e1b2bf46615d1dcf7cfd}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a1d43373b06d3e1b2bf46615d1dcf7cfd}} 
+\index{Jcc.h@{Jcc.h}!JGE\_REL8@{JGE\_REL8}}
+\index{JGE\_REL8@{JGE\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JGE\_REL8}{JGE\_REL8}}
+{\footnotesize\ttfamily \#define J\+G\+E\+\_\+\+R\+E\+L8~0x7D}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_abcaa6adc9880a2c964076b38913f7055}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_abcaa6adc9880a2c964076b38913f7055}} 
+\index{Jcc.h@{Jcc.h}!JL\_REL32@{JL\_REL32}}
+\index{JL\_REL32@{JL\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JL\_REL32}{JL\_REL32}}
+{\footnotesize\ttfamily \#define J\+L\+\_\+\+R\+E\+L32~0x8C}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a6059f077df6b54a8f7ffaac9d6be166c}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a6059f077df6b54a8f7ffaac9d6be166c}} 
+\index{Jcc.h@{Jcc.h}!JL\_REL8@{JL\_REL8}}
+\index{JL\_REL8@{JL\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JL\_REL8}{JL\_REL8}}
+{\footnotesize\ttfamily \#define J\+L\+\_\+\+R\+E\+L8~0x7C}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_ae6d39927f18d5ef61e8381e0abddcae0}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_ae6d39927f18d5ef61e8381e0abddcae0}} 
+\index{Jcc.h@{Jcc.h}!JLE\_REL32@{JLE\_REL32}}
+\index{JLE\_REL32@{JLE\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JLE\_REL32}{JLE\_REL32}}
+{\footnotesize\ttfamily \#define J\+L\+E\+\_\+\+R\+E\+L32~0x8E}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_ad0414d107dcf6b7621b53ec9ecec8653}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_ad0414d107dcf6b7621b53ec9ecec8653}} 
+\index{Jcc.h@{Jcc.h}!JLE\_REL8@{JLE\_REL8}}
+\index{JLE\_REL8@{JLE\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JLE\_REL8}{JLE\_REL8}}
+{\footnotesize\ttfamily \#define J\+L\+E\+\_\+\+R\+E\+L8~0x7E}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a6fc5a14800bc8fcb25d762c834b7721e}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a6fc5a14800bc8fcb25d762c834b7721e}} 
+\index{Jcc.h@{Jcc.h}!JNA\_REL32@{JNA\_REL32}}
+\index{JNA\_REL32@{JNA\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNA\_REL32}{JNA\_REL32}}
+{\footnotesize\ttfamily \#define J\+N\+A\+\_\+\+R\+E\+L32~0x86}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a66542331029d3deee33c529f17ab9ffd}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a66542331029d3deee33c529f17ab9ffd}} 
+\index{Jcc.h@{Jcc.h}!JNA\_REL8@{JNA\_REL8}}
+\index{JNA\_REL8@{JNA\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNA\_REL8}{JNA\_REL8}}
+{\footnotesize\ttfamily \#define J\+N\+A\+\_\+\+R\+E\+L8~0x76}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a8e3e9ede0026fa079287bd2bd78c5e86}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a8e3e9ede0026fa079287bd2bd78c5e86}} 
+\index{Jcc.h@{Jcc.h}!JNAE\_REL32@{JNAE\_REL32}}
+\index{JNAE\_REL32@{JNAE\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNAE\_REL32}{JNAE\_REL32}}
+{\footnotesize\ttfamily \#define J\+N\+A\+E\+\_\+\+R\+E\+L32~0x82}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_af3d0c520633560840fa35b39cda1c912}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_af3d0c520633560840fa35b39cda1c912}} 
+\index{Jcc.h@{Jcc.h}!JNAE\_REL8@{JNAE\_REL8}}
+\index{JNAE\_REL8@{JNAE\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNAE\_REL8}{JNAE\_REL8}}
+{\footnotesize\ttfamily \#define J\+N\+A\+E\+\_\+\+R\+E\+L8~0x72}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a5fb5f7cb5fdafdd4fd6968da16064945}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a5fb5f7cb5fdafdd4fd6968da16064945}} 
+\index{Jcc.h@{Jcc.h}!JNB\_REL32@{JNB\_REL32}}
+\index{JNB\_REL32@{JNB\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNB\_REL32}{JNB\_REL32}}
+{\footnotesize\ttfamily \#define J\+N\+B\+\_\+\+R\+E\+L32~0x83}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a0a078a81393d410dbe37fc13b43bd806}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a0a078a81393d410dbe37fc13b43bd806}} 
+\index{Jcc.h@{Jcc.h}!JNB\_REL8@{JNB\_REL8}}
+\index{JNB\_REL8@{JNB\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNB\_REL8}{JNB\_REL8}}
+{\footnotesize\ttfamily \#define J\+N\+B\+\_\+\+R\+E\+L8~0x73}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_ac67b590a062d38f05686790781fd3097}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_ac67b590a062d38f05686790781fd3097}} 
+\index{Jcc.h@{Jcc.h}!JNBE\_REL32@{JNBE\_REL32}}
+\index{JNBE\_REL32@{JNBE\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNBE\_REL32}{JNBE\_REL32}}
+{\footnotesize\ttfamily \#define J\+N\+B\+E\+\_\+\+R\+E\+L32~0x87}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a8369ead2db455276acfe8525b42b9740}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a8369ead2db455276acfe8525b42b9740}} 
+\index{Jcc.h@{Jcc.h}!JNBE\_REL8@{JNBE\_REL8}}
+\index{JNBE\_REL8@{JNBE\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNBE\_REL8}{JNBE\_REL8}}
+{\footnotesize\ttfamily \#define J\+N\+B\+E\+\_\+\+R\+E\+L8~0x77}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_ad7aedc25fef52796e8d23c5ac6634965}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_ad7aedc25fef52796e8d23c5ac6634965}} 
+\index{Jcc.h@{Jcc.h}!JNC\_REL32@{JNC\_REL32}}
+\index{JNC\_REL32@{JNC\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNC\_REL32}{JNC\_REL32}}
+{\footnotesize\ttfamily \#define J\+N\+C\+\_\+\+R\+E\+L32~0x83}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a962cddc68b450a2b4501d9d4be787681}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a962cddc68b450a2b4501d9d4be787681}} 
+\index{Jcc.h@{Jcc.h}!JNC\_REL8@{JNC\_REL8}}
+\index{JNC\_REL8@{JNC\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNC\_REL8}{JNC\_REL8}}
+{\footnotesize\ttfamily \#define J\+N\+C\+\_\+\+R\+E\+L8~0x73}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a09666db2238bc4c18cc30c486233092e}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a09666db2238bc4c18cc30c486233092e}} 
+\index{Jcc.h@{Jcc.h}!JNE\_REL32@{JNE\_REL32}}
+\index{JNE\_REL32@{JNE\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNE\_REL32}{JNE\_REL32}}
+{\footnotesize\ttfamily \#define J\+N\+E\+\_\+\+R\+E\+L32~0x85}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_ad9943e6625917a9ae3efd6b4dcf0493d}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_ad9943e6625917a9ae3efd6b4dcf0493d}} 
+\index{Jcc.h@{Jcc.h}!JNE\_REL8@{JNE\_REL8}}
+\index{JNE\_REL8@{JNE\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNE\_REL8}{JNE\_REL8}}
+{\footnotesize\ttfamily \#define J\+N\+E\+\_\+\+R\+E\+L8~0x75}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_ae4d8e72d9bc7da880f5cfdad7b297893}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_ae4d8e72d9bc7da880f5cfdad7b297893}} 
+\index{Jcc.h@{Jcc.h}!JNG\_REL32@{JNG\_REL32}}
+\index{JNG\_REL32@{JNG\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNG\_REL32}{JNG\_REL32}}
+{\footnotesize\ttfamily \#define J\+N\+G\+\_\+\+R\+E\+L32~0x8E}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_ac0b0099fa684cf99915bc70fa007c223}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_ac0b0099fa684cf99915bc70fa007c223}} 
+\index{Jcc.h@{Jcc.h}!JNG\_REL8@{JNG\_REL8}}
+\index{JNG\_REL8@{JNG\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNG\_REL8}{JNG\_REL8}}
+{\footnotesize\ttfamily \#define J\+N\+G\+\_\+\+R\+E\+L8~0x7E}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a80ef8eac49d2fd7e321d301f9790d670}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a80ef8eac49d2fd7e321d301f9790d670}} 
+\index{Jcc.h@{Jcc.h}!JNGE\_REL32@{JNGE\_REL32}}
+\index{JNGE\_REL32@{JNGE\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNGE\_REL32}{JNGE\_REL32}}
+{\footnotesize\ttfamily \#define J\+N\+G\+E\+\_\+\+R\+E\+L32~0x8C}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_adf0d471ff5dd1657dcb331fba3247f7e}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_adf0d471ff5dd1657dcb331fba3247f7e}} 
+\index{Jcc.h@{Jcc.h}!JNGE\_REL8@{JNGE\_REL8}}
+\index{JNGE\_REL8@{JNGE\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNGE\_REL8}{JNGE\_REL8}}
+{\footnotesize\ttfamily \#define J\+N\+G\+E\+\_\+\+R\+E\+L8~0x7C}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_ae83d074b3ffccffc970aa2f82cc6a1ff}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_ae83d074b3ffccffc970aa2f82cc6a1ff}} 
+\index{Jcc.h@{Jcc.h}!JNL\_REL32@{JNL\_REL32}}
+\index{JNL\_REL32@{JNL\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNL\_REL32}{JNL\_REL32}}
+{\footnotesize\ttfamily \#define J\+N\+L\+\_\+\+R\+E\+L32~0x8D}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_aa5a21f15c6c2dc91a54e9dbbe7fa655f}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_aa5a21f15c6c2dc91a54e9dbbe7fa655f}} 
+\index{Jcc.h@{Jcc.h}!JNL\_REL8@{JNL\_REL8}}
+\index{JNL\_REL8@{JNL\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNL\_REL8}{JNL\_REL8}}
+{\footnotesize\ttfamily \#define J\+N\+L\+\_\+\+R\+E\+L8~0x7D}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a369a5fdcae69fd2c2dc2c5f094cd7bdb}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a369a5fdcae69fd2c2dc2c5f094cd7bdb}} 
+\index{Jcc.h@{Jcc.h}!JNLE\_REL32@{JNLE\_REL32}}
+\index{JNLE\_REL32@{JNLE\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNLE\_REL32}{JNLE\_REL32}}
+{\footnotesize\ttfamily \#define J\+N\+L\+E\+\_\+\+R\+E\+L32~0x8F}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a230c26d625e31c15012cc28b26b674b8}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a230c26d625e31c15012cc28b26b674b8}} 
+\index{Jcc.h@{Jcc.h}!JNLE\_REL8@{JNLE\_REL8}}
+\index{JNLE\_REL8@{JNLE\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNLE\_REL8}{JNLE\_REL8}}
+{\footnotesize\ttfamily \#define J\+N\+L\+E\+\_\+\+R\+E\+L8~0x7F}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a42301c40495ec250e0952e8c42c3b24a}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a42301c40495ec250e0952e8c42c3b24a}} 
+\index{Jcc.h@{Jcc.h}!JNO\_REL32@{JNO\_REL32}}
+\index{JNO\_REL32@{JNO\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNO\_REL32}{JNO\_REL32}}
+{\footnotesize\ttfamily \#define J\+N\+O\+\_\+\+R\+E\+L32~0x81}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_adbc0856aff71f543126094212c0576f4}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_adbc0856aff71f543126094212c0576f4}} 
+\index{Jcc.h@{Jcc.h}!JNO\_REL8@{JNO\_REL8}}
+\index{JNO\_REL8@{JNO\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNO\_REL8}{JNO\_REL8}}
+{\footnotesize\ttfamily \#define J\+N\+O\+\_\+\+R\+E\+L8~0x71}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a0b7971f2219c7dadfa349403251bd64a}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a0b7971f2219c7dadfa349403251bd64a}} 
+\index{Jcc.h@{Jcc.h}!JNP\_REL32@{JNP\_REL32}}
+\index{JNP\_REL32@{JNP\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNP\_REL32}{JNP\_REL32}}
+{\footnotesize\ttfamily \#define J\+N\+P\+\_\+\+R\+E\+L32~0x8B}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a3e928e1f3641ab932f4806648c6e55ae}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a3e928e1f3641ab932f4806648c6e55ae}} 
+\index{Jcc.h@{Jcc.h}!JNP\_REL8@{JNP\_REL8}}
+\index{JNP\_REL8@{JNP\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNP\_REL8}{JNP\_REL8}}
+{\footnotesize\ttfamily \#define J\+N\+P\+\_\+\+R\+E\+L8~0x7B}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a20f767c32de2605b7a8444d17ee59e5b}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a20f767c32de2605b7a8444d17ee59e5b}} 
+\index{Jcc.h@{Jcc.h}!JNS\_REL32@{JNS\_REL32}}
+\index{JNS\_REL32@{JNS\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNS\_REL32}{JNS\_REL32}}
+{\footnotesize\ttfamily \#define J\+N\+S\+\_\+\+R\+E\+L32~0x89}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_abeced5fb45fcabc8f2b89df12cf3ac96}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_abeced5fb45fcabc8f2b89df12cf3ac96}} 
+\index{Jcc.h@{Jcc.h}!JNS\_REL8@{JNS\_REL8}}
+\index{JNS\_REL8@{JNS\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNS\_REL8}{JNS\_REL8}}
+{\footnotesize\ttfamily \#define J\+N\+S\+\_\+\+R\+E\+L8~0x79}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_af1bfec41b28fddcbb3771ee2aa30a205}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_af1bfec41b28fddcbb3771ee2aa30a205}} 
+\index{Jcc.h@{Jcc.h}!JNZ\_REL32@{JNZ\_REL32}}
+\index{JNZ\_REL32@{JNZ\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNZ\_REL32}{JNZ\_REL32}}
+{\footnotesize\ttfamily \#define J\+N\+Z\+\_\+\+R\+E\+L32~0x85}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_acfef417a8d4fa4239d058088a8483e75}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_acfef417a8d4fa4239d058088a8483e75}} 
+\index{Jcc.h@{Jcc.h}!JNZ\_REL8@{JNZ\_REL8}}
+\index{JNZ\_REL8@{JNZ\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JNZ\_REL8}{JNZ\_REL8}}
+{\footnotesize\ttfamily \#define J\+N\+Z\+\_\+\+R\+E\+L8~0x75}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a6e891ea90c087c22b90731d21ad29a40}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a6e891ea90c087c22b90731d21ad29a40}} 
+\index{Jcc.h@{Jcc.h}!JO\_REL32@{JO\_REL32}}
+\index{JO\_REL32@{JO\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JO\_REL32}{JO\_REL32}}
+{\footnotesize\ttfamily \#define J\+O\+\_\+\+R\+E\+L32~0x80}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_aafdb016c45be1cc34903a86169dc3c1c}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_aafdb016c45be1cc34903a86169dc3c1c}} 
+\index{Jcc.h@{Jcc.h}!JO\_REL8@{JO\_REL8}}
+\index{JO\_REL8@{JO\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JO\_REL8}{JO\_REL8}}
+{\footnotesize\ttfamily \#define J\+O\+\_\+\+R\+E\+L8~0x70}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a0e64f09b561cfcd9a6cf591e376b0b3e}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a0e64f09b561cfcd9a6cf591e376b0b3e}} 
+\index{Jcc.h@{Jcc.h}!JP\_REL32@{JP\_REL32}}
+\index{JP\_REL32@{JP\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JP\_REL32}{JP\_REL32}}
+{\footnotesize\ttfamily \#define J\+P\+\_\+\+R\+E\+L32~0x8A}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_ac31da7094366ceadd5ed7fd638188906}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_ac31da7094366ceadd5ed7fd638188906}} 
+\index{Jcc.h@{Jcc.h}!JP\_REL8@{JP\_REL8}}
+\index{JP\_REL8@{JP\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JP\_REL8}{JP\_REL8}}
+{\footnotesize\ttfamily \#define J\+P\+\_\+\+R\+E\+L8~0x7A}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_af28ef46b29e83c726af88fe3541d60f5}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_af28ef46b29e83c726af88fe3541d60f5}} 
+\index{Jcc.h@{Jcc.h}!JPE\_REL32@{JPE\_REL32}}
+\index{JPE\_REL32@{JPE\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JPE\_REL32}{JPE\_REL32}}
+{\footnotesize\ttfamily \#define J\+P\+E\+\_\+\+R\+E\+L32~0x8A}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a62b4fe890d0707f7224f8f0206e0d54c}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a62b4fe890d0707f7224f8f0206e0d54c}} 
+\index{Jcc.h@{Jcc.h}!JPE\_REL8@{JPE\_REL8}}
+\index{JPE\_REL8@{JPE\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JPE\_REL8}{JPE\_REL8}}
+{\footnotesize\ttfamily \#define J\+P\+E\+\_\+\+R\+E\+L8~0x7A}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_ab1e421ace7f7fe3370010cdaf3932b8b}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_ab1e421ace7f7fe3370010cdaf3932b8b}} 
+\index{Jcc.h@{Jcc.h}!JPO\_REL32@{JPO\_REL32}}
+\index{JPO\_REL32@{JPO\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JPO\_REL32}{JPO\_REL32}}
+{\footnotesize\ttfamily \#define J\+P\+O\+\_\+\+R\+E\+L32~0x8B}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_aa5513aac16136577921b3704af4ced00}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_aa5513aac16136577921b3704af4ced00}} 
+\index{Jcc.h@{Jcc.h}!JPO\_REL8@{JPO\_REL8}}
+\index{JPO\_REL8@{JPO\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JPO\_REL8}{JPO\_REL8}}
+{\footnotesize\ttfamily \#define J\+P\+O\+\_\+\+R\+E\+L8~0x7B}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a5dbd5a270891335c26bf9d51b89f83a4}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a5dbd5a270891335c26bf9d51b89f83a4}} 
+\index{Jcc.h@{Jcc.h}!JRCXZ\_REL8@{JRCXZ\_REL8}}
+\index{JRCXZ\_REL8@{JRCXZ\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JRCXZ\_REL8}{JRCXZ\_REL8}}
+{\footnotesize\ttfamily \#define J\+R\+C\+X\+Z\+\_\+\+R\+E\+L8~0x\+E3}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a3b6bf59d6d3b2298ed1909a87bd94a9c}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a3b6bf59d6d3b2298ed1909a87bd94a9c}} 
+\index{Jcc.h@{Jcc.h}!JS\_REL32@{JS\_REL32}}
+\index{JS\_REL32@{JS\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JS\_REL32}{JS\_REL32}}
+{\footnotesize\ttfamily \#define J\+S\+\_\+\+R\+E\+L32~0x88}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a199882909d41e2f25f7cdd70c5c981b1}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a199882909d41e2f25f7cdd70c5c981b1}} 
+\index{Jcc.h@{Jcc.h}!JS\_REL8@{JS\_REL8}}
+\index{JS\_REL8@{JS\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JS\_REL8}{JS\_REL8}}
+{\footnotesize\ttfamily \#define J\+S\+\_\+\+R\+E\+L8~0x78}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a6597796b96c20758dd9555e1f8d939e5}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a6597796b96c20758dd9555e1f8d939e5}} 
+\index{Jcc.h@{Jcc.h}!JZ\_REL32@{JZ\_REL32}}
+\index{JZ\_REL32@{JZ\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JZ\_REL32}{JZ\_REL32}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define J\+Z\+\_\+\+R\+E\+L32~0x84}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a6597796b96c20758dd9555e1f8d939e5}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a6597796b96c20758dd9555e1f8d939e5}} 
+\index{Jcc.h@{Jcc.h}!JZ\_REL32@{JZ\_REL32}}
+\index{JZ\_REL32@{JZ\_REL32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JZ\_REL32}{JZ\_REL32}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define J\+Z\+\_\+\+R\+E\+L32~0x84}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a50169b223e19ebda7c80aadee88639ad}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a50169b223e19ebda7c80aadee88639ad}} 
+\index{Jcc.h@{Jcc.h}!JZ\_REL8@{JZ\_REL8}}
+\index{JZ\_REL8@{JZ\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{JZ\_REL8}{JZ\_REL8}}
+{\footnotesize\ttfamily \#define J\+Z\+\_\+\+R\+E\+L8~0x74}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_aeaac2ef3a027d767a9ad05643ea9cdc9}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_aeaac2ef3a027d767a9ad05643ea9cdc9}} 
+\index{Jcc.h@{Jcc.h}!LOOP\_REL8@{LOOP\_REL8}}
+\index{LOOP\_REL8@{LOOP\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{LOOP\_REL8}{LOOP\_REL8}}
+{\footnotesize\ttfamily \#define L\+O\+O\+P\+\_\+\+R\+E\+L8~0x\+E2}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a8401e8573ee930898915d78cfa987909}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a8401e8573ee930898915d78cfa987909}} 
+\index{Jcc.h@{Jcc.h}!LOOPE\_REL8@{LOOPE\_REL8}}
+\index{LOOPE\_REL8@{LOOPE\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{LOOPE\_REL8}{LOOPE\_REL8}}
+{\footnotesize\ttfamily \#define L\+O\+O\+P\+E\+\_\+\+R\+E\+L8~0x\+E1}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a50a1b9f504e1e0ca6e10af4d0357f03f}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a50a1b9f504e1e0ca6e10af4d0357f03f}} 
+\index{Jcc.h@{Jcc.h}!LOOPNE\_REL8@{LOOPNE\_REL8}}
+\index{LOOPNE\_REL8@{LOOPNE\_REL8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{LOOPNE\_REL8}{LOOPNE\_REL8}}
+{\footnotesize\ttfamily \#define L\+O\+O\+P\+N\+E\+\_\+\+R\+E\+L8~0x\+E0}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a7d5ef0de19030d43f98042e1c4a9f605}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a7d5ef0de19030d43f98042e1c4a9f605}} 
+\index{Jcc.h@{Jcc.h}!NT@{NT}}
+\index{NT@{NT}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{NT}{NT}}
+{\footnotesize\ttfamily \#define NT~0x4000}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a37666c9af451b99166c96df28aec5395}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a37666c9af451b99166c96df28aec5395}} 
+\index{Jcc.h@{Jcc.h}!OF@{OF}}
+\index{OF@{OF}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{OF}{OF}}
+{\footnotesize\ttfamily \#define OF~0x800}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_aa0e278c26c25558741febfadd7216caa}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_aa0e278c26c25558741febfadd7216caa}} 
+\index{Jcc.h@{Jcc.h}!PF@{PF}}
+\index{PF@{PF}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{PF}{PF}}
+{\footnotesize\ttfamily \#define PF~0x04}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a8480531c08b9aa2ba525a6a03d119487}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a8480531c08b9aa2ba525a6a03d119487}} 
+\index{Jcc.h@{Jcc.h}!RF@{RF}}
+\index{RF@{RF}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{RF}{RF}}
+{\footnotesize\ttfamily \#define RF~0x10000}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a1022bf161d0791b616eb885b56a04934}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a1022bf161d0791b616eb885b56a04934}} 
+\index{Jcc.h@{Jcc.h}!SF@{SF}}
+\index{SF@{SF}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{SF}{SF}}
+{\footnotesize\ttfamily \#define SF~0x80}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a1c0168a9703a05a19de4ce775acc6647}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a1c0168a9703a05a19de4ce775acc6647}} 
+\index{Jcc.h@{Jcc.h}!TF@{TF}}
+\index{TF@{TF}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{TF}{TF}}
+{\footnotesize\ttfamily \#define TF~0x100}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a2821b72ad5b91dd09cef916dce01beff}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a2821b72ad5b91dd09cef916dce01beff}} 
+\index{Jcc.h@{Jcc.h}!VIF@{VIF}}
+\index{VIF@{VIF}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{VIF}{VIF}}
+{\footnotesize\ttfamily \#define V\+IF~0x80000}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_aa0ca88b99db16a94898a4a2d93a68e4c}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_aa0ca88b99db16a94898a4a2d93a68e4c}} 
+\index{Jcc.h@{Jcc.h}!VIP@{VIP}}
+\index{VIP@{VIP}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{VIP}{VIP}}
+{\footnotesize\ttfamily \#define V\+IP~0x100000}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_adfc557c4c5ffee93683554f98270d461}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_adfc557c4c5ffee93683554f98270d461}} 
+\index{Jcc.h@{Jcc.h}!VM@{VM}}
+\index{VM@{VM}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{VM}{VM}}
+{\footnotesize\ttfamily \#define VM~0x20000}
+
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_ab4dfddb53d3b02a91b6a0429bdc10143}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_ab4dfddb53d3b02a91b6a0429bdc10143}} 
+\index{Jcc.h@{Jcc.h}!ZF@{ZF}}
+\index{ZF@{ZF}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{ZF}{ZF}}
+{\footnotesize\ttfamily \#define ZF~0x40}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a0e7ca6a4cd722fb8a3a44197055a1273}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a0e7ca6a4cd722fb8a3a44197055a1273}} 
+\index{Jcc.h@{Jcc.h}!jccTest@{jccTest}}
+\index{jccTest@{jccTest}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{jccTest}{jccTest}}
+{\footnotesize\ttfamily typedef B\+O\+O\+L\+E\+AN($\ast$ jcc\+Test) (\mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$Opcode, \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} eflags)}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a315061a6f91950b3171e209ad625c2d0}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a315061a6f91950b3171e209ad625c2d0}} 
+\index{Jcc.h@{Jcc.h}!GetJcc32Dest@{GetJcc32Dest}}
+\index{GetJcc32Dest@{GetJcc32Dest}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{GetJcc32Dest()}{GetJcc32Dest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} Get\+Jcc32\+Dest (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{jcc\+Opcode,  }\item[{const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{rip,  }\item[{B\+Y\+TE}]{instruction\+Length }\end{DoxyParamCaption})}
+
+Return the destination of a Jcc rel32 instruction, considering that the condition of the branch is always T\+R\+UE. It fails if the opcode pass as paramter are not from a Jcc rel 32 instruction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em opcode} & start of the instruction (do not include prefix). \\
+\hline
+\mbox{\texttt{ in}}  & {\em rip} & value of rip when the instruction is executed. In other word, it is the start of the instruction which include prefix. \\
+\hline
+\mbox{\texttt{ in}}  & {\em instruction\+Length} & size of the instruction (include prefixe). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the destination of the branch or N\+U\+LL if it fails. Be careful, sometimes a branch could jump to the N\+U\+LL address. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_adc643e725879a46dced8b8d26250c4b8}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_adc643e725879a46dced8b8d26250c4b8}} 
+\index{Jcc.h@{Jcc.h}!GetJcc8Dest@{GetJcc8Dest}}
+\index{GetJcc8Dest@{GetJcc8Dest}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{GetJcc8Dest()}{GetJcc8Dest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} Get\+Jcc8\+Dest (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{jcc\+Opcode,  }\item[{const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{rip,  }\item[{B\+Y\+TE}]{instruction\+Length }\end{DoxyParamCaption})}
+
+Return the destination of a Jcc rel8 instruction, considering that the condition of the branch is always T\+R\+UE. It fails if the opcode pass as paramter are not from a Jcc rel 8 instruction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em opcode} & start of the instruction (do not include prefix). \\
+\hline
+\mbox{\texttt{ in}}  & {\em rip} & value of rip when the instruction is executed. In other word, it is the start of the instruction which include prefix. \\
+\hline
+\mbox{\texttt{ in}}  & {\em instruction\+Length} & size of the instruction (include prefixe). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the destination of the branch or N\+U\+LL if it fails. Be careful, sometimes a branch could jump to the N\+U\+LL address. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_aad5f2cbe09bab9a99ded1b532c93b5b5}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_aad5f2cbe09bab9a99ded1b532c93b5b5}} 
+\index{Jcc.h@{Jcc.h}!GetJccOrLoopDest@{GetJccOrLoopDest}}
+\index{GetJccOrLoopDest@{GetJccOrLoopDest}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{GetJccOrLoopDest()}{GetJccOrLoopDest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} Get\+Jcc\+Or\+Loop\+Dest (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{opcode,  }\item[{const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{rip,  }\item[{B\+Y\+TE}]{instruction\+Length }\end{DoxyParamCaption})}
+
+Return the destination of a Jcc or a Loop instruction, considering that the condition of the branch is always T\+R\+UE. It fails if the opcode pass as paramter are not from a Jcc or a Loop instruction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em opcode} & start of the instruction (do not include prefix). \\
+\hline
+\mbox{\texttt{ in}}  & {\em rip} & value of rip when the instruction is executed. In other word, it is the start of the instruction which include prefix. \\
+\hline
+\mbox{\texttt{ in}}  & {\em instruction\+Length} & size of the instruction (include prefixe). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the destination of the branch or N\+U\+LL if it fails. Be careful, sometimes a branch could jump to the N\+U\+LL address. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a17634a1e681e9cfc67e821df4db832dc}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a17634a1e681e9cfc67e821df4db832dc}} 
+\index{Jcc.h@{Jcc.h}!GetLoopDest@{GetLoopDest}}
+\index{GetLoopDest@{GetLoopDest}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{GetLoopDest()}{GetLoopDest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} Get\+Loop\+Dest (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{jcc\+Opcode,  }\item[{const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{rip,  }\item[{B\+Y\+TE}]{instruction\+Length }\end{DoxyParamCaption})}
+
+Return the destination of a Loop instruction, considering that the condition of the branch is always T\+R\+UE. It fails if the opcode pass as paramter are not from a Loop instruction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em opcode} & start of the instruction (do not include prefix). \\
+\hline
+\mbox{\texttt{ in}}  & {\em rip} & value of rip when the instruction is executed. In other word, it is the start of the instruction which include prefix. \\
+\hline
+\mbox{\texttt{ in}}  & {\em instruction\+Length} & size of the instruction (include prefixe). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the destination of the branch or N\+U\+LL if it fails. Be careful, sometimes a branch could jump to the N\+U\+LL address. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a459a781e9ffe42ef4a64a136ccc52002}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a459a781e9ffe42ef4a64a136ccc52002}} 
+\index{Jcc.h@{Jcc.h}!IsJcc@{IsJcc}}
+\index{IsJcc@{IsJcc}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{IsJcc()}{IsJcc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} B\+O\+O\+L\+E\+AN Is\+Jcc (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{opcode }\end{DoxyParamCaption})}
+
+Say if the instruction which start as opcode is a Jcc instruction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em opcode} & start of the instruction (do not include prefixe). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if it is a Jcc instruction otherwise it returns F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a37b8183601e08fca5b5dc0e2930afa01}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a37b8183601e08fca5b5dc0e2930afa01}} 
+\index{Jcc.h@{Jcc.h}!IsJccOrLoop@{IsJccOrLoop}}
+\index{IsJccOrLoop@{IsJccOrLoop}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{IsJccOrLoop()}{IsJccOrLoop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} B\+O\+O\+L\+E\+AN Is\+Jcc\+Or\+Loop (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{opcode }\end{DoxyParamCaption})}
+
+Say if the instruction which start as opcode is a Jcc or a Loop instruction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em opcode} & start of the instruction (do not include prefixe). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if it is a Jcc or a Loop instruction otherwise it returns F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a76faf1a57d6c247e593dc2ce0842af81}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a76faf1a57d6c247e593dc2ce0842af81}} 
+\index{Jcc.h@{Jcc.h}!IsJccOrLoopActive@{IsJccOrLoopActive}}
+\index{IsJccOrLoopActive@{IsJccOrLoopActive}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{IsJccOrLoopActive()}{IsJccOrLoopActive()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} B\+O\+O\+L\+E\+AN Is\+Jcc\+Or\+Loop\+Active (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{opcode,  }\item[{\mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}}}]{eflags,  }\item[{\mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}}}]{rcx,  }\item[{B\+O\+O\+L\+E\+AN}]{has\+Address\+Size\+Prefix }\end{DoxyParamCaption})}
+
+Return the state of a Jcc or a Loop instruction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em opcode} & start of the instruction (do not include prefix). \\
+\hline
+\mbox{\texttt{ in}}  & {\em eflags} & value of eflags before the instruction is executed. \\
+\hline
+\mbox{\texttt{ in}}  & {\em rcx} & value of rcx before the instruction is executed. \\
+\hline
+\mbox{\texttt{ in}}  & {\em address\+Size} & address size of the instruction see \+: \char`\"{}address-\/size override prefix\char`\"{} for more information. This value can be found using Get\+Instruction. It is 8 most of the time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if the branch is taken. F\+A\+L\+SE otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a870c6b6054712d73a89f798d1b5d6cbc}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a870c6b6054712d73a89f798d1b5d6cbc}} 
+\index{Jcc.h@{Jcc.h}!IsJccRel32@{IsJccRel32}}
+\index{IsJccRel32@{IsJccRel32}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{IsJccRel32()}{IsJccRel32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} B\+O\+O\+L\+E\+AN Is\+Jcc\+Rel32 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{opcode }\end{DoxyParamCaption})}
+
+Say if the instruction which start as opcode is a Jcc rel32 instruction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em opcode} & start of the instruction (do not include prefixe). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if it is a Jcc rel32 instruction otherwise it returns F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a9f741b6bb6808e2b83d0f16610771184}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a9f741b6bb6808e2b83d0f16610771184}} 
+\index{Jcc.h@{Jcc.h}!IsJccRel8@{IsJccRel8}}
+\index{IsJccRel8@{IsJccRel8}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{IsJccRel8()}{IsJccRel8()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} B\+O\+O\+L\+E\+AN Is\+Jcc\+Rel8 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{opcode }\end{DoxyParamCaption})}
+
+Say if the instruction which start as opcode is a Jcc rel8 instruction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em opcode} & start of the instruction (do not include prefixe). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if it is a Jcc rel8 instruction otherwise it returns F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_instruction_counter_2_instruction_counter_2_jcc_8h_a75508f8d8642bcbaef750e2470729f97}\label{_instruction_counter_2_instruction_counter_2_jcc_8h_a75508f8d8642bcbaef750e2470729f97}} 
+\index{Jcc.h@{Jcc.h}!IsLoop@{IsLoop}}
+\index{IsLoop@{IsLoop}!Jcc.h@{Jcc.h}}
+\doxysubsubsection{\texorpdfstring{IsLoop()}{IsLoop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_main_instruction_counter_8h_a36e3bfa98b5238d5a4ad8be4786c6b37}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R\+\_\+\+L\+IB}} B\+O\+O\+L\+E\+AN Is\+Loop (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{opcode }\end{DoxyParamCaption})}
+
+Say if the instruction which start as opcode is a Loop instruction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em opcode} & start of the instruction (do not include prefixe). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if it is a Loop instruction otherwise it returns F\+A\+L\+SE. 
+\end{DoxyReturn}

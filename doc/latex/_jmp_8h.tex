@@ -1,0 +1,32 @@
+\hypertarget{_jmp_8h}{}\doxysection{C\+:/\+Users/\+Nota\+Number/\+Classified/\+Programmation/\+C/\+Flow-\/master/src/\+Flow/\+Jmp.h File Reference}
+\label{_jmp_8h}\index{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/Flow/Jmp.h@{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/Flow/Jmp.h}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} \mbox{\hyperlink{_jmp_8h_a7e0293b7f67ac953a40299c6ecdb0921}{Get\+Mapped\+Jmp\+Size}} (\mbox{\hyperlink{_module_mapping_8h_aa179d7a8f9db0415215d839ec2565456}{P\+M\+A\+P\+P\+E\+D\+\_\+\+P\+A\+GE}} p\+Page, \mbox{\hyperlink{_module_mapping_8h_a9b359f9cef1b61585ee114579dd16a9d}{M\+A\+P\+P\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON}} $\ast$p\+Instruction, \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$p\+Index)
+\item 
+\mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} \mbox{\hyperlink{_jmp_8h_ab6f6f2e8736d6224810073ed9bd3285b}{Write\+Mapped\+Jmp}} (\mbox{\hyperlink{_module_mapping_8h_aa179d7a8f9db0415215d839ec2565456}{P\+M\+A\+P\+P\+E\+D\+\_\+\+P\+A\+GE}} p\+Page, \mbox{\hyperlink{_module_mapping_8h_a9b359f9cef1b61585ee114579dd16a9d}{M\+A\+P\+P\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON}} $\ast$p\+Instruction, \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$buffer, \mbox{\hyperlink{_module_mapping_8h_ace39fd6ada144d4fc3314bf63ba8fe5f}{P\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+L\+I\+ST}} p\+Callback\+List, \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} tls\+Id, \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$p\+Index)
+\item 
+\mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_jmp_8h_a13d887f4cbc3437065602929f0a4c652}{Manage\+Jmp}} (\+\_\+\+In\+\_\+ \mbox{\hyperlink{_flow_init_8h_a8f1e1146d7c138cc79abcc8edfbecce4}{D\+O\+C\+K\+ER}} $\ast$docker, \+\_\+\+In\+\_\+opt\+\_\+ \mbox{\hyperlink{_mod_r_m_8h_ad72b8164369315d084ba85db0aa0a72b}{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT}} $\ast$context, \+\_\+\+In\+\_\+ \mbox{\hyperlink{_instruction_counter_8h_aa89a230da12185056e1b372a62f706a6}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}} $\ast$\mbox{\hyperlink{_instruction_counter_8h_a9a330709ccd9c7a275983dbcac4cb4c6}{instruction\+Read}}, \+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$buffer, \+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$buffer\+Index, \+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} buffer\+Length)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_jmp_8h_a7e0293b7f67ac953a40299c6ecdb0921}\label{_jmp_8h_a7e0293b7f67ac953a40299c6ecdb0921}} 
+\index{Jmp.h@{Jmp.h}!GetMappedJmpSize@{GetMappedJmpSize}}
+\index{GetMappedJmpSize@{GetMappedJmpSize}!Jmp.h@{Jmp.h}}
+\doxysubsubsection{\texorpdfstring{GetMappedJmpSize()}{GetMappedJmpSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} Get\+Mapped\+Jmp\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_module_mapping_8h_aa179d7a8f9db0415215d839ec2565456}{P\+M\+A\+P\+P\+E\+D\+\_\+\+P\+A\+GE}}}]{p\+Page,  }\item[{\mbox{\hyperlink{_module_mapping_8h_a9b359f9cef1b61585ee114579dd16a9d}{M\+A\+P\+P\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON}} $\ast$}]{p\+Instruction,  }\item[{\mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$}]{p\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_jmp_8h_a13d887f4cbc3437065602929f0a4c652}\label{_jmp_8h_a13d887f4cbc3437065602929f0a4c652}} 
+\index{Jmp.h@{Jmp.h}!ManageJmp@{ManageJmp}}
+\index{ManageJmp@{ManageJmp}!Jmp.h@{Jmp.h}}
+\doxysubsubsection{\texorpdfstring{ManageJmp()}{ManageJmp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} Manage\+Jmp (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_flow_init_8h_a8f1e1146d7c138cc79abcc8edfbecce4}{D\+O\+C\+K\+ER}} $\ast$}]{docker,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ \mbox{\hyperlink{_mod_r_m_8h_ad72b8164369315d084ba85db0aa0a72b}{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT}} $\ast$}]{context,  }\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_instruction_counter_8h_aa89a230da12185056e1b372a62f706a6}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}} $\ast$}]{instruction\+Read,  }\item[{\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{buffer,  }\item[{\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$}]{buffer\+Index,  }\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}}}]{buffer\+Length }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_jmp_8h_ab6f6f2e8736d6224810073ed9bd3285b}\label{_jmp_8h_ab6f6f2e8736d6224810073ed9bd3285b}} 
+\index{Jmp.h@{Jmp.h}!WriteMappedJmp@{WriteMappedJmp}}
+\index{WriteMappedJmp@{WriteMappedJmp}!Jmp.h@{Jmp.h}}
+\doxysubsubsection{\texorpdfstring{WriteMappedJmp()}{WriteMappedJmp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} Write\+Mapped\+Jmp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_module_mapping_8h_aa179d7a8f9db0415215d839ec2565456}{P\+M\+A\+P\+P\+E\+D\+\_\+\+P\+A\+GE}}}]{p\+Page,  }\item[{\mbox{\hyperlink{_module_mapping_8h_a9b359f9cef1b61585ee114579dd16a9d}{M\+A\+P\+P\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON}} $\ast$}]{p\+Instruction,  }\item[{\mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{_module_mapping_8h_ace39fd6ada144d4fc3314bf63ba8fe5f}{P\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+L\+I\+ST}}}]{p\+Callback\+List,  }\item[{\mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}}}]{tls\+Id,  }\item[{\mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$}]{p\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+

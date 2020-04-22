@@ -1,0 +1,71 @@
+\hypertarget{_call_8h}{}\doxysection{C\+:/\+Users/\+Nota\+Number/\+Classified/\+Programmation/\+C/\+Flow-\/master/src/\+Flow/\+Call.h File Reference}
+\label{_call_8h}\index{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/Flow/Call.h@{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/Flow/Call.h}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_call_8h_a7e95c48134c939d8dcc6baec0b466eaf}{F\+I\+L\+L\+\_\+\+C\+A\+L\+L\+\_\+\+I\+N\+F\+O\+\_\+\+B\+U\+F\+F\+ER}}(new\+Ret\+Address)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} \mbox{\hyperlink{_call_8h_a1a1c3bf841d55bf2e828cadd361024ad}{Push\+Shadow\+Stack}} ()
+\item 
+\mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} \mbox{\hyperlink{_call_8h_ad03d503fbf73470986aa8f10cfe0df65}{Mapped\+Call\+Mod\+Rm\+Rip\+Rel}} (\mbox{\hyperlink{_module_mapping_8h_aa179d7a8f9db0415215d839ec2565456}{P\+M\+A\+P\+P\+E\+D\+\_\+\+P\+A\+GE}} p\+Page, \mbox{\hyperlink{_module_mapping_8h_a9b359f9cef1b61585ee114579dd16a9d}{M\+A\+P\+P\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON}} $\ast$p\+Instruction)
+\item 
+\mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} \mbox{\hyperlink{_call_8h_a7156c809690d50b55073c7179b2c22ba}{Get\+Mapped\+Call\+Size}} (\mbox{\hyperlink{_module_mapping_8h_aa179d7a8f9db0415215d839ec2565456}{P\+M\+A\+P\+P\+E\+D\+\_\+\+P\+A\+GE}} p\+Page, \mbox{\hyperlink{_module_mapping_8h_a9b359f9cef1b61585ee114579dd16a9d}{M\+A\+P\+P\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON}} $\ast$p\+Instruction, \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$p\+Index)
+\item 
+\mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} \mbox{\hyperlink{_call_8h_aafa3f45a7629762cdcc9a46782ef584f}{Write\+Mapped\+Call}} (\mbox{\hyperlink{_module_mapping_8h_aa179d7a8f9db0415215d839ec2565456}{P\+M\+A\+P\+P\+E\+D\+\_\+\+P\+A\+GE}} p\+Page, \mbox{\hyperlink{_module_mapping_8h_a9b359f9cef1b61585ee114579dd16a9d}{M\+A\+P\+P\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON}} $\ast$p\+Instruction, \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$buffer, \mbox{\hyperlink{_module_mapping_8h_ace39fd6ada144d4fc3314bf63ba8fe5f}{P\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+L\+I\+ST}} p\+Callback\+List, \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} tls\+Id, \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$p\+Index)
+\item 
+\mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_call_8h_a903dfba6f24c4179ca8f5b3d598a0ed0}{Manage\+Call}} (\+\_\+\+In\+\_\+ \mbox{\hyperlink{_flow_init_8h_a8f1e1146d7c138cc79abcc8edfbecce4}{D\+O\+C\+K\+ER}} $\ast$docker, \+\_\+\+In\+\_\+opt\+\_\+ \mbox{\hyperlink{_mod_r_m_8h_ad72b8164369315d084ba85db0aa0a72b}{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT}} $\ast$context, \+\_\+\+In\+\_\+ \mbox{\hyperlink{_instruction_counter_8h_aa89a230da12185056e1b372a62f706a6}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}} $\ast$\mbox{\hyperlink{_instruction_counter_8h_a9a330709ccd9c7a275983dbcac4cb4c6}{instruction\+Read}}, \+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$buffer, \+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$buffer\+Index, \+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} buffer\+Length)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_call_8h_a7e95c48134c939d8dcc6baec0b466eaf}\label{_call_8h_a7e95c48134c939d8dcc6baec0b466eaf}} 
+\index{Call.h@{Call.h}!FILL\_CALL\_INFO\_BUFFER@{FILL\_CALL\_INFO\_BUFFER}}
+\index{FILL\_CALL\_INFO\_BUFFER@{FILL\_CALL\_INFO\_BUFFER}!Call.h@{Call.h}}
+\doxysubsubsection{\texorpdfstring{FILL\_CALL\_INFO\_BUFFER}{FILL\_CALL\_INFO\_BUFFER}}
+{\footnotesize\ttfamily \#define F\+I\+L\+L\+\_\+\+C\+A\+L\+L\+\_\+\+I\+N\+F\+O\+\_\+\+B\+U\+F\+F\+ER(\begin{DoxyParamCaption}\item[{}]{new\+Ret\+Address }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    pPage-\/>CallInfo[pPage-\/>CallInfoLength].OldRetAddress = (\mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{QWORD}})(pInstruction-\/>Opcode + pInstruction-\/>Length);\(\backslash\)}
+\DoxyCodeLine{    pPage-\/>CallInfo[pPage-\/>CallInfoLength].NewRetAddress = (\mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{QWORD}})(newRetAddress);\(\backslash\)}
+\DoxyCodeLine{    pPage-\/>CallInfo[pPage-\/>CallInfoLength].RetCallback = NULL;\(\backslash\)}
+\DoxyCodeLine{    pPage-\/>CallInfoLength++;}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_call_8h_a7156c809690d50b55073c7179b2c22ba}\label{_call_8h_a7156c809690d50b55073c7179b2c22ba}} 
+\index{Call.h@{Call.h}!GetMappedCallSize@{GetMappedCallSize}}
+\index{GetMappedCallSize@{GetMappedCallSize}!Call.h@{Call.h}}
+\doxysubsubsection{\texorpdfstring{GetMappedCallSize()}{GetMappedCallSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} Get\+Mapped\+Call\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_module_mapping_8h_aa179d7a8f9db0415215d839ec2565456}{P\+M\+A\+P\+P\+E\+D\+\_\+\+P\+A\+GE}}}]{p\+Page,  }\item[{\mbox{\hyperlink{_module_mapping_8h_a9b359f9cef1b61585ee114579dd16a9d}{M\+A\+P\+P\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON}} $\ast$}]{p\+Instruction,  }\item[{\mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$}]{p\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_call_8h_a903dfba6f24c4179ca8f5b3d598a0ed0}\label{_call_8h_a903dfba6f24c4179ca8f5b3d598a0ed0}} 
+\index{Call.h@{Call.h}!ManageCall@{ManageCall}}
+\index{ManageCall@{ManageCall}!Call.h@{Call.h}}
+\doxysubsubsection{\texorpdfstring{ManageCall()}{ManageCall()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} Manage\+Call (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_flow_init_8h_a8f1e1146d7c138cc79abcc8edfbecce4}{D\+O\+C\+K\+ER}} $\ast$}]{docker,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ \mbox{\hyperlink{_mod_r_m_8h_ad72b8164369315d084ba85db0aa0a72b}{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT}} $\ast$}]{context,  }\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_instruction_counter_8h_aa89a230da12185056e1b372a62f706a6}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}} $\ast$}]{instruction\+Read,  }\item[{\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{buffer,  }\item[{\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$}]{buffer\+Index,  }\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}}}]{buffer\+Length }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_call_8h_ad03d503fbf73470986aa8f10cfe0df65}\label{_call_8h_ad03d503fbf73470986aa8f10cfe0df65}} 
+\index{Call.h@{Call.h}!MappedCallModRmRipRel@{MappedCallModRmRipRel}}
+\index{MappedCallModRmRipRel@{MappedCallModRmRipRel}!Call.h@{Call.h}}
+\doxysubsubsection{\texorpdfstring{MappedCallModRmRipRel()}{MappedCallModRmRipRel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} Mapped\+Call\+Mod\+Rm\+Rip\+Rel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_module_mapping_8h_aa179d7a8f9db0415215d839ec2565456}{P\+M\+A\+P\+P\+E\+D\+\_\+\+P\+A\+GE}}}]{p\+Page,  }\item[{\mbox{\hyperlink{_module_mapping_8h_a9b359f9cef1b61585ee114579dd16a9d}{M\+A\+P\+P\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON}} $\ast$}]{p\+Instruction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_call_8h_a1a1c3bf841d55bf2e828cadd361024ad}\label{_call_8h_a1a1c3bf841d55bf2e828cadd361024ad}} 
+\index{Call.h@{Call.h}!PushShadowStack@{PushShadowStack}}
+\index{PushShadowStack@{PushShadowStack}!Call.h@{Call.h}}
+\doxysubsubsection{\texorpdfstring{PushShadowStack()}{PushShadowStack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} Push\+Shadow\+Stack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_call_8h_aafa3f45a7629762cdcc9a46782ef584f}\label{_call_8h_aafa3f45a7629762cdcc9a46782ef584f}} 
+\index{Call.h@{Call.h}!WriteMappedCall@{WriteMappedCall}}
+\index{WriteMappedCall@{WriteMappedCall}!Call.h@{Call.h}}
+\doxysubsubsection{\texorpdfstring{WriteMappedCall()}{WriteMappedCall()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} Write\+Mapped\+Call (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_module_mapping_8h_aa179d7a8f9db0415215d839ec2565456}{P\+M\+A\+P\+P\+E\+D\+\_\+\+P\+A\+GE}}}]{p\+Page,  }\item[{\mbox{\hyperlink{_module_mapping_8h_a9b359f9cef1b61585ee114579dd16a9d}{M\+A\+P\+P\+E\+D\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON}} $\ast$}]{p\+Instruction,  }\item[{\mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{_module_mapping_8h_ace39fd6ada144d4fc3314bf63ba8fe5f}{P\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+L\+I\+ST}}}]{p\+Callback\+List,  }\item[{\mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}}}]{tls\+Id,  }\item[{\mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$}]{p\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\+\_\+\+\_\+debugbreak();

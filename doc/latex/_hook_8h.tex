@@ -1,0 +1,40 @@
+\hypertarget{_hook_8h}{}\doxysection{C\+:/\+Users/\+Nota\+Number/\+Classified/\+Programmation/\+C/\+Flow-\/master/src/\+Hook/\+Hook.h File Reference}
+\label{_hook_8h}\index{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/Hook/Hook.h@{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/Hook/Hook.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$tlhelp32.\+h$>$}\newline
+{\ttfamily \#include $<$tchar.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Main\+I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+Counter.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Liste\+Thread\+Information.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Liste\+Hook.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Hook\+Trampoline.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_hook_8h_a6f5f4e79edbdebad8e6c06b47b61d81c}{H\+O\+O\+K\+\_\+\+L\+IB}}~\mbox{\hyperlink{_module_mapping_8h_acdbe2dac764849c563c26b5781acf301}{\+\_\+\+\_\+declspec}}(dllimport)
+\item 
+\#define \mbox{\hyperlink{_hook_8h_ab236e4185e4f0ce541a8bceda5dfef06}{T\+P\+R\+I\+N\+T\+F\+\_\+\+E\+R\+R\+OR}}(text)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_hook_8h_a6f5f4e79edbdebad8e6c06b47b61d81c}\label{_hook_8h_a6f5f4e79edbdebad8e6c06b47b61d81c}} 
+\index{Hook.h@{Hook.h}!HOOK\_LIB@{HOOK\_LIB}}
+\index{HOOK\_LIB@{HOOK\_LIB}!Hook.h@{Hook.h}}
+\doxysubsubsection{\texorpdfstring{HOOK\_LIB}{HOOK\_LIB}}
+{\footnotesize\ttfamily \#define H\+O\+O\+K\+\_\+\+L\+IB~\mbox{\hyperlink{_module_mapping_8h_acdbe2dac764849c563c26b5781acf301}{\+\_\+\+\_\+declspec}}(dllimport)}
+
+\mbox{\Hypertarget{_hook_8h_ab236e4185e4f0ce541a8bceda5dfef06}\label{_hook_8h_ab236e4185e4f0ce541a8bceda5dfef06}} 
+\index{Hook.h@{Hook.h}!TPRINTF\_ERROR@{TPRINTF\_ERROR}}
+\index{TPRINTF\_ERROR@{TPRINTF\_ERROR}!Hook.h@{Hook.h}}
+\doxysubsubsection{\texorpdfstring{TPRINTF\_ERROR}{TPRINTF\_ERROR}}
+{\footnotesize\ttfamily \#define T\+P\+R\+I\+N\+T\+F\+\_\+\+E\+R\+R\+OR(\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \_tprintf(text);\(\backslash\)}
+\DoxyCodeLine{    success = \mbox{\hyperlink{_macro_8h_aa93f0eb578d23995850d61f7d61c55c1}{FALSE}};\(\backslash\)}
+\DoxyCodeLine{    \_\_leave;}
+
+\end{DoxyCode}

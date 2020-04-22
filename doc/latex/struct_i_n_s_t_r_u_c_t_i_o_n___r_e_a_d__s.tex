@@ -1,0 +1,169 @@
+\hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s}{}\doxysection{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+D\+\_\+s Struct Reference}
+\label{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s}\index{INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}}
+
+
+{\ttfamily \#include $<$Instruction\+Counter.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}} $\ast$ \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a16373d9420ddd8b31af16e882e1fff5b}{Opcode}}
+\begin{DoxyCompactList}\small\item\em Address of the instruction (include prefix). \end{DoxyCompactList}\item 
+B\+Y\+TE \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a9bb273929132363d62ff934e3bc7d09c}{Length}}
+\begin{DoxyCompactList}\small\item\em Length/\+Size of the instruction. \end{DoxyCompactList}\item 
+B\+Y\+TE \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_ae1ce49793d3c925f113eaef90c168b56}{End\+Of\+Prefix}}
+\begin{DoxyCompactList}\small\item\em Opcode + End\+Of\+Prefix = address of the first opcode inside the instruction which is not a prefix. \end{DoxyCompactList}\item 
+B\+Y\+TE \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a0c0c3e2e38ab711b1005e2d7f0fc9fe0}{Mod\+R\+M\+Pos}}
+\begin{DoxyCompactList}\small\item\em Opcode + Mod\+R\+M\+Pos = address of the Mod\+RM opcode inside the instruction. If there is no Mod\+RM, this field is equal to 255. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_mod_r_m_8h_a124fffaf6e43517fd2e6931d9d0ae3f7}{R\+EX}} \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a9c8ce5f8c3b8584d3049937258bbd190}{Rex}}
+\begin{DoxyCompactList}\small\item\em Rex prefix. 0 if the instruction has no rex prefix. \end{DoxyCompactList}\item 
+B\+O\+O\+L\+E\+AN \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_ad2ee56b0bfd03878be6b48c794062a8c}{Has\+Operand\+Size\+Prefix}}
+\begin{DoxyCompactList}\small\item\em T\+R\+UE if the instruction has the \char`\"{}operand-\/size override prefix\char`\"{}, F\+A\+L\+SE otherwise. \end{DoxyCompactList}\item 
+B\+Y\+TE \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a97f03c9917e06eae49ccbfedbc5c197a}{Address\+Size}}
+\begin{DoxyCompactList}\small\item\em 4 or 8 (8 is default value). 4 only if the instruction has the \char`\"{}address-\/size override prefix\char`\"{}. \end{DoxyCompactList}\item 
+B\+O\+O\+L\+E\+AN \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a88a1893a4537938aac43ad9274cebe38}{Has\+Lock\+Prefix}}
+\begin{DoxyCompactList}\small\item\em T\+R\+UE if the instruction has the \char`\"{}lock prefix\char`\"{}, F\+A\+L\+SE otherwise. \end{DoxyCompactList}\item 
+B\+O\+O\+L\+E\+AN \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_aaa9ef0044716992c1d2f94d8b48a6455}{Has\+Repe\+Prefix}}
+\begin{DoxyCompactList}\small\item\em T\+R\+UE if the instruction has the \char`\"{}repe prefix\char`\"{}, F\+A\+L\+SE otherwise. \end{DoxyCompactList}\item 
+B\+O\+O\+L\+E\+AN \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a7406ead67747036b5b446a0f5af16a71}{Has\+Repne\+Prefix}}
+\begin{DoxyCompactList}\small\item\em T\+R\+UE if the instruction has the \char`\"{}repne prefix\char`\"{}, F\+A\+L\+SE otherwise. \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a2ba66bdc0fdf4b36afcc1dc83952badc}{INSTRUCTION\_SHARED\_VALUE}}\\
+\>\>{\em Other information about the instruction. }\\
+\>\mbox{\hyperlink{_instruction_counter_8h_af28ce61674e9d7b3a8b787492a889279}{INSTRUCTION\_SHARED\_VALUE}} \mbox{\hyperlink{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_aa1b25160bd0cae2ad17eeceffc585c5e}{CommonValue}}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Information about an instruction read using Get\+Instruction function 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a3547685599cb6bed082123bf9ad27e3b}\label{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a3547685599cb6bed082123bf9ad27e3b}} 
+\doxysubsubsection{\texorpdfstring{"@15}{@15}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a97f03c9917e06eae49ccbfedbc5c197a}\label{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a97f03c9917e06eae49ccbfedbc5c197a}} 
+\index{INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}!AddressSize@{AddressSize}}
+\index{AddressSize@{AddressSize}!INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}}
+\doxysubsubsection{\texorpdfstring{AddressSize}{AddressSize}}
+{\footnotesize\ttfamily B\+Y\+TE I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+D\+\_\+s\+::\+Address\+Size}
+
+
+
+4 or 8 (8 is default value). 4 only if the instruction has the \char`\"{}address-\/size override prefix\char`\"{}. 
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_aa1b25160bd0cae2ad17eeceffc585c5e}\label{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_aa1b25160bd0cae2ad17eeceffc585c5e}} 
+\index{INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}!CommonValue@{CommonValue}}
+\index{CommonValue@{CommonValue}!INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}}
+\doxysubsubsection{\texorpdfstring{CommonValue}{CommonValue}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_instruction_counter_8h_af28ce61674e9d7b3a8b787492a889279}{I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+S\+H\+A\+R\+E\+D\+\_\+\+V\+A\+L\+UE}} I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+D\+\_\+s\+::\+Common\+Value}
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_ae1ce49793d3c925f113eaef90c168b56}\label{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_ae1ce49793d3c925f113eaef90c168b56}} 
+\index{INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}!EndOfPrefix@{EndOfPrefix}}
+\index{EndOfPrefix@{EndOfPrefix}!INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}}
+\doxysubsubsection{\texorpdfstring{EndOfPrefix}{EndOfPrefix}}
+{\footnotesize\ttfamily B\+Y\+TE I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+D\+\_\+s\+::\+End\+Of\+Prefix}
+
+
+
+Opcode + End\+Of\+Prefix = address of the first opcode inside the instruction which is not a prefix. 
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a88a1893a4537938aac43ad9274cebe38}\label{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a88a1893a4537938aac43ad9274cebe38}} 
+\index{INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}!HasLockPrefix@{HasLockPrefix}}
+\index{HasLockPrefix@{HasLockPrefix}!INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}}
+\doxysubsubsection{\texorpdfstring{HasLockPrefix}{HasLockPrefix}}
+{\footnotesize\ttfamily B\+O\+O\+L\+E\+AN I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+D\+\_\+s\+::\+Has\+Lock\+Prefix}
+
+
+
+T\+R\+UE if the instruction has the \char`\"{}lock prefix\char`\"{}, F\+A\+L\+SE otherwise. 
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_ad2ee56b0bfd03878be6b48c794062a8c}\label{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_ad2ee56b0bfd03878be6b48c794062a8c}} 
+\index{INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}!HasOperandSizePrefix@{HasOperandSizePrefix}}
+\index{HasOperandSizePrefix@{HasOperandSizePrefix}!INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}}
+\doxysubsubsection{\texorpdfstring{HasOperandSizePrefix}{HasOperandSizePrefix}}
+{\footnotesize\ttfamily B\+O\+O\+L\+E\+AN I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+D\+\_\+s\+::\+Has\+Operand\+Size\+Prefix}
+
+
+
+T\+R\+UE if the instruction has the \char`\"{}operand-\/size override prefix\char`\"{}, F\+A\+L\+SE otherwise. 
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_aaa9ef0044716992c1d2f94d8b48a6455}\label{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_aaa9ef0044716992c1d2f94d8b48a6455}} 
+\index{INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}!HasRepePrefix@{HasRepePrefix}}
+\index{HasRepePrefix@{HasRepePrefix}!INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}}
+\doxysubsubsection{\texorpdfstring{HasRepePrefix}{HasRepePrefix}}
+{\footnotesize\ttfamily B\+O\+O\+L\+E\+AN I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+D\+\_\+s\+::\+Has\+Repe\+Prefix}
+
+
+
+T\+R\+UE if the instruction has the \char`\"{}repe prefix\char`\"{}, F\+A\+L\+SE otherwise. 
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a7406ead67747036b5b446a0f5af16a71}\label{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a7406ead67747036b5b446a0f5af16a71}} 
+\index{INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}!HasRepnePrefix@{HasRepnePrefix}}
+\index{HasRepnePrefix@{HasRepnePrefix}!INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}}
+\doxysubsubsection{\texorpdfstring{HasRepnePrefix}{HasRepnePrefix}}
+{\footnotesize\ttfamily B\+O\+O\+L\+E\+AN I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+D\+\_\+s\+::\+Has\+Repne\+Prefix}
+
+
+
+T\+R\+UE if the instruction has the \char`\"{}repne prefix\char`\"{}, F\+A\+L\+SE otherwise. 
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a2ba66bdc0fdf4b36afcc1dc83952badc}\label{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a2ba66bdc0fdf4b36afcc1dc83952badc}} 
+\index{INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}!INSTRUCTION\_SHARED\_VALUE@{INSTRUCTION\_SHARED\_VALUE}}
+\index{INSTRUCTION\_SHARED\_VALUE@{INSTRUCTION\_SHARED\_VALUE}!INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}}
+\doxysubsubsection{\texorpdfstring{INSTRUCTION\_SHARED\_VALUE}{INSTRUCTION\_SHARED\_VALUE}}
+{\footnotesize\ttfamily I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+D\+\_\+s\+::\+I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+S\+H\+A\+R\+E\+D\+\_\+\+V\+A\+L\+UE}
+
+
+
+Other information about the instruction. 
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a9bb273929132363d62ff934e3bc7d09c}\label{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a9bb273929132363d62ff934e3bc7d09c}} 
+\index{INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}!Length@{Length}}
+\index{Length@{Length}!INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}}
+\doxysubsubsection{\texorpdfstring{Length}{Length}}
+{\footnotesize\ttfamily B\+Y\+TE I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+D\+\_\+s\+::\+Length}
+
+
+
+Length/\+Size of the instruction. 
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a0c0c3e2e38ab711b1005e2d7f0fc9fe0}\label{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a0c0c3e2e38ab711b1005e2d7f0fc9fe0}} 
+\index{INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}!ModRMPos@{ModRMPos}}
+\index{ModRMPos@{ModRMPos}!INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}}
+\doxysubsubsection{\texorpdfstring{ModRMPos}{ModRMPos}}
+{\footnotesize\ttfamily B\+Y\+TE I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+D\+\_\+s\+::\+Mod\+R\+M\+Pos}
+
+
+
+Opcode + Mod\+R\+M\+Pos = address of the Mod\+RM opcode inside the instruction. If there is no Mod\+RM, this field is equal to 255. 
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a16373d9420ddd8b31af16e882e1fff5b}\label{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a16373d9420ddd8b31af16e882e1fff5b}} 
+\index{INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}!Opcode@{Opcode}}
+\index{Opcode@{Opcode}!INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}}
+\doxysubsubsection{\texorpdfstring{Opcode}{Opcode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_opcode_8h_ad495b242f2a8f7b0f0cba9fbe40db62f}{O\+P\+C\+O\+DE}}$\ast$ I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+D\+\_\+s\+::\+Opcode}
+
+
+
+Address of the instruction (include prefix). 
+
+\mbox{\Hypertarget{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a9c8ce5f8c3b8584d3049937258bbd190}\label{struct_i_n_s_t_r_u_c_t_i_o_n___r_e_a_d__s_a9c8ce5f8c3b8584d3049937258bbd190}} 
+\index{INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}!Rex@{Rex}}
+\index{Rex@{Rex}!INSTRUCTION\_READ\_s@{INSTRUCTION\_READ\_s}}
+\doxysubsubsection{\texorpdfstring{Rex}{Rex}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_mod_r_m_8h_a124fffaf6e43517fd2e6931d9d0ae3f7}{R\+EX}} I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+R\+E\+A\+D\+\_\+s\+::\+Rex}
+
+
+
+Rex prefix. 0 if the instruction has no rex prefix. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Nota\+Number/\+Classified/\+Programmation/\+C/\+Flow-\/master/src/\+Instruction\+Counter/\+Instruction\+Counter/\mbox{\hyperlink{_instruction_counter_8h}{Instruction\+Counter.\+h}}\end{DoxyCompactItemize}

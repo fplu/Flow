@@ -1,0 +1,241 @@
+\hypertarget{_flow_export_8h}{}\doxysection{C\+:/\+Users/\+Nota\+Number/\+Classified/\+Programmation/\+C/\+Flow-\/master/src/\+Flow/\+Flow\+Export.h File Reference}
+\label{_flow_export_8h}\index{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/Flow/FlowExport.h@{C:/Users/NotaNumber/Classified/Programmation/C/Flow-\/master/src/Flow/FlowExport.h}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_flow_export_8h_a0d47dcc61f67c63826910a82cfa4e177}{C\+A\+L\+L\+\_\+\+B\+A\+C\+K\+\_\+\+S\+T\+EP}}~0x1
+\item 
+\#define \mbox{\hyperlink{_flow_export_8h_acd9afdf39b5605a483de6a34da455d59}{C\+A\+L\+L\+\_\+\+B\+A\+C\+K\+\_\+\+E\+X\+E\+C\+U\+T\+I\+O\+N\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+V\+I\+O\+L\+A\+T\+I\+ON}}~0x2
+\item 
+\#define \mbox{\hyperlink{_flow_export_8h_a282040b452ecb00661c0d811ac40d645}{C\+A\+L\+L\+\_\+\+B\+A\+C\+K\+\_\+\+M\+I\+S\+C\+A\+L\+L\+E\+N\+O\+U\+S\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}}~0x3
+\item 
+\#define \mbox{\hyperlink{_flow_export_8h_aef9ff02b7d800cab694fcb40187b67a4}{C\+A\+L\+L\+\_\+\+B\+A\+C\+K\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+R\+I\+G\+H\+T\+\_\+\+M\+O\+D\+I\+F\+I\+C\+A\+T\+I\+ON}}~0x4
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void $\ast$ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} \mbox{\hyperlink{_module_mapping_8h_a071993bc5e051aad252867595090a95d}{M\+A\+P\+P\+E\+D\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+NG}} \mbox{\hyperlink{_flow_export_8h_ad7c560c84be6c9dc58657db956e1472b}{get\+Mapping\+State}} (void)
+\item 
+\mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void \mbox{\hyperlink{_flow_export_8h_a62684b24eb7a22cc41807e63251ced8e}{debug\+Current\+Thread}} (void)
+\item 
+\mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void \mbox{\hyperlink{_flow_export_8h_af1d0fcfd2b9274864345ceb97b2b14c7}{global\+Flow\+Init}} (\+\_\+\+In\+\_\+ W\+C\+H\+AR $\ast$modules\+Names, \+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} number\+Of\+Module)
+\item 
+\mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void \mbox{\hyperlink{_flow_export_8h_ab11d0b8560a59a591d64e3218e1c56c5}{add\+Syscall\+Callback}} (\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$p\+Emulator\+Handler, \+\_\+\+In\+\_\+ \mbox{\hyperlink{_syscall_handler_8h_a703956129e3e78a8f6fd622961c4d37a}{syscall\+Callback}} \+\_\+syscall\+Callback, \+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} syscall\+Id)
+\item 
+\mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void \mbox{\hyperlink{_flow_export_8h_ad234378d22c18ea901aae0907e12e361}{remove\+Syscall\+Callback}} (\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$p\+Emulator\+Handler, \+\_\+\+In\+\_\+opt\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} syscall\+Id, \+\_\+\+In\+\_\+opt\+\_\+ \mbox{\hyperlink{_syscall_handler_8h_a703956129e3e78a8f6fd622961c4d37a}{syscall\+Callback}} \+\_\+syscall\+Callback)
+\item 
+\mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void \mbox{\hyperlink{_flow_export_8h_ac0e7b6fc78879e3db0c3fe707c919e10}{get\+Thread\+Context}} (\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$p\+Emulator\+Handler, \+\_\+\+Out\+\_\+ \mbox{\hyperlink{_mod_r_m_8h_ad72b8164369315d084ba85db0aa0a72b}{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT}} $\ast$thread\+Context)
+\item 
+\mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void \mbox{\hyperlink{_flow_export_8h_a64367e505b9af92555600a8d11158e3a}{set\+Thread\+Context}} (\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$p\+Emulator\+Handler, \+\_\+\+In\+\_\+ \mbox{\hyperlink{_mod_r_m_8h_ad72b8164369315d084ba85db0aa0a72b}{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT}} $\ast$thread\+Context)
+\item 
+\mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void \mbox{\hyperlink{_flow_export_8h_a44fa2205a33c9641cdd5d9d4784db84f}{get\+Extended\+Thread\+Context}} (\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$p\+Emulator\+Handler, \+\_\+\+Out\+\_\+ C\+O\+N\+T\+E\+XT $\ast$thread\+Context)
+\item 
+\mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void \mbox{\hyperlink{_flow_export_8h_a459befa7ce19439585ec8731868bb9bb}{set\+Extended\+Thread\+Context}} (\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$p\+Emulator\+Handler, \+\_\+\+In\+\_\+ C\+O\+N\+T\+E\+XT $\ast$thread\+Context)
+\item 
+\mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_flow_export_8h_a087ce104657f66d0b56e8d34eaa7fb80}{add\+Call\+Callback}} (\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$p\+Emulator\+Handler, \+\_\+\+In\+\_\+ void $\ast$function, \+\_\+\+In\+\_\+ void(callback\+\_\+)(\mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$docker, \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} last\+Rip))
+\item 
+\mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_flow_export_8h_a30e51ebcf20c79fef9214088ac3ec3a9}{add\+Ret\+Callback}} (\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$p\+Emulator\+Handler, \+\_\+\+In\+\_\+ void $\ast$function, \+\_\+\+In\+\_\+ void(callback\+\_\+)(\mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$docker, \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} last\+Rip))
+\item 
+\mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void \mbox{\hyperlink{_flow_export_8h_ad923cd254ab88d0daa725dae2551273e}{tls\+Alloc}} (\+\_\+\+Out\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$p\+Tls\+Id)
+\item 
+\mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void \mbox{\hyperlink{_flow_export_8h_a8ce9a65ab317a97d69130c7db99f789c}{tls\+Free}} (\+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} tls\+Id)
+\item 
+\mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void \mbox{\hyperlink{_flow_export_8h_a1a37d74cf098a5ea7d3a81f7b567b34c}{tls\+Set\+Value}} (\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$p\+Emulator\+Handler, \+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} tls\+Id, \+\_\+\+In\+\_\+ \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} value)
+\item 
+\mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void \mbox{\hyperlink{_flow_export_8h_a45f7d8910dabc44e59b42d23551008b6}{tls\+Get\+Value}} (\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$p\+Emulator\+Handler, \+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} tls\+Id, \+\_\+\+Out\+\_\+ \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} $\ast$\mbox{\hyperlink{_instruction_read_export_8h_a7cb3427065bf6ef5b4e1284611d89628}{p\+Value}})
+\item 
+\mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} \mbox{\hyperlink{_flow_export_8h_a4ebd9b28cad119d22d10eed4b96cd785}{set\+Syscall\+Post\+Callback}} (\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$p\+Emulator\+Handler, \+\_\+\+In\+\_\+opt\+\_\+ void($\ast$post\+Callback)(\mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$))
+\item 
+void \mbox{\hyperlink{_flow_export_8h_af684f6ebd7f91ba307055e3d12ea78a7}{\+\_\+get\+All\+Register}} (C\+O\+N\+T\+E\+XT $\ast$context)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_flow_export_8h_aef9ff02b7d800cab694fcb40187b67a4}\label{_flow_export_8h_aef9ff02b7d800cab694fcb40187b67a4}} 
+\index{FlowExport.h@{FlowExport.h}!CALL\_BACK\_ACCESS\_RIGHT\_MODIFICATION@{CALL\_BACK\_ACCESS\_RIGHT\_MODIFICATION}}
+\index{CALL\_BACK\_ACCESS\_RIGHT\_MODIFICATION@{CALL\_BACK\_ACCESS\_RIGHT\_MODIFICATION}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{CALL\_BACK\_ACCESS\_RIGHT\_MODIFICATION}{CALL\_BACK\_ACCESS\_RIGHT\_MODIFICATION}}
+{\footnotesize\ttfamily \#define C\+A\+L\+L\+\_\+\+B\+A\+C\+K\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+R\+I\+G\+H\+T\+\_\+\+M\+O\+D\+I\+F\+I\+C\+A\+T\+I\+ON~0x4}
+
+\mbox{\Hypertarget{_flow_export_8h_acd9afdf39b5605a483de6a34da455d59}\label{_flow_export_8h_acd9afdf39b5605a483de6a34da455d59}} 
+\index{FlowExport.h@{FlowExport.h}!CALL\_BACK\_EXECUTION\_ACCESS\_VIOLATION@{CALL\_BACK\_EXECUTION\_ACCESS\_VIOLATION}}
+\index{CALL\_BACK\_EXECUTION\_ACCESS\_VIOLATION@{CALL\_BACK\_EXECUTION\_ACCESS\_VIOLATION}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{CALL\_BACK\_EXECUTION\_ACCESS\_VIOLATION}{CALL\_BACK\_EXECUTION\_ACCESS\_VIOLATION}}
+{\footnotesize\ttfamily \#define C\+A\+L\+L\+\_\+\+B\+A\+C\+K\+\_\+\+E\+X\+E\+C\+U\+T\+I\+O\+N\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+V\+I\+O\+L\+A\+T\+I\+ON~0x2}
+
+\mbox{\Hypertarget{_flow_export_8h_a282040b452ecb00661c0d811ac40d645}\label{_flow_export_8h_a282040b452ecb00661c0d811ac40d645}} 
+\index{FlowExport.h@{FlowExport.h}!CALL\_BACK\_MISCALLENOUS\_EXCEPTION@{CALL\_BACK\_MISCALLENOUS\_EXCEPTION}}
+\index{CALL\_BACK\_MISCALLENOUS\_EXCEPTION@{CALL\_BACK\_MISCALLENOUS\_EXCEPTION}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{CALL\_BACK\_MISCALLENOUS\_EXCEPTION}{CALL\_BACK\_MISCALLENOUS\_EXCEPTION}}
+{\footnotesize\ttfamily \#define C\+A\+L\+L\+\_\+\+B\+A\+C\+K\+\_\+\+M\+I\+S\+C\+A\+L\+L\+E\+N\+O\+U\+S\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON~0x3}
+
+\mbox{\Hypertarget{_flow_export_8h_a0d47dcc61f67c63826910a82cfa4e177}\label{_flow_export_8h_a0d47dcc61f67c63826910a82cfa4e177}} 
+\index{FlowExport.h@{FlowExport.h}!CALL\_BACK\_STEP@{CALL\_BACK\_STEP}}
+\index{CALL\_BACK\_STEP@{CALL\_BACK\_STEP}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{CALL\_BACK\_STEP}{CALL\_BACK\_STEP}}
+{\footnotesize\ttfamily \#define C\+A\+L\+L\+\_\+\+B\+A\+C\+K\+\_\+\+S\+T\+EP~0x1}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}\label{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}} 
+\index{FlowExport.h@{FlowExport.h}!EMULATOR\_HANDLER@{EMULATOR\_HANDLER}}
+\index{EMULATOR\_HANDLER@{EMULATOR\_HANDLER}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{EMULATOR\_HANDLER}{EMULATOR\_HANDLER}}
+{\footnotesize\ttfamily typedef void$\ast$ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_flow_export_8h_af684f6ebd7f91ba307055e3d12ea78a7}\label{_flow_export_8h_af684f6ebd7f91ba307055e3d12ea78a7}} 
+\index{FlowExport.h@{FlowExport.h}!\_getAllRegister@{\_getAllRegister}}
+\index{\_getAllRegister@{\_getAllRegister}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{\_getAllRegister()}{\_getAllRegister()}}
+{\footnotesize\ttfamily void \+\_\+get\+All\+Register (\begin{DoxyParamCaption}\item[{C\+O\+N\+T\+E\+XT $\ast$}]{context }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_flow_export_8h_a087ce104657f66d0b56e8d34eaa7fb80}\label{_flow_export_8h_a087ce104657f66d0b56e8d34eaa7fb80}} 
+\index{FlowExport.h@{FlowExport.h}!addCallCallback@{addCallCallback}}
+\index{addCallCallback@{addCallCallback}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{addCallCallback()}{addCallCallback()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} add\+Call\+Callback (\begin{DoxyParamCaption}\item[{\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$}]{p\+Emulator\+Handler,  }\item[{\+\_\+\+In\+\_\+ void $\ast$}]{function,  }\item[{\+\_\+\+In\+\_\+ }]{voidcallback\+\_\+)(\+E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+E\+R $\ast$docker, Q\+W\+O\+R\+D last\+Rip }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_flow_export_8h_a30e51ebcf20c79fef9214088ac3ec3a9}\label{_flow_export_8h_a30e51ebcf20c79fef9214088ac3ec3a9}} 
+\index{FlowExport.h@{FlowExport.h}!addRetCallback@{addRetCallback}}
+\index{addRetCallback@{addRetCallback}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{addRetCallback()}{addRetCallback()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} add\+Ret\+Callback (\begin{DoxyParamCaption}\item[{\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$}]{p\+Emulator\+Handler,  }\item[{\+\_\+\+In\+\_\+ void $\ast$}]{function,  }\item[{\+\_\+\+In\+\_\+ }]{voidcallback\+\_\+)(\+E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+E\+R $\ast$docker, Q\+W\+O\+R\+D last\+Rip }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_flow_export_8h_ab11d0b8560a59a591d64e3218e1c56c5}\label{_flow_export_8h_ab11d0b8560a59a591d64e3218e1c56c5}} 
+\index{FlowExport.h@{FlowExport.h}!addSyscallCallback@{addSyscallCallback}}
+\index{addSyscallCallback@{addSyscallCallback}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{addSyscallCallback()}{addSyscallCallback()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void add\+Syscall\+Callback (\begin{DoxyParamCaption}\item[{\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$}]{p\+Emulator\+Handler,  }\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_syscall_handler_8h_a703956129e3e78a8f6fd622961c4d37a}{syscall\+Callback}}}]{\+\_\+syscall\+Callback,  }\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}}}]{syscall\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_flow_export_8h_a62684b24eb7a22cc41807e63251ced8e}\label{_flow_export_8h_a62684b24eb7a22cc41807e63251ced8e}} 
+\index{FlowExport.h@{FlowExport.h}!debugCurrentThread@{debugCurrentThread}}
+\index{debugCurrentThread@{debugCurrentThread}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{debugCurrentThread()}{debugCurrentThread()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void debug\+Current\+Thread (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_flow_export_8h_a44fa2205a33c9641cdd5d9d4784db84f}\label{_flow_export_8h_a44fa2205a33c9641cdd5d9d4784db84f}} 
+\index{FlowExport.h@{FlowExport.h}!getExtendedThreadContext@{getExtendedThreadContext}}
+\index{getExtendedThreadContext@{getExtendedThreadContext}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{getExtendedThreadContext()}{getExtendedThreadContext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void get\+Extended\+Thread\+Context (\begin{DoxyParamCaption}\item[{\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$}]{p\+Emulator\+Handler,  }\item[{\+\_\+\+Out\+\_\+ C\+O\+N\+T\+E\+XT $\ast$}]{thread\+Context }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_flow_export_8h_ad7c560c84be6c9dc58657db956e1472b}\label{_flow_export_8h_ad7c560c84be6c9dc58657db956e1472b}} 
+\index{FlowExport.h@{FlowExport.h}!getMappingState@{getMappingState}}
+\index{getMappingState@{getMappingState}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{getMappingState()}{getMappingState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} \mbox{\hyperlink{_module_mapping_8h_a071993bc5e051aad252867595090a95d}{M\+A\+P\+P\+E\+D\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+NG}} get\+Mapping\+State (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_flow_export_8h_ac0e7b6fc78879e3db0c3fe707c919e10}\label{_flow_export_8h_ac0e7b6fc78879e3db0c3fe707c919e10}} 
+\index{FlowExport.h@{FlowExport.h}!getThreadContext@{getThreadContext}}
+\index{getThreadContext@{getThreadContext}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{getThreadContext()}{getThreadContext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void get\+Thread\+Context (\begin{DoxyParamCaption}\item[{\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$}]{p\+Emulator\+Handler,  }\item[{\+\_\+\+Out\+\_\+ \mbox{\hyperlink{_mod_r_m_8h_ad72b8164369315d084ba85db0aa0a72b}{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT}} $\ast$}]{thread\+Context }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_flow_export_8h_af1d0fcfd2b9274864345ceb97b2b14c7}\label{_flow_export_8h_af1d0fcfd2b9274864345ceb97b2b14c7}} 
+\index{FlowExport.h@{FlowExport.h}!globalFlowInit@{globalFlowInit}}
+\index{globalFlowInit@{globalFlowInit}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{globalFlowInit()}{globalFlowInit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void global\+Flow\+Init (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ W\+C\+H\+AR $\ast$}]{modules\+Names,  }\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}}}]{number\+Of\+Module }\end{DoxyParamCaption})}
+
+Init flow in the current process, but do not start it. If you are calling this function manually you should consider calling debug\+Current\+Thread on the main thread of the process.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em modules\+Names} & table of all module path which make 500 byte length. It length should be equal to number\+Of\+Module $\ast$ 500 at least. \\
+\hline
+\mbox{\texttt{ in}}  & {\em number\+Of\+Module} & number of module. Between 0 and 10 or it fails. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_flow_export_8h_ad234378d22c18ea901aae0907e12e361}\label{_flow_export_8h_ad234378d22c18ea901aae0907e12e361}} 
+\index{FlowExport.h@{FlowExport.h}!removeSyscallCallback@{removeSyscallCallback}}
+\index{removeSyscallCallback@{removeSyscallCallback}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{removeSyscallCallback()}{removeSyscallCallback()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void remove\+Syscall\+Callback (\begin{DoxyParamCaption}\item[{\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$}]{p\+Emulator\+Handler,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}}}]{syscall\+Id,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ \mbox{\hyperlink{_syscall_handler_8h_a703956129e3e78a8f6fd622961c4d37a}{syscall\+Callback}}}]{\+\_\+syscall\+Callback }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_flow_export_8h_a459befa7ce19439585ec8731868bb9bb}\label{_flow_export_8h_a459befa7ce19439585ec8731868bb9bb}} 
+\index{FlowExport.h@{FlowExport.h}!setExtendedThreadContext@{setExtendedThreadContext}}
+\index{setExtendedThreadContext@{setExtendedThreadContext}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{setExtendedThreadContext()}{setExtendedThreadContext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void set\+Extended\+Thread\+Context (\begin{DoxyParamCaption}\item[{\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$}]{p\+Emulator\+Handler,  }\item[{\+\_\+\+In\+\_\+ C\+O\+N\+T\+E\+XT $\ast$}]{thread\+Context }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_flow_export_8h_a4ebd9b28cad119d22d10eed4b96cd785}\label{_flow_export_8h_a4ebd9b28cad119d22d10eed4b96cd785}} 
+\index{FlowExport.h@{FlowExport.h}!setSyscallPostCallback@{setSyscallPostCallback}}
+\index{setSyscallPostCallback@{setSyscallPostCallback}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{setSyscallPostCallback()}{setSyscallPostCallback()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} \mbox{\hyperlink{_macro_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}} set\+Syscall\+Post\+Callback (\begin{DoxyParamCaption}\item[{\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$}]{p\+Emulator\+Handler,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ void($\ast$)(\mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$)}]{post\+Callback }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_flow_export_8h_a64367e505b9af92555600a8d11158e3a}\label{_flow_export_8h_a64367e505b9af92555600a8d11158e3a}} 
+\index{FlowExport.h@{FlowExport.h}!setThreadContext@{setThreadContext}}
+\index{setThreadContext@{setThreadContext}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{setThreadContext()}{setThreadContext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void set\+Thread\+Context (\begin{DoxyParamCaption}\item[{\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$}]{p\+Emulator\+Handler,  }\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_mod_r_m_8h_ad72b8164369315d084ba85db0aa0a72b}{T\+H\+R\+E\+A\+D\+\_\+\+C\+O\+N\+T\+E\+XT}} $\ast$}]{thread\+Context }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_flow_export_8h_ad923cd254ab88d0daa725dae2551273e}\label{_flow_export_8h_ad923cd254ab88d0daa725dae2551273e}} 
+\index{FlowExport.h@{FlowExport.h}!tlsAlloc@{tlsAlloc}}
+\index{tlsAlloc@{tlsAlloc}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{tlsAlloc()}{tlsAlloc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void tls\+Alloc (\begin{DoxyParamCaption}\item[{\+\_\+\+Out\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}} $\ast$}]{p\+Tls\+Id }\end{DoxyParamCaption})}
+
+You can use the T\+LS provided by F\+L\+OW instead of the one of Windows. You have up to 256 slot. Allocate one slot inside the T\+LS.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em p\+Tls\+Id} & id of the allocated slot, -\/1 mean the allocation fail. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_flow_export_8h_a8ce9a65ab317a97d69130c7db99f789c}\label{_flow_export_8h_a8ce9a65ab317a97d69130c7db99f789c}} 
+\index{FlowExport.h@{FlowExport.h}!tlsFree@{tlsFree}}
+\index{tlsFree@{tlsFree}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{tlsFree()}{tlsFree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void tls\+Free (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}}}]{tls\+Id }\end{DoxyParamCaption})}
+
+You can use the T\+LS provided by F\+L\+OW instead of the one of Windows. You have up to 256 slot. Free one slot inside the T\+LS.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em tls\+Id} & id of the slot to free. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_flow_export_8h_a45f7d8910dabc44e59b42d23551008b6}\label{_flow_export_8h_a45f7d8910dabc44e59b42d23551008b6}} 
+\index{FlowExport.h@{FlowExport.h}!tlsGetValue@{tlsGetValue}}
+\index{tlsGetValue@{tlsGetValue}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{tlsGetValue()}{tlsGetValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void tls\+Get\+Value (\begin{DoxyParamCaption}\item[{\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$}]{p\+Emulator\+Handler,  }\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}}}]{tls\+Id,  }\item[{\+\_\+\+Out\+\_\+ \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}} $\ast$}]{p\+Value }\end{DoxyParamCaption})}
+
+You can use the T\+LS provided by F\+L\+OW instead of the one of Windows. You have up to 256 slot. Set the value of a slot inside the T\+LS for the current thread (given by p\+Emulator\+Handler).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Emulator\+Handler} & handle to F\+L\+OW. \\
+\hline
+\mbox{\texttt{ in}}  & {\em tls\+Id} & id of the slot to get. \\
+\hline
+\mbox{\texttt{ out}}  & {\em p\+Value} & the value of the slot. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_flow_export_8h_a1a37d74cf098a5ea7d3a81f7b567b34c}\label{_flow_export_8h_a1a37d74cf098a5ea7d3a81f7b567b34c}} 
+\index{FlowExport.h@{FlowExport.h}!tlsSetValue@{tlsSetValue}}
+\index{tlsSetValue@{tlsSetValue}!FlowExport.h@{FlowExport.h}}
+\doxysubsubsection{\texorpdfstring{tlsSetValue()}{tlsSetValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_flow_main_8h_a0dc7fda1a05c04bad35ab6ce00391996}{\+\_\+\+L\+I\+B\+\_\+\+I\+N\+C\+\_\+\+R\+I\+P\+\_\+\+A\+P\+I\+\_\+}} void tls\+Set\+Value (\begin{DoxyParamCaption}\item[{\+\_\+\+Inout\+\_\+ \mbox{\hyperlink{_flow_export_8h_a3a2ff953ac8a07379d6fd01d86dbe0be}{E\+M\+U\+L\+A\+T\+O\+R\+\_\+\+H\+A\+N\+D\+L\+ER}} $\ast$}]{p\+Emulator\+Handler,  }\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_macro_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}}}]{tls\+Id,  }\item[{\+\_\+\+In\+\_\+ \mbox{\hyperlink{_injector_main_8h_a6fe04fdd875bcad282f702bb818897b6}{Q\+W\+O\+RD}}}]{value }\end{DoxyParamCaption})}
+
+You can use the T\+LS provided by F\+L\+OW instead of the one of Windows. You have up to 256 slot. Set the value of a slot inside the T\+LS for the current thread (given by p\+Emulator\+Handler).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Emulator\+Handler} & handle to F\+L\+OW. \\
+\hline
+\mbox{\texttt{ in}}  & {\em tls\+Id} & id of the slot to set. \\
+\hline
+\mbox{\texttt{ in}}  & {\em value} & value to set. \\
+\hline
+\end{DoxyParams}
