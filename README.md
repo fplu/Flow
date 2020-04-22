@@ -24,5 +24,5 @@ Step to use this project
 7. To debug your userDLL you could use Windbg.
 
 
-For more information read the documentation generated thanks to doxygen located in the doc/html folder.
-The most important part concern the instruction counter located in InstructionCounter/InstructionCounter/*, Flow/FlowExport.h and Flow/FlowInit.h
+For more informations, read the documentation generated thanks to doxygen located in the doc/html folder.
+The most important parts in the doc are located in InstructionCounter/InstructionCounter/*, Flow/FlowExport.h and Flow/FlowInit.h
