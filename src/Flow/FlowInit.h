@@ -115,6 +115,19 @@ extern void(*g_ExceptionCallback)(EMULATOR_HANDLER*, CONTEXT*, DWORD);
 *	TRUE the callback are enable. FALSE the callback are disable
 *	When this function is not set we consider all callback are enable.
 */
-extern BOOL(*g_EnableRangeInstructionAnalyseFunction)(OPCODE* baseAddress, DWORD baseSize);
+extern BOOL(*g_EnableRangeInstructionAnalyse)(OPCODE* baseAddress, DWORD baseSize);
+
+
+/*
+*	If a function is named "enableRangeInstructionInstrumentation" in the user dll, it should return wether or not we instrument the region of code.
+*	TRUE we instrument the region. 
+*	FALSE every calls to the region will not be intrumented. An uninstrumented region cannot be analyzed.
+*	The instrumentation will restart when the first function called in the region return.
+*	Disabling instrumentation in a region of code allow a gain of speed (especially with mscore when instrumenting .NET	application) and a gain of RAM.
+*	When this function is not set we consider that everything should be instrumented.
+*
+*	Nb : In some rare case, when analysing shellcode, disabling instrumentation using this function could cause performance loss
+*/
+extern BOOL(*g_EnableRangeInstructionInstrumentation)(OPCODE* baseAddress, DWORD baseSize);
 
 #endif // !_FLOW_INIT_H_

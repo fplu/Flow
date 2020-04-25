@@ -76,7 +76,7 @@ void SingleStepHandlerRun(DOCKER * docker) {
 			//STEP 1 : check memory right
 			memoryCheckValue = SingleStepHandlerMemoryCheck(&docker->memBasicInfo, docker->Rip, instructionRead.Length);
 			if (memoryCheckValue == PAGE_EXECUTE_READWRITE) {
-				docker->ptitCountPtetPasTemp++;
+				//docker->ptitCountPtetPasTemp++;
 			}
 			if (memoryCheckValue == PAGE_EXECUTE_READWRITE && context == NULL) {
 				//break;
@@ -88,7 +88,7 @@ void SingleStepHandlerRun(DOCKER * docker) {
 			}			
 			else if (memoryCheckValue == PAGE_EXECUTE_READ) {
 				docker->ptitCountPtetTemp++;
-				if (docker->ptitCountPtetTemp > 100) {
+				if (docker->ptitCountPtetTemp > 1000) {
 					g_mmm.AreAllModuleInit = FALSE;
 				}
 			}
@@ -154,7 +154,9 @@ void SingleStepHandlerRun(DOCKER * docker) {
 				}
 			}
 
-			if (g_EnableRangeInstructionAnalyseFunction(instructionRead.Opcode, instructionRead.Length)) {
+			if (g_EnableRangeInstructionAnalyse(instructionRead.Opcode, instructionRead.Length) &&
+				g_EnableRangeInstructionInstrumentation(instructionRead.Opcode, instructionRead.Length)) {
+
 				void * tmpRip = docker->Rip;
 				docker->Rip = (void*)docker->context.Rip;
 

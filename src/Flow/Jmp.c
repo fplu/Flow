@@ -26,19 +26,23 @@ BOOL ManageJmp(
 			__leave;
 		}
 
-		//STEP 1 : calc new instructions length
-		
-		//STEP 2 : check if there is enough space for the new instruction
-		if (newInstructionLength + *bufferIndex + JMP_REL32_SIZE >= BUFFER_OPCODE_SIZE) {
-			success = FALSE;
-			__leave;
-		}
+//		if (!g_EnableRangeInstructionInstrumentation(dest, 1)) {
 
-		//STEP 3 : write the new instruction
+//		}
+//		else {
+			//STEP 1 : calc new instructions length
 
-		//STEP 4 : give the new value of Rip
-		(QWORD)docker->Rip = dest;
+			//STEP 2 : check if there is enough space for the new instruction
+			if (newInstructionLength + *bufferIndex + JMP_REL32_SIZE >= BUFFER_OPCODE_SIZE) {
+				success = FALSE;
+				__leave;
+			}
 
+			//STEP 3 : write the new instruction
+
+			//STEP 4 : give the new value of Rip
+			(QWORD)docker->Rip = dest;
+//		}
 	}
 	__finally {
 

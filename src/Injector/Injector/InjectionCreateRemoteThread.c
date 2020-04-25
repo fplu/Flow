@@ -196,7 +196,11 @@ BOOL DLLInject(_In_ HANDLE hProcess, _In_ TCHAR * dllPath, _In_ BOOL is32BitProc
 		*remoteThread = INVALID_HANDLE_VALUE;
 
 		//Alloue de l'espace dans hprocess.
-		dllPathAddressInRemoteMemory = VirtualAllocEx(hProcess, NULL, _tcslen(dllPath) * sizeof(TCHAR), MEM_RESERVE | MEM_COMMIT, PAGE_EXECUTE_READWRITE);
+		dllPathAddressInRemoteMemory = 
+			
+			
+			
+		VirtualAllocEx(hProcess, NULL, _tcslen(dllPath) * sizeof(TCHAR), MEM_RESERVE | MEM_COMMIT, PAGE_EXECUTE_READWRITE);
 		if (!dllPathAddressInRemoteMemory) {
 			sucess = FALSE;
 			MSDN_FUNC_ERROR();

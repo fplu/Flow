@@ -1,5 +1,7 @@
 #include "FlowMain.h"
 
+#define CEIL_TO_PAGE(a) (((QWORD)(a) + USN_PAGE_SIZE - 1)/USN_PAGE_SIZE)
+
 extern void(*g_InstructionDefaultCallback)(EMULATOR_HANDLER*);
 extern void(*(*g_GetInstructionCallback)(INSTRUCTION_READ*))(EMULATOR_HANDLER*);
 
@@ -89,11 +91,6 @@ MAPPED_MODULE_MANAGEMENT g_mmm = { 0 };
 PMAPPED_PAGE* g_ppmp = NULL;
 __declspec(thread) MAPPED_MODULE_PROCESSING g_mmp = {.BeingProcessed = FALSE};
 
-BOOL EnableModuleInstructionAnalyse(OPCODE* baseAddress, DWORD baseSize) {
-	return TRUE;
-}
-
-BOOL(*g_EnableRangeInstructionAnalyseFunction)(OPCODE * baseAddress, DWORD baseSize) = EnableModuleInstructionAnalyse;
 
 /*
 BOOL IsAddressInDataPage(PMAPPED_PAGE pPage, QWORD address) {
@@ -563,6 +560,9 @@ void ModuleMappingOnNewModuleLoad(
 	if (LDR_DLL_NOTIFICATION_REASON_LOADED == NotificationReason) {
 		g_mmm.AreAllModuleInit = FALSE;
 	}
+	else if(LDR_DLL_NOTIFICATION_REASON_UNLOADED == NotificationReason) {
+		__debugbreak();
+	}
 }
 
 
@@ -680,21 +680,23 @@ BOOL ModuleMappingInit(_In_ PVOID callback_) {
 			__leave;
 		}
 
+		g_mmm.ElementMaxLength = USN_PAGE_SIZE;
 		g_mmm.Callback = callback_;
-		if ((g_mmm.WastedElement = VirtualAlloc(NULL, 50 * USN_PAGE_SIZE, MEM_COMMIT, PAGE_READWRITE)) == NULL) {
+		if ((g_mmm.WastedElement = VirtualAlloc(NULL, g_mmm.ElementMaxLength * sizeof(MAPPED_PAGE), MEM_COMMIT, PAGE_READWRITE)) == NULL) {
 			success = FALSE;
 			__leave;
 		}
 
-		if ((g_mmm.Element = VirtualAlloc(NULL, 50 * USN_PAGE_SIZE, MEM_COMMIT, PAGE_READWRITE)) == NULL) {
+		if ((g_mmm.Element = VirtualAlloc(NULL, g_mmm.ElementMaxLength * sizeof(MAPPED_PAGE), MEM_COMMIT, PAGE_READWRITE)) == NULL) {
 			success = FALSE;
 			__leave;
 		}
 		g_mmm.WastedElementLength = 0;
 		g_mmm.ElementLength = 0;
-		g_mmm.ElementMaxLength = 50 * USN_PAGE_SIZE / sizeof(MAPPED_PAGE);
+		//__debugbreak();
 		g_mmm.AreAllModuleInit = FALSE;
 		g_mmm.SynchronizationByte = 0;
+
 	}
 	__finally {
 
@@ -729,20 +731,20 @@ void ModuleMappingMapPage(OPCODE * baseAddress, DWORD baseSize) {
 		g_mmm.SynchronizationByte = 0;
 		return;
 	}
-	
+
 	if (g_mmm.ElementLength >= g_mmm.ElementMaxLength) {
 		__debugbreak();
 		g_mmm.SynchronizationByte = 0;
 		return;
-	} 
+	}
 
 	if ((ModuleMappingMap(
-		baseAddress, 
-		baseSize, 
-		g_mmm.Element + g_mmm.ElementLength, 
-		g_EnableRangeInstructionAnalyseFunction(baseAddress, baseSize))) != 0
+		baseAddress,
+		baseSize,
+		g_mmm.Element + g_mmm.ElementLength,
+		g_EnableRangeInstructionAnalyse(baseAddress, baseSize))) != 0
 		) {
-		
+
 		if (((QWORD)g_mmm.Element[i].OldCode >> 36) == 0x7FF) {
 			for (j = (QWORD)g_mmm.Element[i].OldCode; j < (QWORD)g_mmm.Element[i].OldCode + (QWORD)g_mmm.Element[i].OldCodeLength; j++) {
 				g_ppmp(j) = g_mmm.Element + i;
@@ -756,16 +758,23 @@ void ModuleMappingMapPage(OPCODE * baseAddress, DWORD baseSize) {
 
 
 BOOL ModuleMappingMapAllUnmappedModule(void) {
+	static BOOLEAN* MappedRegionMask = NULL;
+	static DWORD MappedRegionMaskLength = 0;
+
+	QWORD bornMin;
+	QWORD bornMax;
+
 	BOOL success = TRUE;
 	//HANDLE hModuleSnap = NULL;
 	HMODULE hMods[1024];
 	DWORD cbNeeded;
 	MODULEINFO moduleInfo;
 
-//	MODULEENTRY32 moduleEntry;
+	//	MODULEENTRY32 moduleEntry;
 	DWORD i;
 	QWORD j;
 	QWORD k;
+	QWORD l;
 	BOOL wait;
 	BOOL find;
 	QWORD analysedSize, deltaAnalysedSize;
@@ -786,14 +795,14 @@ BOOL ModuleMappingMapAllUnmappedModule(void) {
 			g_mmm.SynchronizationByte = 0;//reset lock
 			__leave;
 		}
+		//__debugbreak();
 
 		for (k = 0; k < (cbNeeded / sizeof(HMODULE)); k++) {
-
-			if (g_mmm.ElementLength >= g_mmm.ElementMaxLength) {
+			/*if (g_mmm.ElementLength >= g_mmm.ElementMaxLength) {
 				__debugbreak();
 				g_mmm.SynchronizationByte = 0;//reset lock
 				__leave;
-			}
+			}*/
 
 			if (!GetModuleInformation(GetCurrentProcess(), hMods[k], &moduleInfo, sizeof(MODULEINFO))) {
 				success = FALSE;
@@ -801,42 +810,114 @@ BOOL ModuleMappingMapAllUnmappedModule(void) {
 				__leave;
 			}
 
-			find = FALSE;
-			for (i = 0; i < g_mmm.ElementLength; i++) {
-				if (g_mmm.Element[i].OldCode >= (OPCODE*)moduleInfo.lpBaseOfDll &&
-					g_mmm.Element[i].OldCode < (OPCODE*)moduleInfo.lpBaseOfDll + moduleInfo.SizeOfImage) {
-					//DebugBreak();
-					find = TRUE;
-					break;
+			
+			if (!g_EnableRangeInstructionInstrumentation((OPCODE*)moduleInfo.lpBaseOfDll, moduleInfo.SizeOfImage)) {
+				break;
+			}
+
+			if (MappedRegionMaskLength < CEIL_TO_PAGE(moduleInfo.SizeOfImage)) {
+				if (MappedRegionMask != NULL) {
+					VirtualFree(MappedRegionMask, 0, MEM_RELEASE);
+				}
+				MappedRegionMaskLength = CEIL_TO_PAGE(moduleInfo.SizeOfImage);
+				if ((MappedRegionMask = VirtualAlloc(NULL, MappedRegionMaskLength, MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE)) == NULL) {
+					success = FALSE;
+					g_mmm.SynchronizationByte = 0;//reset lock
+					__leave;
 				}
 			}
-			if (!find) {
 
+			for (i = 0; i < CEIL_TO_PAGE(moduleInfo.SizeOfImage); i++) {
+				MappedRegionMask[i] = FALSE;
+			}
+
+			find = FALSE;
+
+			//only one loop, we do not need something very precise, the job we be finished inside 
+			for (i = 0; i < g_mmm.ElementLength; i++) {
+
+				if (g_mmm.Element[i].OldCode < (OPCODE*)moduleInfo.lpBaseOfDll + moduleInfo.SizeOfImage &&
+					g_mmm.Element[i].OldCode + g_mmm.Element[i].OldCodeLength > (OPCODE*)moduleInfo.lpBaseOfDll) {
+
+					//prise des bornes les plus grandes communes entre les deux ensembles
+					bornMin = (QWORD)max(g_mmm.Element[i].OldCode, (OPCODE*)moduleInfo.lpBaseOfDll);
+					bornMax = (QWORD)min(g_mmm.Element[i].OldCode + g_mmm.Element[i].OldCodeLength, (OPCODE*)moduleInfo.lpBaseOfDll + moduleInfo.SizeOfImage);
+
+					//reduction des bornes à l'origine
+					bornMin -= (QWORD)moduleInfo.lpBaseOfDll;
+					bornMax -= (QWORD)moduleInfo.lpBaseOfDll;
+
+					//réduction des bornes à la granularity (PAGE_SIZE)
+					bornMin = CEIL_TO_PAGE(bornMin);
+					bornMax = CEIL_TO_PAGE(bornMax);
+
+					//__debugbreak();
+					for (l = bornMin; l < bornMax; l++) {
+						MappedRegionMask[l] = TRUE;
+					}
+				}
+
+			}
+			if (find) {
+				break;
+			}
+			for (l = 0; l < CEIL_TO_PAGE(moduleInfo.SizeOfImage); l++) {
+				if (MappedRegionMask[l] == TRUE) {
+					//__debugbreak();
+					continue;
+				}
+				bornMin = l;
+				for (l++ ; l < CEIL_TO_PAGE(moduleInfo.SizeOfImage); l++) {
+					if (MappedRegionMask[l] == TRUE) {
+						break;
+					}
+				}
+				bornMax = l - bornMin;
+
+				bornMin *= USN_PAGE_SIZE;
+				bornMax *= USN_PAGE_SIZE;
+				bornMin += (QWORD)moduleInfo.lpBaseOfDll;
+
+				//__debugbreak();
 				analysedSize = 0;
 				do {
+
+					if (g_mmm.ElementLength >= g_mmm.ElementMaxLength) {
+						__debugbreak();
+						g_mmm.SynchronizationByte = 0;//reset lock
+						__leave;
+					}
+
+
 					deltaAnalysedSize = ModuleMappingMap(
-						(OPCODE*)moduleInfo.lpBaseOfDll + analysedSize,
-						(DWORD)(moduleInfo.SizeOfImage - analysedSize),
+						(OPCODE*)(bornMin + analysedSize),
+						(DWORD)(bornMax - analysedSize),
 						g_mmm.Element + g_mmm.ElementLength,
-						g_EnableRangeInstructionAnalyseFunction(moduleInfo.lpBaseOfDll, moduleInfo.SizeOfImage)
+						g_EnableRangeInstructionAnalyse(moduleInfo.lpBaseOfDll, moduleInfo.SizeOfImage)
 					);
 					if (deltaAnalysedSize == 0) {
 						break;
 					}
 
+					//__debugbreak();
 					if (((QWORD)g_mmm.Element[i].OldCode >> 36) == 0x7FF) {
 						for (j = (QWORD)g_mmm.Element[i].OldCode; j < (QWORD)g_mmm.Element[i].OldCode + (QWORD)g_mmm.Element[i].OldCodeLength; j++) {
 							g_ppmp(j) = g_mmm.Element + i;
 						}
 					}
+
+					
+
 					analysedSize += deltaAnalysedSize;
 					g_mmm.ElementLength++;
-					
-				} while (1);
+				//	break;
+				} while (bornMax - analysedSize > 0);
+				//break;
 			}
 
-		} 
 
+		}
+		//__debugbreak();
 		g_mmm.SynchronizationByte = 0;//reset lock
 	}
 	__finally {

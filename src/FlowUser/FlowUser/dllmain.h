@@ -28,9 +28,9 @@
 #endif // !MSDN_FUNC_ERROR
 
 #ifdef INCRIPTESTUSER_EXPORTS
-#define INCRIPTESTUSER_LIB __declspec(dllexport)
+#define FLOW_USER_LIB __declspec(dllexport)
 #else
-#define INCRIPTESTUSER_LIB __declspec(dllimport)
+#define FLOW_USER_LIB __declspec(dllimport)
 #endif
 
 
@@ -51,34 +51,44 @@
 /*
 *	If a function is named "processInitializationCallback" in the user dll it will ba called at process initialization outside of a dllMain
 */
-INCRIPTESTUSER_LIB void processInitializationCallback();
+FLOW_USER_LIB void processInitializationCallback();
 
 
 /*
 *	If a function is named "threadInitializationCallback" in the user dll it will ba called at each time a new thread start to be instrumented
 */
-INCRIPTESTUSER_LIB void threadInitializationCallback(EMULATOR_HANDLER* pEmulatorHandler);
+FLOW_USER_LIB void threadInitializationCallback(EMULATOR_HANDLER* pEmulatorHandler);
 
 /*
 *	If a function is named "getInstructionCallback" in the user dll it will ba called at each time an instruction is instrumented.
 *	It take the current instruction as parameter and return a pre callback for this instruction.
 *	The pre callback will receive a handle to Flow as first parameter each time it is called
 */
-INCRIPTESTUSER_LIB void(*getInstructionCallback(INSTRUCTION_READ* pInstructionRead))(EMULATOR_HANDLER*);
+FLOW_USER_LIB void(*getInstructionCallback(INSTRUCTION_READ* pInstructionRead))(EMULATOR_HANDLER*);
 
 /*
 *	If a function is named "exceptionCallback" it will be called each time an unexpected behaviour is detected passing OPTIONNALY a handle to FLOW or optionnaly a context to the code which cause the exception and the reason of exception
 */
-INCRIPTESTUSER_LIB void exceptionCallback(EMULATOR_HANDLER* pEmulatorHandler, CONTEXT* context, DWORD reason);
+FLOW_USER_LIB void exceptionCallback(EMULATOR_HANDLER* pEmulatorHandler, CONTEXT* context, DWORD reason);
 
 /*
 *	If a function is named "enableModuleInstructionAnalyse" in the user dll, it should return wether or not we enable all callbacks in a region of memory passed as argument (starting to baseAddress to baseAddress + baseSize).
 *	TRUE the callback are enable. FALSE the callback are disable
 *	When this function is not set we consider all callback are enable.
 */
-INCRIPTESTUSER_LIB BOOL enableModuleInstructionAnalyse(OPCODE* baseAddress, DWORD baseSize);
+FLOW_USER_LIB BOOL enableModuleInstructionAnalyse(OPCODE* baseAddress, DWORD baseSize);
 
-
+/*
+*	If a function is named "enableRangeInstructionInstrumentation" in the user dll, it should return wether or not we instrument the region of code.
+*	TRUE we instrument the region.
+*	FALSE every calls to the region will not be intrumented. An uninstrumented region cannot be analyzed.
+*	The instrumentation will restart when the first function called in the region return.
+*	Disabling instrumentation in a region of code allow a gain of speed (especially with mscore when instrumenting .NET	application) and a gain of RAM.
+*	When this function is not set we consider that everything should be instrumented.
+*
+*	Nb : In some rare case, when analysing shellcode, disabling instrumentation using this function could cause performance loss
+*/
+FLOW_USER_LIB BOOL enableRangeInstructionInstrumentation(OPCODE* baseAddress, DWORD baseSize);
 
 #endif
 

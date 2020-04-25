@@ -35,6 +35,21 @@ void(*g_InstructionDefaultCallback)(EMULATOR_HANDLER*) = NULL;
 void(*(*g_GetInstructionCallback)(INSTRUCTION_READ*))(EMULATOR_HANDLER*) = NULL;
 void(*g_ExceptionCallback)(EMULATOR_HANDLER*, CONTEXT*, DWORD) = NULL;
 
+
+BOOL EnableRangeInstructionAnalyse(OPCODE* baseAddress, DWORD baseSize) {
+	return TRUE;
+}
+
+BOOL(*g_EnableRangeInstructionAnalyse)(OPCODE* baseAddress, DWORD baseSize) = EnableRangeInstructionAnalyse;
+
+BOOL EnableRangeInstructionInstrumentation(OPCODE* baseAddress, DWORD baseSize) {
+	return TRUE;
+}
+
+BOOL(*g_EnableRangeInstructionInstrumentation)(OPCODE* baseAddress, DWORD baseSize) = EnableRangeInstructionInstrumentation;
+
+
+
 QWORD initIncRip(_In_ void* _firstRip, _In_opt_ void* _firstStack) {
 	//__debugbreak();
 

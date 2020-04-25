@@ -55,7 +55,10 @@ void globalFlowInit(_In_ WCHAR * modulesNames, _In_ DWORD numberOfModule) {
 	g_SyscallDefaultCallback = (syscallCallback)GetProcAddress(g_UserModule, "syscallDefaultCallback");
 	
 	tmp = (void*)GetProcAddress(g_UserModule, "enableRangeInstructionAnalyse");
-	g_EnableRangeInstructionAnalyseFunction = (tmp == NULL ? g_EnableRangeInstructionAnalyseFunction : (BOOL(*)(OPCODE * baseAddress, DWORD baseSize))tmp);
+	g_EnableRangeInstructionAnalyse = (tmp == NULL ? g_EnableRangeInstructionAnalyse : (BOOL(*)(OPCODE * baseAddress, DWORD baseSize))tmp);
+
+	tmp = (void*)GetProcAddress(g_UserModule, "enableRangeInstructionInstrumentation");
+	g_EnableRangeInstructionInstrumentation = (tmp == NULL ? g_EnableRangeInstructionInstrumentation : (BOOL(*)(OPCODE * baseAddress, DWORD baseSize))tmp);
 
 	if (g_ProcessInitializationCallback) {
 		g_ProcessInitializationCallback();

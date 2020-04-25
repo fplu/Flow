@@ -144,7 +144,7 @@ global JMP_AT_TLS3_8
 	ja      saut7_%1;	INSTRUCTIONPointerManagement!GetNewAddressFromOldAddress+0xa5 (00007ff9`fac94845)
 	saut6_%1:
 	inc     r9d
-	add     rcx, 110h; WARNING
+	add     rcx, 68h; WARNING
 	cmp     r9d, r11d
 	jb      saut8_%1;	INSTRUCTIONPointerManagement!GetNewAddressFromOldAddress+0x80 (00007ff9`fac94820)
 	saut5_%1:
@@ -153,7 +153,7 @@ global JMP_AT_TLS3_8
 	saut7_%1: 
 	lfence  
 	mov     eax, r9d
-	imul    rcx, rax, 110h; WARNING 
+	imul    rcx, rax, 68h; WARNING 
 	mov		rax, [rel G_MMM]
 	add     rcx, qword [rax];[INSTRUCTIONPointerManagement!g_mmm (00007ff9`facaff40)]
 	sub     r8, qword [rcx+8]
